@@ -1,6 +1,33 @@
 # A prompt for your own Claude
 
-Kate, paste everything below the line into your own Claude (Claude Code, or claude.ai with GitHub connected) when you want it to work on your site with you.
+Kate, this page has two parts: first how to connect your Claude to GitHub (once), then a prompt to paste into your Claude whenever you want it to work on your site with you.
+
+## Part 1: connect your Claude to GitHub
+
+Steps as of 20 November 2026. These screens change often, so if something looks different, follow the linked page. You never need to copy or paste a token or password anywhere: every sign-in below is GitHub's or Claude's own browser flow.
+
+**First, accept the invitation.** GitHub has invited your GitHub account to work on the repository. Accept it from the email GitHub sent you, or sign in to GitHub and open https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/invitations.
+
+**Option A: in the browser or the Claude app (Claude Code on the web).** Needs a paid Claude plan (Pro or above).
+1. Go to https://claude.ai/code and sign in with your Claude account.
+2. Follow the prompt to connect GitHub: GitHub asks you to authorise Claude, approve it, and you are sent back. (If you ever need to do this again: https://claude.ai/connect-github.)
+3. Start a session: click the repository selector below the message box, choose SovereignWebsite/Site__Founder__Kate-Curtis-Evans, set the branch to dev, then paste the prompt from Part 2.
+4. If the repository does not appear in the list, tell Dinis: the Claude GitHub App has to be allowed on that repository, and only an owner of the SovereignWebsite organisation can do that.
+
+Source: https://code.claude.com/docs/en/web-quickstart and https://code.claude.com/docs/en/claude-code-on-the-web
+
+**Option B: Claude Code on your own computer.**
+1. Install it. On a Mac, open Terminal and run `curl -fsSL https://claude.ai/install.sh | bash` (or `brew install --cask claude-code` if you use Homebrew). On Windows, open PowerShell and run `irm https://claude.ai/install.ps1 | iex` (installing Git for Windows first is recommended).
+2. Open a new terminal window and run `claude --version` to check it worked.
+3. Run `claude` and follow the browser prompts to sign in with your Claude account.
+4. Sign in to GitHub so your computer can fetch and push the site: install GitHub's own command-line tool from https://cli.github.com/ and run `gh auth login`, choosing GitHub.com and to log in with a web browser.
+5. In the folder where you keep projects, start `claude`, ask it to clone https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans and switch to dev, then paste the prompt from Part 2.
+
+Source: https://code.claude.com/docs/en/setup and https://code.claude.com/docs/en/web-quickstart
+
+## Part 2: the prompt
+
+Paste everything below the line into your Claude.
 
 ---
 
