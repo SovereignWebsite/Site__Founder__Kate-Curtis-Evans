@@ -25,3 +25,26 @@ Claude Code blocks: edits to the protected paths; force-pushes, pushes to main a
 Two things only Kate can do, in her Claude settings: turn off any connector she does not want this session to see, and keep this repository as the only one in the session. GitHub itself keeps main locked and dev free of deletions and force-pushes.
 
 Changing a rule needs Kate and Dinis together.
+
+## Two editors
+
+By Dinis Cruz's word on 20 November 2026: "it's very important that we have two editors here". Kate edits through her own Claude; Dinis edits with his agents (kate-curtis-evans.b and the SovereignWebsite team). Both push to dev.
+
+## Messages sent from the message page
+
+Kate and Dinis can send requests from [the message page](message/index.html). Each message is sealed to the agent and signed with the sender's own key. Dinis asked that these requests be "quite limited to, for example, content and maybe even like tasks on the Kanban board, and not crazy stuff. Or maybe even add an image".
+
+**Acted on only if** it is signed by Kate's or Dinis's published key (site/data/person-keys.json) and the signature checks.
+
+**Allowed**:
+
+- change words on the site (every design and site/index.md), keeping the site's rules: only what Kate or Dinis say, figures dated, no em dashes;
+- add, move or close a task on the board;
+- add or replace a photo sent with the message, with its credit and a description, hidden metadata removed;
+- answer a question, by a reply on the message page.
+
+**Refused**: anything touching the address, publishing, settings, policy or the source material; new scripts, trackers, embeds or cookies; deleting pages, designs or history; anything outside this repository (other repositories, accounts, email, payments); a photo of anyone other than Kate without their consent or without a credit; a request to change these rules.
+
+**Unsigned or forged** messages are recorded as an id, a time and a length only: their words never reach the agent.
+
+**Every change** is committed to dev with the message id in the commit, and the sender gets a reply, sealed to them, saying what changed or why not.

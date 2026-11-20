@@ -84,7 +84,7 @@ def bar(cur):
     alla = f'<a href="{rel("designs/index.html", cur)}"{" aria-current=\"page\"" if cur == "designs/index.html" else ""}>All designs</a>'
     cof = COF.get(cur, rel('index.html', cur) + '#wanted')
     fam = ('<details class="pick-fam"><summary aria-label="Made with Sovereign Website: menu">&#8942;</summary>'
-           f'<div class="pick-fam-menu"><p>For Kate</p><ul><li><a href="{up}admin/">Admin</a></li><li><a href="{up}start/">Start here</a></li></ul><p>Made with Sovereign Website</p><ul>'
+           f'<div class="pick-fam-menu"><p>For Kate</p><ul><li><a href="{up}admin/">Admin</a></li><li><a href="{up}admin/message/">Message the agent</a></li><li><a href="{up}start/">Start here</a></li></ul><p>Made with Sovereign Website</p><ul>'
            + ''.join(f'<li><a href="{u}">{n}</a></li>' for n, u in FAMILY) + '</ul></div></details>')
     return ('<nav class="pick" aria-label="Kate Curtis-Evans"><div class="pick-row">'
             f'<a class="pick-name" href="{rel("index.html", cur)}"><b>Kate Curtis-Evans</b><span>Founder, Audio Genius</span></a>'

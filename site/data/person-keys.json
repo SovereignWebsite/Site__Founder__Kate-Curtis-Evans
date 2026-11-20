@@ -1,0 +1,49 @@
+{
+  "about": "Keys a conductor issues to its person for one session (admin/tools/person-key.mjs): public halves only. The issuing agent also holds the private half, so it can read what is sealed to the person; a new session issues a new key. The step before each person holds their own key on pki.sgit.ai.",
+  "keys": [
+    {
+      "person": "dinis",
+      "fingerprint": "sha256:865b75c06e33b3d4",
+      "signing_fingerprint": "sha256:2b347926772ef26f",
+      "status": "active",
+      "issued_by": "kate-curtis-evans.b@SovereignWebsite.dinis",
+      "session": "session_01Kw9UwEREYzo2rPJ4cv4XVN",
+      "issued_at": "2026-11-20T17:07:02Z",
+      "valid": "while the issuing session lives",
+      "encrypt": {
+        "kty": "EC",
+        "crv": "P-256",
+        "x": "seg5O4tDZ9s9MFvSewsY0uiyhdrfGpz0WHGBaHg7Vvc",
+        "y": "4ssiOzNScI2MiciyMByfbpY9Ry4PIpD3R4r7i1u1yA4"
+      },
+      "sign": {
+        "kty": "EC",
+        "crv": "P-256",
+        "x": "qhKK_XLb8DuUddz8ZqSwpjZONhIMC8gv3jLVC27_11I",
+        "y": "pUz0K9_saaAQJffO7FfEeFoFamOY1DxABLHamXSJlfw"
+      }
+    },
+    {
+      "person": "kate",
+      "fingerprint": "sha256:f6d54f1091c1a951",
+      "signing_fingerprint": "sha256:23da95d2ce99fe17",
+      "status": "active",
+      "issued_by": "kate-curtis-evans.b@SovereignWebsite.dinis",
+      "session": "session_01Kw9UwEREYzo2rPJ4cv4XVN",
+      "issued_at": "2026-11-20T17:07:02Z",
+      "valid": "while the issuing session lives",
+      "encrypt": {
+        "kty": "EC",
+        "crv": "P-256",
+        "x": "D4iKnO-01pD566VDktbXoKaeOl0SQrpRmpaGBaDZjjI",
+        "y": "epjMs5OlJ6j_ELVkFjuHgWgQ6TSwTUe2zh0vPvOyHMg"
+      },
+      "sign": {
+        "kty": "EC",
+        "crv": "P-256",
+        "x": "ISxS3a8qbTgufVA97-V2FU4vqGPVL1LPQlQC2XSeCY4",
+        "y": "Wmm-LzylwVbTsa2CtVkItQop87LUOXFa3GRK3Fl1Q2s"
+      }
+    }
+  ]
+}

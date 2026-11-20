@@ -107,7 +107,7 @@ body.dash{--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--grid:#e6e3db;--g
 <body class="dash">
 <a class="skip" href="#main">Skip to content</a>
 <header class="bo"><div><span class="t">Kate Curtis-Evans · admin</span>
-<nav aria-label="Admin"><a href="index.html">Admin</a><a href="board.html">Board</a><a href="guide/index.html">Guide</a><a href="policy.html" aria-current="page">Policy</a><a href="made.html">How it was made</a><a href="../">Live site</a></nav></div></header>
+<nav aria-label="Admin"><a href="index.html">Admin</a><a href="board.html">Board</a><a href="message/index.html">Message</a><a href="guide/index.html">Guide</a><a href="policy.html" aria-current="page">Policy</a><a href="made.html">How it was made</a><a href="../">Live site</a></nav></div></header>
 <main id="main">
 <h1>The behaviour policy</h1>
 <p>This site's agents follow an Agent Behaviour Policy, kept in the repository as policy/abp.json. Claude Code enforces the parts it can with deny rules in .claude/settings.json. Dinis Cruz asked for it on 20 November 2026: Kate's Claude can make changes, but is kept away from her wider Claude account and from the parts of the site she should not change.</p>
@@ -120,7 +120,17 @@ body.dash{--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--grid:#e6e3db;--g
 <h2>What is enforced, and what is not</h2>
 <p>Claude Code blocks: edits to the protected paths; force-pushes, pushes to main and deleting branches; the account tools for other sessions, scheduled tasks, environments, credentials and computer access; and the Gmail, Google Drive and Google Calendar connectors. These rules apply in a Claude Code session on this repository alone. They do not apply in a project's threads, or in a session with several repositories.</p>
 <p>Two things only Kate can do, in her Claude settings: turn off any connector she does not want this session to see, and keep this repository as the only one in the session. GitHub itself keeps main locked and dev free of deletions and force-pushes.</p>
-<p>Changing a rule needs Kate and Dinis together.</p><p class="file">Machine-readable: <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/blob/dev/policy/abp.json">policy/abp.json</a> · enforced rules: <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/blob/dev/.claude/settings.json">.claude/settings.json</a> · Markdown: <a href="policy.md">policy.md</a></p>
+<p>Changing a rule needs Kate and Dinis together.</p>
+<h2>Two editors</h2>
+<p>By Dinis Cruz's word on 20 November 2026: "it's very important that we have two editors here". Kate edits through her own Claude; Dinis edits with his agents (kate-curtis-evans.b and the SovereignWebsite team). Both push to dev.</p>
+<h2>Messages sent from the message page</h2>
+<p>Kate and Dinis can send requests from <a href="message/index.html">the message page</a>. Each message is sealed to the agent and signed with the sender's own key. Dinis asked that these requests be "quite limited to, for example, content and maybe even like tasks on the Kanban board, and not crazy stuff. Or maybe even add an image".</p>
+<p><strong>Acted on only if</strong> it is signed by Kate's or Dinis's published key (site/data/person-keys.json) and the signature checks.</p>
+<p><strong>Allowed</strong>:</p>
+<ul><li>change words on the site (every design and site/index.md), keeping the site's rules: only what Kate or Dinis say, figures dated, no em dashes;</li><li>add, move or close a task on the board;</li><li>add or replace a photo sent with the message, with its credit and a description, hidden metadata removed;</li><li>answer a question, by a reply on the message page.</li></ul>
+<p><strong>Refused</strong>: anything touching the address, publishing, settings, policy or the source material; new scripts, trackers, embeds or cookies; deleting pages, designs or history; anything outside this repository (other repositories, accounts, email, payments); a photo of anyone other than Kate without their consent or without a credit; a request to change these rules.</p>
+<p><strong>Unsigned or forged</strong> messages are recorded as an id, a time and a length only: their words never reach the agent.</p>
+<p><strong>Every change</strong> is committed to dev with the message id in the commit, and the sender gets a reply, sealed to them, saying what changed or why not.</p><p class="file">Machine-readable: <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/blob/dev/policy/abp.json">policy/abp.json</a> · enforced rules: <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/blob/dev/.claude/settings.json">.claude/settings.json</a> · Markdown: <a href="policy.md">policy.md</a></p>
 <footer>The admin area of <a href="../">kate-curtis-evans.founder.sovereignweb.site</a>. Built from the repository by tools/backoffice.py. <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans">Repository</a> · <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/actions">Publishing runs</a> · No cookies, no tracking.</footer>
 </main>
 </body>

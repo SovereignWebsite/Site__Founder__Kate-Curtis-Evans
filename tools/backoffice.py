@@ -74,7 +74,7 @@ li a,td a,nav a,.file a{display:inline-block;min-height:24px;line-height:24px}
 
 def page(title, desc, body, cur, depth=1, full=False):
     up = '../' * depth
-    nav = [('index.html', 'Admin'), ('board.html', 'Board'), ('guide/index.html', 'Guide'),
+    nav = [('index.html', 'Admin'), ('board.html', 'Board'), ('message/index.html', 'Message'), ('guide/index.html', 'Guide'),
            ('policy.html', 'Policy'), ('made.html', 'How it was made')]
     base = '' if depth == 1 else '../'
     links = ''.join(f'<a href="{base}{h}"{" aria-current=\"page\"" if h == cur else ""}>{n}</a>' for h, n in nav)
@@ -259,6 +259,34 @@ def main():
     psrc = open(os.path.join(ADMIN, 'policy.md'), encoding='utf-8').read()
     open(os.path.join(ADMIN, 'policy.html'), 'w').write(page('Policy', 'The behaviour policy for agents working on Kate Curtis-Evans\'s site.',
         md(psrc) + f'<p class="file">Machine-readable: <a href="{REPO}/blob/dev/policy/abp.json">policy/abp.json</a> · enforced rules: <a href="{REPO}/blob/dev/.claude/settings.json">.claude/settings.json</a> · Markdown: <a href="policy.md">policy.md</a></p>', 'policy.html'))
+    # message the agent: Kate and Dinis, signed with their key, sealed to the agent, appended to its lane
+    mcss = ('<style>.msg{display:grid;gap:1rem;max-width:44rem}.msg label{font-weight:650;display:block;margin:.6rem 0 .25rem}'
+            '.msg select,.msg textarea,.msg input[type=text]{width:100%;font:inherit;padding:.55rem .7rem;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--fg)}'
+            '.msg textarea{min-height:9rem}.msg button{min-height:40px;padding:0 1.1rem;border-radius:999px;border:0;background:var(--accent);color:#fff;font:650 1rem var(--sans);cursor:pointer}'
+            '.msg button.plain{background:var(--chip);color:var(--fg);border:1px solid var(--line)}.msg .panel{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}'
+            '#thumbs{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.5rem}#thumbs img{width:80px;height:80px;object-fit:cover;border-radius:8px}'
+            '.status{min-height:1.5rem;font-weight:600}.status.bad{color:#c0392b}.status.ok{color:var(--fg)}.muted{color:var(--muted)}'
+            '.reply{border-left:3px solid var(--accent);padding:.4rem .8rem;margin:.6rem 0;background:var(--chip);border-radius:0 8px 8px 0}.reply .when{font-size:.82rem;color:var(--muted);margin:0}.reply .text{margin:.2rem 0;white-space:pre-wrap}'
+            '.qr{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}.qr img{width:150px;height:150px;background:#fff;padding:6px;border-radius:8px}</style>')
+    mbody = mcss + f'''<h1>Message the site's agent</h1>
+<p class="lede">For Kate and Dinis: ask for a change to the site, a task on the board, or a new photo. Messages are sealed so only the agent can read them, and signed with your own key so the agent knows they are from you.</p>
+<div class="msg">
+<p id="who" class="panel"></p>
+<div id="addkey" class="panel" hidden><h2 style="margin-top:0">Add your key</h2><p>Open the private link or QR code you were given, or paste the link here. It stays in this browser only.</p>
+<input type="text" id="keylink" aria-label="Your key link" placeholder="https://kate-curtis-evans.founder.sovereignweb.site/admin/message/#key=..."><p><button type="button" id="addbtn">Add my key</button></p></div>
+<form id="form" class="panel" hidden><label for="kind">What is it?</label>
+<select id="kind"><option value="words">Change the words on the site</option><option value="task">A task for the board</option><option value="photo">Add or change a photo</option><option value="question">A question</option><option value="other">Something else</option></select>
+<label for="text">Your message</label><textarea id="text" placeholder="For example: change the headline to ... / add a task: ... / use this photo in the hero, credited to ..."></textarea>
+<label for="files">Photos (optional, up to four)</label><input type="file" id="files" accept="image/*" multiple><div id="thumbs"></div>
+<p style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem"><button type="submit" id="send">Seal and send</button><button type="button" id="lock" class="plain" hidden>Remove my key from this browser</button></p></form>
+<p id="status" class="status" role="status"></p>
+<section class="panel"><h2 style="margin-top:0">Replies</h2><div id="replies"><p class="muted">Add your key to see replies.</p></div></section>
+<section class="panel"><h2 style="margin-top:0">What the agent will do</h2><p>It acts only on messages signed by Kate or Dinis, and only within <a href="../policy.html">the policy</a>: words on the site, tasks on the board, photos (with their credit). It will not change the site's address, publishing, policy or settings, or anything outside this site. It shows what it changed in its reply. Everything else is kept as a note, never acted on.</p>
+<div class="qr"><img src="qr.svg" alt="QR code for this page"><p>This page's QR code: it opens this page, and carries no key. Your own key comes separately, privately.</p></div></section>
+</div>
+<script src="../../assets/keyring.js"></script><script src="message.js"></script>'''
+    mdir = os.path.join(ADMIN, 'message'); os.makedirs(mdir, exist_ok=True)
+    open(os.path.join(mdir, 'index.html'), 'w').write(page('Message the agent', 'For Kate and Dinis: send a signed, sealed request to this site\'s agent.', mbody, 'message/index.html', depth=2))
     # made
     open(os.path.join(ADMIN, 'made.html'), 'w').write(page('How it was made', 'How Kate Curtis-Evans\'s site was made: the agents, the design rounds and every commit.', made(), 'made.html'))
     # hub

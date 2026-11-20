@@ -1,6 +1,36 @@
 {
  "commits": [
   {
+   "commit": "2bedbc3",
+   "when": "2026-11-20T17:00:12+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Dashboard: round 1 rating is 1; readable Home badge in dark mode",
+   "added": 56,
+   "removed": 36,
+   "files": [
+    "site/admin/board.html",
+    "site/admin/data.json",
+    "site/admin/data/checks.json",
+    "site/admin/guide/01-start.html",
+    "site/admin/guide/02-how-it-works.html",
+    "site/admin/guide/03-changing-content.html",
+    "site/admin/guide/04-designs.html",
+    "site/admin/guide/05-images.html",
+    "site/admin/guide/06-checks.html",
+    "site/admin/guide/07-publishing.html",
+    "site/admin/guide/08-limits.html",
+    "site/admin/guide/09-interview.html",
+    "site/admin/guide/10-help.html",
+    "site/admin/guide/index.html",
+    "site/admin/index.html",
+    "site/admin/made.html",
+    "site/admin/policy.html",
+    "site/version.json",
+    "tools/__pycache__/dashboard.cpython-313.pyc",
+    "tools/dashboard.py"
+   ]
+  },
+  {
    "commit": "6ad7261",
    "when": "2026-11-20T16:56:52+00:00",
    "author": "kate-curtis-evans.b",
@@ -625,6 +655,12 @@
    "credit": "Tab icon"
   },
   {
+   "path": "admin/message/qr.svg",
+   "bytes": 18641,
+   "dims": "",
+   "credit": ""
+  },
+  {
    "path": "img/kate-at-desk.webp",
    "bytes": 125038,
    "dims": "1280 x 882",
@@ -749,17 +785,17 @@
   },
   {
    "path": "admin/data.json",
-   "bytes": 23689,
+   "bytes": 24945,
    "records": 10,
    "unit": "keys",
-   "preview": "{\n \"commits\": [\n  {\n   \"commit\": \"6ad7261\",\n   \"when\": \"2026-11-20T16:56:52+00:00\",\n   \"author\": \"kate-curtis-evans.b\",\n   \"subject\": \"Admin dashboard v2 (design.b's brief): sidebar, eight sections, data.json\",\n   \"added"
+   "preview": "{\n \"commits\": [\n  {\n   \"commit\": \"2bedbc3\",\n   \"when\": \"2026-11-20T17:00:12+00:00\",\n   \"author\": \"kate-curtis-evans.b\",\n   \"subject\": \"Dashboard: round 1 rating is 1; readable Home badge in dark mode\",\n   \"added\": 56,\n  "
   },
   {
    "path": "version.json",
    "bytes": 231,
    "records": 5,
    "unit": "keys",
-   "preview": "{\n \"site\": \"kate-curtis-evans.founder.sovereignweb.site\",\n \"built_from_commit\": \"6ad7261\",\n \"built_at\": \"2026-11-20T17:00Z\",\n \"repository\": \"https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans\",\n \"branch"
+   "preview": "{\n \"site\": \"kate-curtis-evans.founder.sovereignweb.site\",\n \"built_from_commit\": \"2bedbc3\",\n \"built_at\": \"2026-11-20T17:08Z\",\n \"repository\": \"https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans\",\n \"branch"
   },
   {
    "path": "../issues/",
@@ -892,12 +928,12 @@
    "synthetic_users": null
   }
  ],
- "files": 56,
- "bytes": 951421,
+ "files": 63,
+ "bytes": 1010503,
  "version": {
   "site": "kate-curtis-evans.founder.sovereignweb.site",
-  "built_from_commit": "6ad7261",
-  "built_at": "2026-11-20T17:00Z",
+  "built_from_commit": "2bedbc3",
+  "built_at": "2026-11-20T17:12Z",
   "repository": "https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans",
   "branch": "dev"
  }
