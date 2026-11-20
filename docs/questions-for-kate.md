@@ -6,7 +6,9 @@ Kate, the site only says what you have said yourself (your LinkedIn profile and 
 1. When did you publish the LinkedIn post looking for a technical co-founder? The figures on the site (90-day beta with 50 testers, 34,000 minutes, 1,200 website visits) come from it, and each figure should carry its date.
    - **Answered by Kate:** November 2026. Added to every design.
 2. "Since launch in September": which year was that?
+   - **Answered by Kate:** September 2026. Added to every design.
 3. Are those figures still current, or do you have newer ones you would like to show?
+   - **Partly answered by Kate (20 November 2026):** 46,700 minutes of audio transcribed, now on every design. Testers and website visits still as in the post.
 4. When did you publish your "Foundations first" post?
 
 ## Images

@@ -14,7 +14,7 @@ Every fact here comes from Kate's own LinkedIn profile and posts, given to this 
 - An ASR-powered legal transcription and workflow platform designed around human-led transcription. The technology does the heavy lifting, but the professional keeps control.
 - Security, confidentiality and responsible data handling are fundamental, not features to bolt on later.
 - Foundations first: Kate has stopped adding new features on purpose (including a legal glossary and template uploads) to focus on privacy and data protection.
-- Figures, exactly as Kate stated them in her LinkedIn post looking for a technical co-founder (published in November 2026): a 90-day beta with 50 testers; 34,000 minutes of audio transcribed since launch in September; 1,200 website visits with no paid advertising as yet. It now has paying users, and not one of those who signed up at the end of the beta has left. Bootstrapped and pre-seed.
+- Figures: 46,700 minutes of audio transcribed since launch in September 2026 (as Kate gave it on 20 November 2026). Exactly as Kate stated them in her LinkedIn post looking for a technical co-founder (published in November 2026): a 90-day beta with 50 testers; 1,200 website visits with no paid advertising as yet. It now has paying users, and not one of those who signed up at the end of the beta has left. Bootstrapped and pre-seed.
 
 ## Wanted: a technical co-founder
 - The next stage: moving to a tech stack built for regulated data and getting certifications like Cyber Essentials in place. Ideally someone with legal tech or regulated-industry experience.
