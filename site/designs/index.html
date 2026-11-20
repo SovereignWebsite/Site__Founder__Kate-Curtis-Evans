@@ -61,6 +61,14 @@ h1{font-family:var(--serif);font-size:clamp(2rem,6vw,3rem);line-height:1.1;margi
 .pick .pick-row{max-width:72rem;margin:0 auto;padding:.3rem 1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.1rem .25rem}
 .pick a{color:#f2eee6;text-decoration:none}
 .pick summary{display:inline-block;cursor:pointer;font-weight:650;min-height:28px;line-height:28px;padding:0 .7rem;border-radius:999px;background:#f2eee6;color:#1c1b19;margin-right:.4rem;list-style:none;white-space:nowrap}
+.pick .pick-name{display:flex;flex-direction:column;line-height:1.15;margin-right:auto;padding:.15rem 0;min-height:24px}
+.pick .pick-name b{font-size:15px}.pick .pick-name span{font-size:12.5px;color:#d8d2c6}
+.pick .pick-links{list-style:none;display:flex;flex-wrap:wrap;gap:0 .2rem;margin:0 .4rem 0 0;padding:0}
+.pick .pick-links a{display:inline-block;min-height:28px;line-height:28px;padding:0 .55rem;border-radius:999px}
+.pick .pick-links a:hover,.pick .pick-links a:focus-visible{background:#3a3833;text-decoration:underline}
+.pick .pick-row{padding:.45rem 1rem;gap:.35rem .4rem}
+.pick details{order:3}
+@media (max-width:40rem){.pick .pick-links{order:4;flex-basis:100%;margin:0 -.55rem}.pick details[open]{order:5}}
 .pick summary::-webkit-details-marker{display:none}
 .pick summary::after{content:" \25BE"}
 .pick details[open] summary::after{content:" \25B4"}
@@ -83,7 +91,17 @@ h1{font-family:var(--serif);font-size:clamp(2rem,6vw,3rem);line-height:1.1;margi
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<nav class="pick" aria-label="Choose a design"><div class="pick-row"><details><summary>Choose a design</summary><div class="pick-cards"><ul><li><a href="../index.html"><img src="../img/designs/board.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Workflow Board</strong><span>Her work as a board, with one open job</span></a></li><li><a href="1.html"><img src="../img/designs/transcript.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Transcript</strong><span>Her story set out as a legal transcript</span></a></li><li><a href="2.html"><img src="../img/designs/edit.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Edit Window</strong><span>A transcription editor, dark and cinematic</span></a></li><li><a href="newsroom.html"><img src="../img/designs/newsroom.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Newsroom</strong><span>A magazine cover: specialist to founder</span></a></li><li><a href="5.html"><img src="../img/designs/brief.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Brief</strong><span>Plain and printable on A4</span></a></li></ul><p class="pick-all"><a href="index.html" aria-current="page">All designs</a></p></div></details></div></nav>
+<nav class="pick" aria-label="Kate Curtis-Evans"><div class="pick-row"><a class="pick-name" href="../index.html"><b>Kate Curtis-Evans</b><span>Founder, Audio Genius</span></a><ul class="pick-links"><li><a href="../index.html#wanted">Co-founder wanted</a></li><li><a href="https://audio-genius.com/">Audio Genius</a></li><li><a href="https://www.linkedin.com/in/kate-curtis-evans/">LinkedIn</a></li></ul><details><summary>Choose a design</summary><div class="pick-cards"><ul><li><a href="../index.html"><img src="../img/designs/board.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Workflow Board</strong><span>Her work as a board, with one open job</span></a></li><li><a href="1.html"><img src="../img/designs/transcript.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Transcript</strong><span>Her story set out as a legal transcript</span></a></li><li><a href="2.html"><img src="../img/designs/edit.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Edit Window</strong><span>A transcription editor, dark and cinematic</span></a></li><li><a href="newsroom.html"><img src="../img/designs/newsroom.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Newsroom</strong><span>A magazine cover: specialist to founder</span></a></li><li><a href="5.html"><img src="../img/designs/brief.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Brief</strong><span>Plain and printable on A4</span></a></li></ul><p class="pick-all"><a href="index.html" aria-current="page">All designs</a></p></div></details></div></nav>
+<main id="main">
+<h1>Five designs for Kate Curtis&#8209;Evans</h1>
+<p>Each is an idea from Kate's own world that rebuilds the page. Every word on them is from her own LinkedIn profile and posts, as on the live page.</p>
+<ol class="designs"><li><h2><a href="../index.html">1. The Workflow Board (the home page)</a></h2><p>Audio Genius manages transcription work, so Kate's own work is a board: delivered, in progress, on hold on purpose, and one open job, the technical co-founder.</p></li><li><h2><a href="1.html">2. The Transcript</a></h2><p>The page as a legal transcript, the document Kate produces every day: a cover sheet, numbered turns, Q and A, her own words verbatim, the beta figures as Exhibit A.</p></li><li><h2><a href="2.html">3. The Edit Window</a></h2><p>Designed dark first, as a transcription editor: a waveform, her roles as tracks on a timeline drawn to the year, each section a segment with its label.</p></li><li><h2><a href="newsroom.html">4. The Newsroom</a></h2><p>Her founder story told as a news feature: the specialist who became a founder. A headline, a standfirst, the lead photo, the story with her quote pulled out, and the figures in an at-a-glance box.</p></li><li><h2><a href="5.html">5. The Brief</a></h2><p>Plain and printable for people in a hurry: the ask, the product, the figures and her record on one or two sheets of A4.</p></li></ol>
+<p class="earlier">Earlier designs, kept so old links work: <a href="4.html">Foundations</a> and <a href="profile.html">The Profile</a> (the first draft).</p>
+</main>
+<footer class="site-foot">
+  <p>Photo of Kate at her desk by Matt Hinton Photography. Everything on this page comes from Kate's own LinkedIn profile and posts.</p>
+  <p>No cookies, no tracking. A sovereign website, made with the <a href="https://sovereignwebsite.org/">open pattern</a>. Source: <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans">github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans</a>.</p>
+  </footer>
 <nav class="family" aria-label="The Sovereign Website family">
   <ul class="family-wide">
     <li><a href="https://sovereignwebsite.ai/">Sovereign Website</a></li>
@@ -111,15 +129,5 @@ h1{font-family:var(--serif);font-size:clamp(2rem,6vw,3rem);line-height:1.1;margi
     </ul>
   </details>
 </nav>
-<main id="main">
-<h1>Five designs for Kate Curtis&#8209;Evans</h1>
-<p>Each is an idea from Kate's own world that rebuilds the page. Every word on them is from her own LinkedIn profile and posts, as on the live page.</p>
-<ol class="designs"><li><h2><a href="../index.html">1. The Workflow Board (the home page)</a></h2><p>Audio Genius manages transcription work, so Kate's own work is a board: delivered, in progress, on hold on purpose, and one open job, the technical co-founder.</p></li><li><h2><a href="1.html">2. The Transcript</a></h2><p>The page as a legal transcript, the document Kate produces every day: a cover sheet, numbered turns, Q and A, her own words verbatim, the beta figures as Exhibit A.</p></li><li><h2><a href="2.html">3. The Edit Window</a></h2><p>Designed dark first, as a transcription editor: a waveform, her roles as tracks on a timeline drawn to the year, each section a segment with its label.</p></li><li><h2><a href="newsroom.html">4. The Newsroom</a></h2><p>Her founder story told as a news feature: the specialist who became a founder. A headline, a standfirst, the lead photo, the story with her quote pulled out, and the figures in an at-a-glance box.</p></li><li><h2><a href="5.html">5. The Brief</a></h2><p>Plain and printable for people in a hurry: the ask, the product, the figures and her record on one or two sheets of A4.</p></li></ol>
-<p class="earlier">Earlier designs, kept so old links work: <a href="4.html">Foundations</a> and <a href="profile.html">The Profile</a> (the first draft).</p>
-</main>
-<footer class="site-foot">
-  <p>Photo of Kate at her desk by Matt Hinton Photography. Everything on this page comes from Kate's own LinkedIn profile and posts.</p>
-  <p>No cookies, no tracking. A sovereign website, made with the <a href="https://sovereignwebsite.org/">open pattern</a>. Source: <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans">github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans</a>.</p>
-  </footer>
 </body>
 </html>

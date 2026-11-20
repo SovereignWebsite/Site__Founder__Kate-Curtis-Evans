@@ -118,6 +118,14 @@ h2{font:inherit;margin:0}
 .pick .pick-row{max-width:72rem;margin:0 auto;padding:.3rem 1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.1rem .25rem}
 .pick a{color:#f2eee6;text-decoration:none}
 .pick summary{display:inline-block;cursor:pointer;font-weight:650;min-height:28px;line-height:28px;padding:0 .7rem;border-radius:999px;background:#f2eee6;color:#1c1b19;margin-right:.4rem;list-style:none;white-space:nowrap}
+.pick .pick-name{display:flex;flex-direction:column;line-height:1.15;margin-right:auto;padding:.15rem 0;min-height:24px}
+.pick .pick-name b{font-size:15px}.pick .pick-name span{font-size:12.5px;color:#d8d2c6}
+.pick .pick-links{list-style:none;display:flex;flex-wrap:wrap;gap:0 .2rem;margin:0 .4rem 0 0;padding:0}
+.pick .pick-links a{display:inline-block;min-height:28px;line-height:28px;padding:0 .55rem;border-radius:999px}
+.pick .pick-links a:hover,.pick .pick-links a:focus-visible{background:#3a3833;text-decoration:underline}
+.pick .pick-row{padding:.45rem 1rem;gap:.35rem .4rem}
+.pick details{order:3}
+@media (max-width:40rem){.pick .pick-links{order:4;flex-basis:100%;margin:0 -.55rem}.pick details[open]{order:5}}
 .pick summary::-webkit-details-marker{display:none}
 .pick summary::after{content:" \25BE"}
 .pick details[open] summary::after{content:" \25B4"}
@@ -140,34 +148,7 @@ h2{font:inherit;margin:0}
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<nav class="pick" aria-label="Choose a design"><div class="pick-row"><details><summary>Choose a design</summary><div class="pick-cards"><ul><li><a href="../index.html"><img src="../img/designs/board.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Workflow Board</strong><span>Her work as a board, with one open job</span></a></li><li><a href="1.html" aria-current="page"><img src="../img/designs/transcript.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Transcript</strong><span>Her story set out as a legal transcript</span><span class="now">You are here</span></a></li><li><a href="2.html"><img src="../img/designs/edit.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Edit Window</strong><span>A transcription editor, dark and cinematic</span></a></li><li><a href="newsroom.html"><img src="../img/designs/newsroom.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Newsroom</strong><span>A magazine cover: specialist to founder</span></a></li><li><a href="5.html"><img src="../img/designs/brief.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Brief</strong><span>Plain and printable on A4</span></a></li></ul><p class="pick-all"><a href="index.html">All designs</a></p></div></details></div></nav>
-<nav class="family" aria-label="The Sovereign Website family">
-  <ul class="family-wide">
-    <li><a href="https://sovereignwebsite.ai/">Sovereign Website</a></li>
-    <li><a href="https://sovereignwebsite.org/">Principles</a></li>
-    <li><a href="https://sovereignwebsite.site/" aria-current="true">Hosted</a></li>
-    <li><a href="https://hub.sovereignweb.site/">Hub</a></li>
-    <li><a href="https://agents.sovereignweb.site/">Agents</a></li>
-    <li><a href="https://vault.sovereignwebsite.site/">Vault</a></li>
-    <li class="family-sep"><a href="https://agenticcells.ai/">AgentiCCells</a></li>
-    <li><a href="https://riskmandate.ai/">RiskMandate</a></li>
-    <li><a href="https://newsroom.sgit.ai/">Newsroom</a></li>
-  </ul>
-  <details class="family-narrow">
-    <summary>Sovereign Website family</summary>
-    <ul>
-      <li><a href="https://sovereignwebsite.ai/">Sovereign Website</a></li>
-      <li><a href="https://sovereignwebsite.org/">Principles</a></li>
-      <li><a href="https://sovereignwebsite.site/" aria-current="true">Hosted</a></li>
-      <li><a href="https://hub.sovereignweb.site/">Hub</a></li>
-      <li><a href="https://agents.sovereignweb.site/">Agents</a></li>
-      <li><a href="https://vault.sovereignwebsite.site/">Vault</a></li>
-      <li class="family-sep"><a href="https://agenticcells.ai/">AgentiCCells</a></li>
-      <li><a href="https://riskmandate.ai/">RiskMandate</a></li>
-      <li><a href="https://newsroom.sgit.ai/">Newsroom</a></li>
-    </ul>
-  </details>
-</nav>
+<nav class="pick" aria-label="Kate Curtis-Evans"><div class="pick-row"><a class="pick-name" href="../index.html"><b>Kate Curtis-Evans</b><span>Founder, Audio Genius</span></a><ul class="pick-links"><li><a href="#cofounder">Co-founder wanted</a></li><li><a href="https://audio-genius.com/">Audio Genius</a></li><li><a href="https://www.linkedin.com/in/kate-curtis-evans/">LinkedIn</a></li></ul><details><summary>Choose a design</summary><div class="pick-cards"><ul><li><a href="../index.html"><img src="../img/designs/board.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Workflow Board</strong><span>Her work as a board, with one open job</span></a></li><li><a href="1.html" aria-current="page"><img src="../img/designs/transcript.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Transcript</strong><span>Her story set out as a legal transcript</span><span class="now">You are here</span></a></li><li><a href="2.html"><img src="../img/designs/edit.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Edit Window</strong><span>A transcription editor, dark and cinematic</span></a></li><li><a href="newsroom.html"><img src="../img/designs/newsroom.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Newsroom</strong><span>A magazine cover: specialist to founder</span></a></li><li><a href="5.html"><img src="../img/designs/brief.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Brief</strong><span>Plain and printable on A4</span></a></li></ul><p class="pick-all"><a href="index.html">All designs</a></p></div></details></div></nav>
 <main id="main">
 <header class="cover">
   <svg class="wave" aria-hidden="true" focusable="false" viewBox="0 0 600 64" preserveAspectRatio="none"><rect x="0" y="24.0" width="3" height="16" rx="1.5"/><rect x="5" y="12.5" width="3" height="39" rx="1.5"/><rect x="10" y="13.5" width="3" height="37" rx="1.5"/><rect x="15" y="13.5" width="3" height="37" rx="1.5"/><rect x="20" y="4.5" width="3" height="55" rx="1.5"/><rect x="25" y="3.5" width="3" height="57" rx="1.5"/><rect x="30" y="13.5" width="3" height="37" rx="1.5"/><rect x="35" y="17.5" width="3" height="29" rx="1.5"/><rect x="40" y="15.5" width="3" height="33" rx="1.5"/><rect x="45" y="24.0" width="3" height="16" rx="1.5"/><rect x="50" y="27.5" width="3" height="9" rx="1.5"/><rect x="55" y="27.0" width="3" height="10" rx="1.5"/><rect x="60" y="29.5" width="3" height="5" rx="1.5"/><rect x="65" y="22.5" width="3" height="19" rx="1.5"/><rect x="70" y="19.0" width="3" height="26" rx="1.5"/><rect x="75" y="28.0" width="3" height="8" rx="1.5"/><rect x="80" y="29.5" width="3" height="5" rx="1.5"/><rect x="85" y="30.0" width="3" height="4" rx="1.5"/><rect x="90" y="28.5" width="3" height="7" rx="1.5"/><rect x="95" y="17.0" width="3" height="30" rx="1.5"/><rect x="100" y="16.0" width="3" height="32" rx="1.5"/><rect x="105" y="23.0" width="3" height="18" rx="1.5"/><rect x="110" y="21.5" width="3" height="21" rx="1.5"/><rect x="115" y="18.5" width="3" height="27" rx="1.5"/><rect x="120" y="28.5" width="3" height="7" rx="1.5"/><rect x="125" y="24.0" width="3" height="16" rx="1.5"/><rect x="130" y="23.5" width="3" height="17" rx="1.5"/><rect x="135" y="21.5" width="3" height="21" rx="1.5"/><rect x="140" y="9.5" width="3" height="45" rx="1.5"/><rect x="145" y="4.5" width="3" height="55" rx="1.5"/><rect x="150" y="11.0" width="3" height="42" rx="1.5"/><rect x="155" y="12.0" width="3" height="40" rx="1.5"/><rect x="160" y="8.0" width="3" height="48" rx="1.5"/><rect x="165" y="14.5" width="3" height="35" rx="1.5"/><rect x="170" y="27.0" width="3" height="10" rx="1.5"/><rect x="175" y="29.0" width="3" height="6" rx="1.5"/><rect x="180" y="28.0" width="3" height="8" rx="1.5"/><rect x="185" y="27.0" width="3" height="10" rx="1.5"/><rect x="190" y="20.5" width="3" height="23" rx="1.5"/><rect x="195" y="27.0" width="3" height="10" rx="1.5"/><rect x="200" y="30.0" width="3" height="4" rx="1.5"/><rect x="205" y="28.0" width="3" height="8" rx="1.5"/><rect x="210" y="30.0" width="3" height="4" rx="1.5"/><rect x="215" y="20.0" width="3" height="24" rx="1.5"/><rect x="220" y="16.5" width="3" height="31" rx="1.5"/><rect x="225" y="21.0" width="3" height="22" rx="1.5"/><rect x="230" y="16.5" width="3" height="31" rx="1.5"/><rect x="235" y="10.5" width="3" height="43" rx="1.5"/><rect x="240" y="18.0" width="3" height="28" rx="1.5"/><rect x="245" y="28.0" width="3" height="8" rx="1.5"/><rect x="250" y="28.0" width="3" height="8" rx="1.5"/><rect x="255" y="30.0" width="3" height="4" rx="1.5"/><rect x="260" y="20.0" width="3" height="24" rx="1.5"/><rect x="265" y="12.0" width="3" height="40" rx="1.5"/><rect x="270" y="15.5" width="3" height="33" rx="1.5"/><rect x="275" y="13.5" width="3" height="37" rx="1.5"/><rect x="280" y="5.5" width="3" height="53" rx="1.5"/><rect x="285" y="9.5" width="3" height="45" rx="1.5"/><rect x="290" y="20.0" width="3" height="24" rx="1.5"/><rect x="295" y="21.5" width="3" height="21" rx="1.5"/><rect x="300" y="20.5" width="3" height="23" rx="1.5"/><rect x="305" y="30.0" width="3" height="4" rx="1.5"/><rect x="310" y="24.5" width="3" height="15" rx="1.5"/><rect x="315" y="28.5" width="3" height="7" rx="1.5"/><rect x="320" y="30.0" width="3" height="4" rx="1.5"/><rect x="325" y="25.0" width="3" height="14" rx="1.5"/><rect x="330" y="27.0" width="3" height="10" rx="1.5"/><rect x="335" y="25.0" width="3" height="14" rx="1.5"/><rect x="340" y="20.5" width="3" height="23" rx="1.5"/><rect x="345" y="23.0" width="3" height="18" rx="1.5"/><rect x="350" y="16.5" width="3" height="31" rx="1.5"/><rect x="355" y="7.5" width="3" height="49" rx="1.5"/><rect x="360" y="11.5" width="3" height="41" rx="1.5"/><rect x="365" y="18.5" width="3" height="27" rx="1.5"/><rect x="370" y="16.5" width="3" height="31" rx="1.5"/><rect x="375" y="17.5" width="3" height="29" rx="1.5"/><rect x="380" y="30.0" width="3" height="4" rx="1.5"/><rect x="385" y="24.0" width="3" height="16" rx="1.5"/><rect x="390" y="25.0" width="3" height="14" rx="1.5"/><rect x="395" y="20.5" width="3" height="23" rx="1.5"/><rect x="400" y="9.5" width="3" height="45" rx="1.5"/><rect x="405" y="9.5" width="3" height="45" rx="1.5"/><rect x="410" y="17.5" width="3" height="29" rx="1.5"/><rect x="415" y="17.0" width="3" height="30" rx="1.5"/><rect x="420" y="15.0" width="3" height="34" rx="1.5"/><rect x="425" y="24.5" width="3" height="15" rx="1.5"/><rect x="430" y="29.5" width="3" height="5" rx="1.5"/><rect x="435" y="30.0" width="3" height="4" rx="1.5"/><rect x="440" y="30.0" width="3" height="4" rx="1.5"/><rect x="445" y="24.0" width="3" height="16" rx="1.5"/><rect x="450" y="23.0" width="3" height="18" rx="1.5"/><rect x="455" y="30.0" width="3" height="4" rx="1.5"/><rect x="460" y="26.5" width="3" height="11" rx="1.5"/><rect x="465" y="29.0" width="3" height="6" rx="1.5"/><rect x="470" y="21.5" width="3" height="21" rx="1.5"/><rect x="475" y="10.0" width="3" height="44" rx="1.5"/><rect x="480" y="10.5" width="3" height="43" rx="1.5"/><rect x="485" y="14.5" width="3" height="35" rx="1.5"/><rect x="490" y="9.5" width="3" height="45" rx="1.5"/><rect x="495" y="7.5" width="3" height="49" rx="1.5"/><rect x="500" y="18.5" width="3" height="27" rx="1.5"/><rect x="505" y="27.0" width="3" height="10" rx="1.5"/><rect x="510" y="26.5" width="3" height="11" rx="1.5"/><rect x="515" y="30.0" width="3" height="4" rx="1.5"/><rect x="520" y="18.5" width="3" height="27" rx="1.5"/><rect x="525" y="15.5" width="3" height="33" rx="1.5"/><rect x="530" y="20.5" width="3" height="23" rx="1.5"/><rect x="535" y="17.0" width="3" height="30" rx="1.5"/><rect x="540" y="12.0" width="3" height="40" rx="1.5"/><rect x="545" y="20.0" width="3" height="24" rx="1.5"/><rect x="550" y="30.0" width="3" height="4" rx="1.5"/><rect x="555" y="28.5" width="3" height="7" rx="1.5"/><rect x="560" y="29.0" width="3" height="6" rx="1.5"/><rect x="565" y="24.5" width="3" height="15" rx="1.5"/><rect x="570" y="21.0" width="3" height="22" rx="1.5"/><rect x="575" y="28.5" width="3" height="7" rx="1.5"/><rect x="580" y="30.0" width="3" height="4" rx="1.5"/><rect x="585" y="27.5" width="3" height="9" rx="1.5"/><rect x="590" y="29.5" width="3" height="5" rx="1.5"/><rect x="595" y="16.5" width="3" height="31" rx="1.5"/></svg>
@@ -204,7 +185,7 @@ h2{font:inherit;margin:0}
 <p class="src" style="color:var(--muted);font-size:.9rem">Figures exactly as Kate stated them in her LinkedIn post looking for a technical co-founder, as given to this site on 20 November 2026.</p></div></li>
 <li class="turn q"><span class="tc" aria-hidden="true">00:03:48</span><span class="who">Q.</span><div class="say"><h2>Why has she stopped adding features?</h2></div></li>
 <li class="turn "><span class="tc" aria-hidden="true">00:03:55</span><span class="who">A.</span><div class="say"><p>On purpose, including a legal glossary and template uploads she was looking forward to building. What comes first is the part nobody sees: privacy and data protection, working through what the platform holds and how long it keeps it, one decision at a time.</p></div></li>
-<li class="turn q"><span class="tc" aria-hidden="true">00:04:05</span><span class="who">Q.</span><div class="say"><h2>Who is she looking for?</h2></div></li>
+<li class="turn q"><span class="tc" aria-hidden="true">00:04:05</span><span class="who">Q.</span><div class="say"><h2 id="cofounder">Who is she looking for?</h2></div></li>
 <li class="turn "><span class="tc" aria-hidden="true">00:04:18</span><span class="who">A.</span><div class="say"><p>A technical co-founder. The platform Kate built Audio Genius on will not let her fork a test site from the live one, and gives her limited control over hosting and other parts of the build. She wants to own how it scales. The next stage is moving to a tech stack built for regulated data and getting certifications like Cyber Essentials in place. That is the work she wants a partner to own, ideally someone with legal tech or regulated-industry experience.</p>
 <div class="two"><div><strong>What Kate brings</strong>The vision for the platform, direct access to users, research and results, and a strategy for expanding into corporates and organisations.</div><div><strong>What the co-founder would own</strong>The technical scope, the build, integration and implementation.</div></div>
 <p>If that is you, message her. If you know who it is, send her an introduction.</p></div></li>
@@ -229,5 +210,32 @@ h2{font:inherit;margin:0}
   <p>Photo of Kate at her desk by Matt Hinton Photography. Everything on this page comes from Kate's own LinkedIn profile and posts.</p>
   <p>No cookies, no tracking. A sovereign website, made with the <a href="https://sovereignwebsite.org/">open pattern</a>. Source: <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans">github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans</a>.</p>
 </footer>
+<nav class="family" aria-label="The Sovereign Website family">
+  <ul class="family-wide">
+    <li><a href="https://sovereignwebsite.ai/">Sovereign Website</a></li>
+    <li><a href="https://sovereignwebsite.org/">Principles</a></li>
+    <li><a href="https://sovereignwebsite.site/" aria-current="true">Hosted</a></li>
+    <li><a href="https://hub.sovereignweb.site/">Hub</a></li>
+    <li><a href="https://agents.sovereignweb.site/">Agents</a></li>
+    <li><a href="https://vault.sovereignwebsite.site/">Vault</a></li>
+    <li class="family-sep"><a href="https://agenticcells.ai/">AgentiCCells</a></li>
+    <li><a href="https://riskmandate.ai/">RiskMandate</a></li>
+    <li><a href="https://newsroom.sgit.ai/">Newsroom</a></li>
+  </ul>
+  <details class="family-narrow">
+    <summary>Sovereign Website family</summary>
+    <ul>
+      <li><a href="https://sovereignwebsite.ai/">Sovereign Website</a></li>
+      <li><a href="https://sovereignwebsite.org/">Principles</a></li>
+      <li><a href="https://sovereignwebsite.site/" aria-current="true">Hosted</a></li>
+      <li><a href="https://hub.sovereignweb.site/">Hub</a></li>
+      <li><a href="https://agents.sovereignweb.site/">Agents</a></li>
+      <li><a href="https://vault.sovereignwebsite.site/">Vault</a></li>
+      <li class="family-sep"><a href="https://agenticcells.ai/">AgentiCCells</a></li>
+      <li><a href="https://riskmandate.ai/">RiskMandate</a></li>
+      <li><a href="https://newsroom.sgit.ai/">Newsroom</a></li>
+    </ul>
+  </details>
+</nav>
 </body>
 </html>
