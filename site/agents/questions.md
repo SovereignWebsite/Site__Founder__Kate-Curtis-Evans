@@ -16,7 +16,9 @@ Kate, the site only says what you have said yourself (your LinkedIn profile and 
 5. Who took the headshot on your LinkedIn banner? May the site use it, with their credit?
    - **Answered by Kate (20 November 2026):** it is her own photo, made with ChatGPT. The site may use it, credited "Photo: Kate Curtis-Evans". Now a small round portrait beside her name in the top bar of every design (site/img/kate-headshot.webp), credited in each footer.
 6. May the site use the Audio Genius logo, and the "Audio Genius needs you" poster?
+   - **Answered by Kate (20 November 2026):** yes to the logo (she supplied the file, now site/img/audio-genius-logo.webp), and the site may use its colours (navy #05102f, purple #6b3fc0 to #c5aaf1). No to the "Audio Genius needs you" poster: never use it.
 7. Do you have other photos, or screenshots of Audio Genius, you would like on the site?
+   - **Partly answered by Kate (20 November 2026):** the site may use other images from her LinkedIn page. Which ones still to choose.
 
 ## Your story as a founder
 8. You are a specialist who became a founder. What was the moment you decided to build Audio Genius yourself?

@@ -22,18 +22,19 @@ FAMILY = [('Sovereign Website', 'https://sovereignwebsite.ai/'), ('Principles', 
           ('Newsroom', 'https://newsroom.sgit.ai/')]
 
 CSS = '''<style>
-.pick{font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#1c1b19;color:#f2eee6;border-bottom:1px solid #000;position:relative;z-index:20}
+.pick{font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#05102f;color:#f2eee6;border-bottom:1px solid #000;position:relative;z-index:20}
 .pick .pick-row{max-width:72rem;margin:0 auto;padding:.45rem 1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .4rem}
 .pick a{color:#f2eee6;text-decoration:none}
 .pick .pick-name{display:flex;align-items:center;gap:.6rem;line-height:1.15;margin-right:auto;padding:.15rem 0;min-height:24px}
-.pick .pick-face{display:block;flex:none;width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid #f2eee6;background:#3a3833}
+.pick .pick-face{display:block;flex:none;width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid #f2eee6;background:#1d2a5c}
 .pick .pick-name .pick-nm{display:flex;flex-direction:column;font-size:inherit;color:inherit}
-.pick .pick-name b{font-size:15px}.pick .pick-name span{font-size:12.5px;color:#d8d2c6}
+.pick .pick-name b{font-size:15px}.pick .pick-name span{font-size:12.5px;color:#d9d6ec}
 .pick .pick-links{list-style:none;display:flex;flex-wrap:wrap;gap:0 .2rem;margin:0 .4rem 0 0;padding:0}
 .pick .pick-links a{display:inline-block;min-height:28px;line-height:28px;padding:0 .55rem;border-radius:999px;white-space:nowrap}
-.pick .pick-links a:hover,.pick .pick-links a:focus-visible{background:#3a3833;text-decoration:underline}
-.pick .pick-links a.pick-gh{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #6b665c}
-.pick summary{display:inline-block;cursor:pointer;font-weight:650;min-height:28px;line-height:28px;padding:0 .7rem;border-radius:999px;background:#f2eee6;color:#1c1b19;list-style:none;white-space:nowrap}
+.pick .pick-links a:hover,.pick .pick-links a:focus-visible{background:#1d2a5c;text-decoration:underline}
+.pick .pick-links a.pick-ag{display:inline-flex;align-items:center;gap:.35rem}.pick .pick-ag img{display:block;width:18px;height:18px}
+.pick .pick-links a.pick-gh{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #5a64a0}
+.pick summary{display:inline-block;cursor:pointer;font-weight:650;min-height:28px;line-height:28px;padding:0 .7rem;border-radius:999px;background:#c5aaf1;color:#05102f;list-style:none;white-space:nowrap}
 .pick summary::-webkit-details-marker{display:none}
 .pick .pick-design summary::after{content:" \\25BE"}
 .pick .pick-design[open] summary::after{content:" \\25B4"}
@@ -43,21 +44,21 @@ CSS = '''<style>
 .pick .pick-cards{padding:1rem 0 .6rem}
 .pick .pick-cards ul{min-width:0;list-style:none;margin:0 auto;padding:0;max-width:72rem;display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(11.5rem,1fr))}
 .pick .pick-cards li{min-width:0}
-.pick .pick-cards a{display:block;border-radius:10px;padding:.5rem;background:#2a2824;border:2px solid transparent;height:100%}
-.pick .pick-cards a:hover,.pick .pick-cards a:focus-visible{border-color:#8a857b}
+.pick .pick-cards a{display:block;border-radius:10px;padding:.5rem;background:#0f1b45;border:2px solid transparent;height:100%}
+.pick .pick-cards a:hover,.pick .pick-cards a:focus-visible{border-color:#c5aaf1}
 .pick .pick-cards a[aria-current="page"]{border-color:#f2eee6}
-.pick .pick-cards img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:6px;background:#3a3833}
+.pick .pick-cards img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:6px;background:#1d2a5c}
 .pick .pick-cards strong{display:block;margin:.5rem .2rem 0;font-size:15px}
-.pick .pick-cards span{display:block;margin:.1rem .2rem .2rem;color:#d8d2c6;font-size:13px}
+.pick .pick-cards span{display:block;margin:.1rem .2rem .2rem;color:#d9d6ec;font-size:13px}
 .pick .pick-cards .now{color:#f2eee6;font-weight:650}
 .pick .pick-all{max-width:72rem;margin:.8rem auto 0}.pick .pick-all a{text-decoration:underline;display:inline-block;min-height:24px;line-height:24px}
 .pick .pick-fam{order:4;position:relative}
-.pick .pick-fam summary{background:transparent;color:#f2eee6;border:1px solid #6b665c;padding:0 .6rem;font-size:18px;font-weight:700;min-width:32px;text-align:center}
-.pick .pick-fam-menu{position:absolute;right:0;top:calc(100% + .4rem);background:#1c1b19;border:1px solid #6b665c;border-radius:10px;padding:.6rem .4rem;min-width:13rem;box-shadow:0 14px 30px rgba(0,0,0,.45);z-index:30}
-.pick .pick-fam-menu p{margin:.3rem .6rem .3rem;font-size:12.5px;color:#d8d2c6}
+.pick .pick-fam summary{background:transparent;color:#f2eee6;border:1px solid #5a64a0;padding:0 .6rem;font-size:18px;font-weight:700;min-width:32px;text-align:center}
+.pick .pick-fam-menu{position:absolute;right:0;top:calc(100% + .4rem);background:#05102f;border:1px solid #5a64a0;border-radius:10px;padding:.6rem .4rem;min-width:13rem;box-shadow:0 14px 30px rgba(0,0,0,.45);z-index:30}
+.pick .pick-fam-menu p{margin:.3rem .6rem .3rem;font-size:12.5px;color:#d9d6ec}
 .pick .pick-fam-menu ul{list-style:none;margin:0;padding:0}
 .pick .pick-fam-menu a{display:block;padding:0 .6rem;min-height:30px;line-height:30px;border-radius:6px}
-.pick .pick-fam-menu a:hover,.pick .pick-fam-menu a:focus-visible{background:#3a3833;text-decoration:underline}
+.pick .pick-fam-menu a:hover,.pick .pick-fam-menu a:focus-visible{background:#1d2a5c;text-decoration:underline}
 .pick .pick-links{order:5;flex-basis:100%;margin:0 -.55rem}
 @media (max-width:40rem){.pick .pick-cards ul{grid-template-columns:1fr 1fr}.pick .pick-face{width:26px;height:26px;border-width:1.5px}.pick .pick-name{gap:.3rem}.pick .pick-row{padding-left:.6rem;padding-right:.6rem;column-gap:.3rem}.pick .pick-design summary{padding:0 .55rem}}
 @media (max-width:22rem){.pick .pick-links a{padding:0 .38rem;font-size:13.5px}.pick .pick-row{gap:.3rem}}
@@ -94,7 +95,7 @@ def bar(cur):
             '<span class="pick-nm"><b>Kate Curtis-Evans</b><span>Founder, Audio Genius</span></span></a>'
             '<ul class="pick-links">'
             f'<li><a href="{cof}">Co-founder wanted</a></li>'
-            '<li><a href="https://audio-genius.com/">Audio Genius</a></li>'
+            f'<li><a class="pick-ag" href="https://audio-genius.com/"><img src="{up}img/audio-genius-mark.webp" width="18" height="18" alt="">Audio Genius</a></li>'
             '<li><a href="https://www.linkedin.com/in/kate-curtis-evans/">LinkedIn</a></li>'
             f'<li><a href="{up}agents/">Use with your AI</a></li>'
             '<li><a class="pick-gh" href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans">'
