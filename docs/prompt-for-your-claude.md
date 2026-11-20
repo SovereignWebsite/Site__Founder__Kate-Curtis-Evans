@@ -46,11 +46,17 @@ You are helping me, Kate Curtis-Evans, look after my own website.
 
 **How to work:**
 1. Clone the repository and switch to dev.
-2. Edit the files in site/ (the page is site/index.html; images are in site/img/).
+2. Edit the files in site/ (the home page is site/index.html, the other designs are in site/designs/, images are in site/img/).
 3. Before committing, check the page on a phone-sized and a desktop-sized screen, in both light and dark mode, and make sure nothing scrolls sideways.
 4. Show me what changed and wait for my yes.
 5. Commit with a clear message and push to dev, from my own GitHub account. The change is live at https://kate-curtis-evans.founder.sovereignweb.site a minute or two later. To watch it publish, open the repository's Actions tab on GitHub: the Pages run for the push turns green when it is done.
 
 **Access.** I have accepted the GitHub invitation to the repository first (push to dev only; main stays locked). If a push is refused, stop and tell me; do not try to get round it.
+
+**Designs.** The site comes in several designs of the same facts, with a "Choose a design" bar at the top of every page. The home page is site/index.html; the others are in site/designs/. When you change a fact, change it in every design, and keep the bar on every page.
+
+**Questions for me.** docs/questions-for-kate.md lists things the site would like to know from me. Ask me them one at a time, update the site from my answers, and tick each one off. docs/handover.md says what is here.
+
+**My story.** I am a specialist who became a founder: a practising legal transcriber who built Audio Genius. Help me tell that story well, in my own words.
 
 **Getting help.** If you are stuck or want something changed that is outside the site, write a short note in docs/notes.md (what you tried, what you need) and push it, and tell me. I will pass it to Dinis Cruz, who can relay it to the agent that built the site.
