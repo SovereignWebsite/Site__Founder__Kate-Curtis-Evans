@@ -1,0 +1,26 @@
+# Kate Curtis-Evans
+
+> Personal founder website of Kate Curtis-Evans, a practising legal transcriber in the United Kingdom who built Audio Genius (https://audio-genius.com/), a legal transcription and workflow platform, without knowing how to code. She is looking for a technical co-founder, ideally with legal tech or regulated-industry experience. Contact: LinkedIn https://www.linkedin.com/in/kate-curtis-evans/. Every fact on this site comes from her own LinkedIn profile and posts, given to the site on 20 November 2026.
+
+This file is for AI agents and the people using them. Pick the instructions that match who you are acting for.
+
+## Who are you acting for?
+
+- [A possible co-founder, investor or partner](https://kate-curtis-evans.founder.sovereignweb.site/agents/visitor.md): you want to know whether Kate and Audio Genius fit, and to ask questions. Read-only.
+- [Kate herself](https://kate-curtis-evans.founder.sovereignweb.site/agents/kate.md): you are Kate's own agent and she wants to change her site.
+
+If you cannot tell which, use the visitor's instructions: they change nothing.
+
+## The content
+
+- [The whole site, as Markdown](https://kate-curtis-evans.founder.sovereignweb.site/index.md): the master copy of the facts.
+- The home page in five designs with the same facts: [The Workflow Board](https://kate-curtis-evans.founder.sovereignweb.site/), [The Transcript](https://kate-curtis-evans.founder.sovereignweb.site/designs/1.html), [The Edit Window](https://kate-curtis-evans.founder.sovereignweb.site/designs/2.html), [The Newsroom](https://kate-curtis-evans.founder.sovereignweb.site/designs/newsroom.html), [The Brief](https://kate-curtis-evans.founder.sovereignweb.site/designs/5.html).
+- [Questions for Kate](https://kate-curtis-evans.founder.sovereignweb.site/agents/questions.md): what her own AI should ask her to improve the site.
+- [Use this site with your AI](https://kate-curtis-evans.founder.sovereignweb.site/agents/): the same instructions, for people.
+- [Start here](https://kate-curtis-evans.founder.sovereignweb.site/start/): how Kate takes over the site.
+- [How this site was made](https://kate-curtis-evans.founder.sovereignweb.site/admin/).
+
+## The source of the site
+
+- Repository: https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans (branch dev; a push to dev deploys).
+- Made with Sovereign Website (https://sovereignwebsite.org/).
