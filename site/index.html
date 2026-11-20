@@ -61,7 +61,7 @@ h2{font-family:var(--serif);font-size:clamp(1.45rem,3.6vw,2rem);line-height:1.2;
 .card.wanted{border:2px dashed var(--accent);padding:1rem}
 .card.wanted b{font-family:var(--serif);font-size:1.4rem}
 .card.wanted p{margin:.5rem 0}
-.card .n{font-family:var(--serif);font-size:1.8rem;font-weight:700;line-height:1.1}
+.card .n{display:block;font-family:var(--serif);font-size:1.8rem;font-weight:700;line-height:1.1}
 .below{display:grid;gap:2rem;border-top:1px solid var(--line);padding:2rem 0}
 @media (min-width:56rem){.below{grid-template-columns:1fr 1fr;gap:3rem}}
 .below p{margin:0 0 .9rem;max-width:40rem}
@@ -70,6 +70,7 @@ blockquote footer{font-family:var(--sans);font-size:.9rem;color:var(--muted)}
 .src{font-size:.9rem;color:var(--muted)}
 .contact{border-top:1px solid var(--line);padding:2rem 0 2.5rem;max-width:44rem}
 
+@media (max-width:40rem){.tag,.photo figcaption,.when{font-size:1rem}}
 </style>
 <style>
 .pick{font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#1c1b19;color:#f2eee6;border-bottom:1px solid #000}
@@ -109,7 +110,7 @@ blockquote footer{font-family:var(--sans);font-size:.9rem;color:var(--muted)}
     <p>Audio Genius is legal transcription and workflow management, built by a transcriber, for transcription professionals. Kate is based in the United Kingdom and is now looking for a technical co-founder.</p>
     <div class="btns"><a class="btn main" href="#wanted">The open job: technical co-founder</a><a class="btn" href="https://audio-genius.com/">Visit audio-genius.com</a></div>
   </div>
-  <ul class="counts" aria-label="The board at a glance"><li><a href="#lane-done">Delivered 4</a></li><li><a href="#lane-run">In progress 4</a></li><li><a href="#lane-hold">On hold 2</a></li><li><a href="#wanted">Unassigned 2</a></li></ul>
+  <ul class="counts" aria-label="The board at a glance"><li><a href="#lane-done">Delivered 4</a></li><li><a href="#lane-run">In progress 4</a></li><li><a href="#lane-hold">On hold 2</a></li><li><a href="#wanted">Open: looking for a co-founder 2</a></li></ul>
 </header>
 
 <section aria-labelledby="board-h">
@@ -131,7 +132,7 @@ blockquote footer{font-family:var(--sans);font-size:.9rem;color:var(--muted)}
     <li class="card"><span class="tag t-hold">On hold</span><b>Legal glossary</b>A feature Kate was looking forward to building.</li>
     <li class="card"><span class="tag t-hold">On hold</span><b>Template uploads</b>Paused so that the part nobody sees comes first.</li>
   </ul></div>
-  <div class="lane" id="wanted"><h3>Unassigned <span>2</span></h3><ul class="cards">
+  <div class="lane" id="wanted"><h3>Open: looking for a co-founder <span>2</span></h3><ul class="cards">
     <li class="card wanted"><span class="tag t-open">Open</span><b>Technical co-founder</b>
       <p>The platform Kate built Audio Genius on will not let Kate fork a test site from the live one, and gives her limited control over hosting and other parts of the build. She wants to own how it scales.</p>
       <p><strong>Kate brings</strong> the vision for the platform, direct access to users, research and results, and a strategy for expanding into corporates and organisations.</p>
