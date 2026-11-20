@@ -14,7 +14,9 @@ Issues follow Issues-FS lite (https://issues-fs.sgit.ai/): one Markdown file per
 front matter (created, priority, source, estimated_effort, blocked_on), the title as the # heading.
 The folder is the status: open, blocked, done. Move a file with git mv to change its column.
 """
-import html, os, re, subprocess, glob
+import html, os, re, subprocess, glob, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import dashboard
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, 'site')
@@ -35,11 +37,11 @@ a{color:var(--accent);text-underline-offset:.18em;overflow-wrap:anywhere}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
 .skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--paper);padding:.4rem .7rem}
 header.bo{border-bottom:1px solid var(--line);background:var(--paper)}
-header.bo div{max-width:68rem;margin:0 auto;padding:.7rem 1rem;display:flex;flex-wrap:wrap;gap:.3rem 1rem;align-items:center}
+header.bo div{max-width:76rem;margin:0 auto;padding:.7rem 1rem;display:flex;flex-wrap:wrap;gap:.3rem 1rem;align-items:center}
 header.bo .t{font-weight:700;margin-right:auto}
 header.bo nav a{display:inline-block;min-height:28px;line-height:28px;padding:0 .5rem;border-radius:6px;color:var(--fg);text-decoration:none}
 header.bo nav a:hover,header.bo nav a[aria-current="page"]{background:var(--chip)}
-main{max-width:68rem;margin:0 auto;padding:1.6rem 1rem 3rem}
+main{max-width:76rem;margin:0 auto;padding:1.6rem 1rem 3rem}
 h1{font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:0 0 .4rem}
 h2{font-size:1.2rem;margin:2rem 0 .6rem}h3{font-size:1rem;margin:1.4rem 0 .4rem}
 p,li{max-width:46rem}.lede{color:var(--muted);margin:0 0 1.4rem}
@@ -86,9 +88,9 @@ def page(title, desc, body, cur, depth=1):
 <meta name="robots" content="noindex">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="{up}favicon.svg" type="image/svg+xml">
-<style>{CSS}</style>
+<style>{CSS}{dashboard.CSS}</style>
 </head>
-<body>
+<body class="dash">
 <a class="skip" href="#main">Skip to content</a>
 <header class="bo"><div><span class="t">Kate Curtis-Evans · admin</span>
 <nav aria-label="Admin">{links}<a href="{up}">Live site</a></nav></div></header>
@@ -263,6 +265,8 @@ def main():
     top = ''.join(f'<li><a href="{REPO}/blob/dev/{it["file"]}">{inline(it["title"])}</a></li>' for it in cols['open'][:4])
     hub = f'''<h1>Admin</h1>
 <p class="lede">Everything about editing and running this site, for Kate and for her Claude. Visitors do not need anything here. The live site is at <a href="../">kate-curtis-evans.founder.sovereignweb.site</a>.</p>
+{dashboard.render(ROOT, SITE, cols)}
+<h2>Where to go</h2>
 <div class="tiles">
 <a class="tile" href="board.html"><b>Board</b><span>What is open, blocked and done.</span><span class="counts"><span class="pill">Open {n["open"]}</span><span class="pill">Blocked {n["blocked"]}</span><span class="pill">Done {n["done"]}</span></span></a>
 <a class="tile" href="guide/index.html"><b>Guide for your Claude</b><span>Ten pages: how the site works, changing facts in every design, photos, checks, publishing, limits, interviewing Kate.</span></a>

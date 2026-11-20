@@ -19,11 +19,11 @@ a{color:var(--accent);text-underline-offset:.18em;overflow-wrap:anywhere}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
 .skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--paper);padding:.4rem .7rem}
 header.bo{border-bottom:1px solid var(--line);background:var(--paper)}
-header.bo div{max-width:68rem;margin:0 auto;padding:.7rem 1rem;display:flex;flex-wrap:wrap;gap:.3rem 1rem;align-items:center}
+header.bo div{max-width:76rem;margin:0 auto;padding:.7rem 1rem;display:flex;flex-wrap:wrap;gap:.3rem 1rem;align-items:center}
 header.bo .t{font-weight:700;margin-right:auto}
 header.bo nav a{display:inline-block;min-height:28px;line-height:28px;padding:0 .5rem;border-radius:6px;color:var(--fg);text-decoration:none}
 header.bo nav a:hover,header.bo nav a[aria-current="page"]{background:var(--chip)}
-main{max-width:68rem;margin:0 auto;padding:1.6rem 1rem 3rem}
+main{max-width:76rem;margin:0 auto;padding:1.6rem 1rem 3rem}
 h1{font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:0 0 .4rem}
 h2{font-size:1.2rem;margin:2rem 0 .6rem}h3{font-size:1rem;margin:1.4rem 0 .4rem}
 p,li{max-width:46rem}.lede{color:var(--muted);margin:0 0 1.4rem}
@@ -51,9 +51,28 @@ table{border-collapse:collapse;width:100%;font-size:.95rem;margin:.6rem 0}th,td{
 footer{border-top:1px solid var(--line);margin-top:2.5rem;padding-top:1rem;color:var(--muted);font-size:.9rem}
 footer a{display:inline-block;min-height:24px;line-height:24px}
 li a,td a,nav a,.file a{display:inline-block;min-height:24px;line-height:24px}
+
+.dash{--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--grid:#e6e3db;--axis:#8f8b82;--good:#2f7a42;--warn:#9a5f00;--info:#2a78d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dash{--s1:#3987e5;--s2:#d95926;--s3:#199e70;--grid:#2f2d29;--axis:#8a857b;--good:#6cc283;--warn:#f0b866;--info:#6ea8e6}}
+.kpis{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fit,minmax(10.5rem,1fr));margin:1rem 0 1.4rem}
+.kpi{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem}
+.kpi b{display:block;font-size:1.9rem;line-height:1.1;font-variant-numeric:tabular-nums}
+.kpi span{display:block;color:var(--muted);font-size:.9rem;margin-top:.2rem}
+.panels{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,30rem),1fr))}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}
+.panel h2{margin:0 0 .2rem;font-size:1.02rem}.panel .sub{margin:0 0 .6rem;color:var(--muted);font-size:.9rem}
+.panel svg{display:block;width:100%;height:auto;overflow:visible}
+.panel svg text{font:12px var(--sans);fill:var(--muted)}.panel svg .v{fill:var(--fg);font-weight:600}
+.legend{display:flex;gap:1rem;flex-wrap:wrap;font-size:.88rem;color:var(--muted);margin:.2rem 0 .4rem}
+.legend i{display:inline-block;width:.8rem;height:.8rem;border-radius:3px;margin-right:.35rem;vertical-align:-.1rem}
+.panel details{margin-top:.5rem;font-size:.9rem}.panel summary{cursor:pointer;color:var(--muted);min-height:24px;line-height:24px}
+.panel table{font-size:.88rem}.note{font-size:.85rem;color:var(--muted)}
+.status{display:flex;height:22px;border-radius:6px;overflow:hidden;gap:2px;margin:.4rem 0}
+.status div{min-width:2px}
+.mark:hover{opacity:.8}
 </style>
 </head>
-<body>
+<body class="dash">
 <a class="skip" href="#main">Skip to content</a>
 <header class="bo"><div><span class="t">Kate Curtis-Evans · admin</span>
 <nav aria-label="Admin"><a href="../index.html">Admin</a><a href="../board.html">Board</a><a href="../guide/index.html">Guide</a><a href="../policy.html">Policy</a><a href="../made.html">How it was made</a><a href="../../">Live site</a></nav></div></header>
