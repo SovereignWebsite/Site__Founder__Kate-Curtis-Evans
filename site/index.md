@@ -13,7 +13,7 @@ Every fact here comes from Kate's own LinkedIn profile and posts, given to this 
 ## Audio Genius
 - An ASR-powered legal transcription and workflow platform designed around human-led transcription. The technology does the heavy lifting, but the professional keeps control.
 - Security, confidentiality and responsible data handling are fundamental, not features to bolt on later.
-- Foundations first: Kate has stopped adding new features on purpose (including a legal glossary and template uploads) to focus on privacy and data protection.
+- Foundations first (as of November 2026, from her LinkedIn post): Kate has stopped adding new features on purpose (including a legal glossary and template uploads) to focus on privacy and data protection.
 - Figures, as Kate gave them on 20 November 2026: a 90-day beta with 50 testers; 46,700 minutes of audio transcribed since launch in September 2026; 1,552 website visits in the 90 days to 20 November 2026, with no paid advertising. It now has paying users, and not one of those who signed up at the end of the beta has left. Bootstrapped and pre-seed.
 
 ## Wanted: a technical co-founder
