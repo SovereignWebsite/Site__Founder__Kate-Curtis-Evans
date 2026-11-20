@@ -66,6 +66,89 @@ blockquote footer{font-family:var(--sans);font-size:.9rem;color:var(--muted)}
 .contact{border-top:1px solid var(--line);padding:2rem 0 2.5rem;max-width:44rem}
 
 @media (max-width:40rem){.tag,.photo figcaption,.when{font-size:1rem}}
+/* ===== Round 6: wow pass, The Workflow Board ===== */
+:root{--hero-ink:#fff;--hero-soft:#f3efe6;--pop:#ffb547;--pop-ink:#1a1206;--blue:#2b5a87;--lane-done:#2f7a42;--lane-run:#2f6fb0;--lane-hold:#9a5f00;--lane-open:#b8391f;--paper:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--paper:#1f2126;--lane-done:#62c27a;--lane-run:#5fa2e6;--lane-hold:#f0b866;--lane-open:#ff7a5c}}
+main{max-width:none;padding:0}
+main>section{max-width:80rem;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+.head{position:relative;display:block;min-height:min(92vh,52rem);padding:0;color:var(--hero-ink);isolation:isolate;overflow:hidden;background:#111}
+.hero-photo{position:absolute;inset:0;z-index:-1}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:72% 30%;border-radius:0;filter:contrast(1.08)}
+.hero-photo::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(10,10,12,.55) 0%,rgba(10,10,12,.35) 30%,rgba(10,10,12,.72) 62%,rgba(10,10,12,.96) 100%),
+  linear-gradient(90deg,rgba(10,10,12,.8) 0%,rgba(10,10,12,.45) 45%,rgba(10,10,12,0) 75%)}
+.hero-photo figcaption{position:absolute;right:1rem;top:1rem;z-index:1;font-size:.875rem;color:#fff;background:rgba(0,0,0,.72);padding:.15rem .55rem;border-radius:999px;margin:0}
+.hero-text{position:relative;max-width:80rem;margin:0 auto;padding:clamp(5rem,16vh,10rem) 1rem 1.5rem}
+.hero-text>*{max-width:46rem}
+.head .eyebrow{color:var(--pop);font-size:.95rem;letter-spacing:.18em}
+.head h1{font-size:clamp(3rem,11.5vw,7rem);line-height:.92;letter-spacing:-.02em;margin:0 0 1.1rem;color:#fff;text-shadow:0 2px 30px rgba(0,0,0,.45)}
+.head .lede{font-style:italic;font-size:clamp(1.25rem,2.8vw,1.75rem);line-height:1.3;color:#fff;max-width:38rem}
+.head .lede::before{content:"";display:block;width:4rem;height:4px;background:var(--pop);margin:0 0 1rem;border-radius:2px}
+.head p{color:var(--hero-soft)}
+.head .btn{color:#fff;border-color:#fff;background:rgba(0,0,0,.35)}
+.head .btn.main{background:var(--pop);color:var(--pop-ink);border-color:var(--pop);box-shadow:0 8px 24px rgba(255,181,71,.25)}
+.head .btn:focus-visible,.head a:focus-visible{outline-color:#fff}
+.counts{position:relative;max-width:80rem;margin:0 auto;padding:1rem 1rem 3rem;grid-template-columns:repeat(2,1fr);gap:.9rem}
+@media (min-width:48rem){.counts{grid-template-columns:repeat(4,1fr);gap:1.2rem;padding-bottom:4.5rem}}
+.counts a{min-height:56px;border:0;border-radius:10px;padding:.7rem 1rem;color:var(--fg);background:var(--paper);font-size:1.05rem;box-shadow:6px 6px 0 var(--c),0 14px 30px rgba(0,0,0,.35);transform:rotate(var(--r))}
+.counts li:nth-child(1) a{--c:var(--lane-done);--r:-2deg}
+.counts li:nth-child(2) a{--c:var(--lane-run);--r:1.5deg}
+.counts li:nth-child(3) a{--c:var(--lane-hold);--r:-1deg}
+.counts li:last-child a{--c:var(--pop);--r:2deg;border:2px dashed var(--pop);background:var(--lane-open);color:#fff}
+@media (prefers-color-scheme:dark){.counts li:last-child a{color:#1a0b06}}
+.counts a:hover,.counts a:focus-visible{transform:none}
+/* the board, pinned up under the photo */
+.boardh{border-top:0;padding-top:2.5rem}
+.boardh h2{font-size:clamp(1.8rem,4.6vw,3rem);letter-spacing:-.01em}
+.boardh h2::after{content:"";display:block;width:3rem;height:4px;background:var(--lane-open);margin-top:.6rem;border-radius:2px}
+.board{gap:1.6rem;margin:1.6rem 0 3.5rem;padding:.4rem}
+@media (min-width:72rem){.board{grid-template-columns:1fr 1fr 1fr 1.55fr}}
+.lane{--c:var(--edge);border:0;border-radius:14px;padding:.9rem;background:var(--paper);box-shadow:8px 8px 0 var(--c),0 18px 40px rgba(0,0,0,.14);transform:rotate(var(--r,0deg))}
+@media (prefers-color-scheme:dark){.lane{box-shadow:8px 8px 0 var(--c),0 18px 40px rgba(0,0,0,.5)}}
+#lane-done{--c:var(--lane-done);--r:-1.6deg}
+#lane-run{--c:var(--lane-run);--r:1.2deg}
+#lane-hold{--c:var(--lane-hold);--r:-.8deg}
+#wanted{--c:var(--pop);--r:1.8deg;background:var(--lane-open);color:#fff;border:3px dashed #fff;outline:0}
+#wanted h3,#wanted h3 span{color:#fff}
+@media (prefers-color-scheme:dark){#wanted,#wanted h3,#wanted h3 span{color:#1a0b06}#wanted{border-color:#1a0b06}}
+.lane h3{font-size:1rem}
+.lane::before{content:"";display:block;width:2.2rem;height:.55rem;margin:-1.3rem auto .5rem;background:var(--c);border-radius:3px;opacity:.9}
+#wanted::before{background:#fff}
+.lane:hover,.lane:focus-within{transform:none}
+.card{border:0;background:var(--bg);box-shadow:0 1px 0 rgba(0,0,0,.06)}
+#wanted .card{background:var(--paper);color:var(--fg)}
+#wanted .card.wanted{border:2px dashed var(--lane-open);padding:1.2rem}
+#wanted .card.wanted b{font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.1}
+.card .n{font-size:2.4rem;color:var(--c,var(--fg))}
+#lane-done .card .n{color:var(--lane-done)}
+.t-done{color:var(--lane-done)}.t-run{color:var(--lane-run)}.t-hold{color:var(--lane-hold)}
+@media (prefers-reduced-motion:no-preference){.lane,.counts a{transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}}
+.below blockquote{font-size:clamp(1.35rem,2.6vw,1.8rem);font-style:italic;border-left:6px solid var(--lane-open);padding-left:1.2rem}
+
+/* addendum: real board depth, coloured columns, assignee marks (decorative, hidden from assistive tech) */
+.lane{background:color-mix(in srgb,var(--c) 13%,var(--paper))}
+.lane h3{background:var(--c);color:#fff;margin:-.9rem -.9rem .9rem;padding:.75rem .9rem;border-radius:14px 14px 0 0;letter-spacing:.08em}
+.lane h3 span{color:#fff;background:rgba(0,0,0,.28);border-radius:999px;padding:0 .55rem;font-weight:700}
+@media (prefers-color-scheme:dark){.lane h3,.lane h3 span{color:#111}.lane h3 span{background:rgba(255,255,255,.35)}}
+.lane::before{display:none}
+#wanted{background:color-mix(in srgb,var(--lane-open) 22%,var(--paper));color:var(--fg);border:3px dashed var(--lane-open)}
+#wanted h3{background:var(--lane-open)}
+.cards{gap:.8rem}
+.card{position:relative;background:var(--paper);border-left:5px solid var(--c);border-radius:8px;padding:.8rem 3rem .8rem .9rem;box-shadow:0 2px 0 rgba(0,0,0,.06),0 8px 18px rgba(0,0,0,.10)}
+@media (prefers-color-scheme:dark){.card{box-shadow:0 8px 18px rgba(0,0,0,.45)}}
+.card::after{content:"KC"/"";position:absolute;top:.7rem;right:.7rem;width:1.9rem;height:1.9rem;border-radius:50%;display:grid;place-items:center;font:700 .72rem/1 var(--sans);letter-spacing:.02em;background:var(--c);color:#fff}
+@media (prefers-color-scheme:dark){.card::after{color:#111}}
+#wanted .card::after{content:"?"/"";background:transparent;color:var(--lane-open);border:2px dashed var(--lane-open);font-size:1rem}
+#wanted .card{border-left-color:var(--lane-open)}
+@media (max-width:40rem){
+  .head{min-height:0}
+  .hero-photo img{object-position:78% 20%}
+  .hero-photo::after{background:linear-gradient(180deg,rgba(10,10,12,.62) 0%,rgba(10,10,12,.7) 45%,rgba(10,10,12,.95) 100%)}
+  .hero-text{padding:3.2rem 1rem 1rem}
+  .head .lede::before{margin-bottom:.7rem}
+  .counts{padding-bottom:2rem}
+}
+
 
 /* The Sovereign Website family bar: the same on every site in the family. */
 /* Colours are explicit, not opacity, so contrast can be measured: a site sets --family-fg (and --family-fg-strong)
@@ -90,21 +173,32 @@ blockquote footer{font-family:var(--sans);font-size:.9rem;color:var(--muted)}
 }
 </style>
 <style>
-.pick{font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#1c1b19;color:#f2eee6;border-bottom:1px solid #000}
-.pick div{max-width:72rem;margin:0 auto;padding:.3rem 1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.1rem .25rem}
-.pick b{font-weight:650;margin-right:.4rem;white-space:nowrap}
-.pick a{color:#f2eee6;text-decoration:none;display:inline-block;min-height:28px;line-height:28px;padding:0 .55rem;border-radius:999px;white-space:nowrap}
-.pick a:hover,.pick a:focus-visible{background:#3a3833;text-decoration:underline}
-.pick a[aria-current="page"]{background:#f2eee6;color:#1c1b19;font-weight:650}
-.pick div:focus-visible{outline:2px solid #f2eee6;outline-offset:-2px}
-@media (max-width:40rem){.pick div{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin}}
+.pick{font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#1c1b19;color:#f2eee6;border-bottom:1px solid #000;position:relative;z-index:20}
+.pick .pick-row{max-width:72rem;margin:0 auto;padding:.3rem 1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.1rem .25rem}
+.pick a{color:#f2eee6;text-decoration:none}
+.pick summary{cursor:pointer;font-weight:650;min-height:28px;line-height:28px;padding:0 .7rem;border-radius:999px;background:#f2eee6;color:#1c1b19;margin-right:.4rem;list-style:none;white-space:nowrap}
+.pick summary::-webkit-details-marker{display:none}
+.pick summary::after{content:" \25BE"}
+.pick details[open] summary::after{content:" \25B4"}
+.pick summary:focus-visible,.pick a:focus-visible{outline:2px solid #f2eee6;outline-offset:2px}
+.pick .pick-cards{position:absolute;left:0;right:0;top:100%;background:#1c1b19;border-bottom:1px solid #000;box-shadow:0 18px 40px rgba(0,0,0,.45);padding:1rem}
+.pick .pick-cards ul{min-width:0;list-style:none;margin:0 auto;padding:0;max-width:72rem;display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(11.5rem,1fr))}
+.pick .pick-cards li{min-width:0}
+.pick .pick-cards a{display:block;border-radius:10px;padding:.5rem;background:#2a2824;border:2px solid transparent;height:100%}
+.pick .pick-cards a:hover,.pick .pick-cards a:focus-visible{border-color:#8a857b}
+.pick .pick-cards a[aria-current="page"]{border-color:#f2eee6}
+.pick .pick-cards img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:6px;background:#3a3833}
+.pick .pick-cards strong{display:block;margin:.5rem .2rem 0;font-size:15px}
+.pick .pick-cards span{display:block;margin:.1rem .2rem .2rem;color:#d8d2c6;font-size:13px}
+.pick .pick-all{max-width:72rem;margin:.8rem auto 0}.pick .pick-all a{text-decoration:underline;display:inline-block;min-height:24px;line-height:24px}
+.pick .pick-cards .now{color:#f2eee6;font-weight:650}
+@media (max-width:40rem){.pick .pick-cards ul{grid-template-columns:1fr 1fr}.pick .pick-cards{max-height:75vh;overflow-y:auto}}
 @media print{.pick{display:none}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<nav class="pick" aria-label="Choose a design"><div tabindex="0">
-<b>Choose a design</b><a href="index.html" aria-current="page">The Workflow Board</a><a href="designs/1.html">The Transcript</a><a href="designs/2.html">The Edit Window</a><a href="designs/newsroom.html">The Newsroom</a><a href="designs/5.html">The Brief</a><a href="designs/index.html">All designs</a></div></nav>
+<nav class="pick" aria-label="Choose a design"><div class="pick-row"><details><summary>Choose a design</summary><div class="pick-cards"><ul><li><a href="index.html" aria-current="page"><img src="img/designs/board.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Workflow Board</strong><span>Her work as a board, with one open job</span><span class="now">You are here</span></a></li><li><a href="designs/1.html"><img src="img/designs/transcript.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Transcript</strong><span>Her story set out as a legal transcript</span></a></li><li><a href="designs/2.html"><img src="img/designs/edit.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Edit Window</strong><span>A transcription editor, dark and cinematic</span></a></li><li><a href="designs/newsroom.html"><img src="img/designs/newsroom.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Newsroom</strong><span>A magazine cover: specialist to founder</span></a></li><li><a href="designs/5.html"><img src="img/designs/brief.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Brief</strong><span>Plain and printable on A4</span></a></li></ul><p class="pick-all"><a href="designs/index.html">All designs</a></p></div></details></div></nav>
 <nav class="family" aria-label="The Sovereign Website family">
   <ul class="family-wide">
     <li><a href="https://sovereignwebsite.ai/">Sovereign Website</a></li>
@@ -134,7 +228,8 @@ blockquote footer{font-family:var(--sans);font-size:.9rem;color:var(--muted)}
 </nav>
 <main id="main">
 <header class="head">
-  <div>
+<figure class="hero-photo"><img src="img/kate-at-desk.webp" srcset="img/kate-at-desk-640.webp 640w, img/kate-at-desk.webp 1280w" sizes="100vw" width="1280" height="882" fetchpriority="high" alt="Black and white photo of Kate at her desk, smiling on the phone, with her dog resting its head against her."><figcaption>Photo: Matt Hinton Photography</figcaption></figure>
+  <div class="hero-text">
     <p class="eyebrow">Founder, Audio Genius</p>
     <h1>Kate Curtis&#8209;Evans</h1>
     <p class="lede">A practising legal transcriber who built a live transcription platform without knowing how to code.</p>
@@ -177,8 +272,7 @@ blockquote footer{font-family:var(--sans);font-size:.9rem;color:var(--muted)}
 
 <section class="below" aria-labelledby="story-h">
   <div>
-    <figure class="photo"><img src="img/kate-at-desk.webp" srcset="img/kate-at-desk-640.webp 640w, img/kate-at-desk.webp 1280w" sizes="(min-width:56rem) 30rem, 100vw" width="1280" height="882" loading="lazy" alt="Black and white photo of Kate at her desk, smiling on the phone, with her dog resting its head against her."><figcaption>Photo: Matt Hinton Photography</figcaption></figure>
-    <h2 id="story-h" style="margin-top:1.2rem">Built by someone who does the work</h2>
+    <h2 id="story-h">Built by someone who does the work</h2>
     <p>Kate has spent six years transcribing for legal professionals across the UK, and she still does the work every day. She kept seeing the same problem: most transcription technology is built for organisations processing audio, or for people capturing their own meetings. Very little of it is designed around the person producing the finished transcript from someone else's audio, with multiple speakers, difficult recordings, exacting standards, confidentiality requirements and deadline pressure.</p>
     <p>So she built what she wanted to use herself, with no outside funding and no traditional tech background. She taught herself to build with vibe coding and AI tools, and learnt to test properly before anything goes live.</p>
     <blockquote>&ldquo;I'm not a tech founder guessing at what professional transcribers need. I am one, and that's the difference.&rdquo;<footer>Kate, on her LinkedIn profile</footer></blockquote>
@@ -210,7 +304,6 @@ blockquote footer{font-family:var(--sans);font-size:.9rem;color:var(--muted)}
 <footer class="site-foot">
   <p>Photo of Kate at her desk by Matt Hinton Photography. Everything on this page comes from Kate's own LinkedIn profile and posts.</p>
   <p>No cookies, no tracking. A sovereign website, made with the <a href="https://sovereignwebsite.org/">open pattern</a>. Source: <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans">github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans</a>.</p>
-  <p>This is The Workflow Board, one of several designs of the same facts. <a href="designs/index.html">All designs</a>.</p>
 </footer>
 </body>
 </html>
