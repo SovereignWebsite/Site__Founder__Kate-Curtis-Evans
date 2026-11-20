@@ -13,7 +13,7 @@ REPO = 'https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans'
 
 # Design rounds, from https://design.agents.sovereignweb.site/back-office.html: rating at the end of each round,
 # and the synthetic users' scores (five imagined visitors) where the round ran them, as design.b reported them.
-ROUNDS = [(1, 2, None), (2, 2, [4, 4, 4, 4, 4]), (3, 2, None), (4, 2, None), (5, 4, [4, 3, 4, 4, 4]),
+ROUNDS = [(1, 1, None), (2, 2, [4, 4, 4, 4, 4]), (3, 2, None), (4, 2, None), (5, 4, [4, 3, 4, 4, 4]),
           (6, 3, None), (7, 3, [4, 4, 4, 4, 4]), (8, 4, None)]
 PERSONAS = ['Hurried phone visitor', 'Small business owner', 'Low-vision reader', 'Design critic', 'Co-founder candidate']
 AUTHORS = {'claude': "Kate's Claude", 'kate-curtis-evans.b': 'kate-curtis-evans.b', 'agenticcells-site-factory[bot]': 'Factory (bot)',
@@ -78,7 +78,7 @@ body.dash{--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--grid:#e6e3db;--g
 .gallery figure{margin:0;background:var(--chip);border-radius:10px;padding:.4rem;font-size:.78rem;color:var(--muted);min-width:0}
 .gallery img{display:block;width:100%;height:92px;object-fit:cover;object-position:top;border-radius:6px;background:var(--line)}
 .gallery figcaption{margin-top:.3rem;line-height:1.35}.gallery b{color:var(--fg);display:block;font-size:.8rem;overflow-wrap:anywhere}
-.live{display:inline-block;font-size:.72rem;font-weight:700;color:#fff;background:var(--good);border-radius:999px;padding:0 .45rem;margin-left:.3rem}
+.live{display:inline-block;font-size:.72rem;font-weight:700;color:var(--paper);background:var(--good);border-radius:999px;padding:0 .45rem;margin-left:.3rem}
 .preview{border:1px solid var(--line);border-radius:12px;overflow:hidden;max-width:30rem;background:var(--paper)}
 .preview img{display:block;width:100%;height:auto}.preview div{padding:.55rem .8rem}.preview b{display:block;font-size:.95rem}
 .preview p{margin:.15rem 0;font-size:.84rem;color:var(--muted)}.preview .dom{font-size:.78rem;text-transform:lowercase}
