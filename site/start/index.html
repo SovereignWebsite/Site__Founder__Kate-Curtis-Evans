@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start here, Kate</title>
+<meta name="description" content="How Kate takes over her website: accept the GitHub invitation, connect her Claude, and carry on.">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+:root{--bg:#f7f4ee;--paper:#fffdf9;--fg:#1c1b19;--muted:#5a5750;--accent:#9a3b1f;--accent-ink:#fff;--line:#e3ddd1;--tint:#efe8dc;
+--serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151412;--paper:#1d1b18;--fg:#efebe3;--muted:#b4aea2;--accent:#e58a63;--accent-ink:#1a0f0a;--line:#2f2c27;--tint:#24211d}}
+:root[data-theme="dark"]{--bg:#151412;--paper:#1d1b18;--fg:#efebe3;--muted:#b4aea2;--accent:#e58a63;--accent-ink:#1a0f0a;--line:#2f2c27;--tint:#24211d}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 var(--sans);overflow-wrap:break-word}
+a{color:var(--accent);text-underline-offset:.18em}a:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--paper);padding:.4rem .7rem}
+main{max-width:44rem;margin:0 auto;padding:2.5rem 1rem 4rem}
+h1{font-family:var(--serif);font-size:clamp(2rem,6vw,2.8rem);line-height:1.1;margin:.3rem 0 1rem}
+h2{font-family:var(--serif);font-size:1.45rem;margin:0 0 .6rem}
+.eyebrow{font-size:.875rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:650;margin:0}
+ol.steps{list-style:none;margin:2rem 0 0;padding:0;counter-reset:s}
+ol.steps>li{counter-increment:s;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:1.3rem 1.3rem 1rem;margin:0 0 1.2rem;position:relative}
+ol.steps>li h2::before{content:"Step " counter(s) ": ";color:var(--accent)}
+.btn{display:inline-block;padding:.7rem 1.15rem;border-radius:999px;font-weight:650;text-decoration:none;background:var(--accent);color:var(--accent-ink);margin:.2rem 0 .8rem}
+.help{background:var(--tint);border-radius:8px;padding:.8rem 1rem;margin:.6rem 0}
+.help p{margin:.3rem 0}
+textarea{width:100%;min-height:16rem;font:14px/1.5 ui-monospace,Menlo,Consolas,monospace;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:.8rem}
+code{font-size:.92em;background:var(--tint);padding:.05rem .3rem;border-radius:4px}
+footer{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;color:var(--muted);font-size:.95rem}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<main id="main">
+<p class="eyebrow">For Kate</p>
+<h1>Start here: taking over your website</h1>
+<p>Your site is live at <a href="../">kate-curtis-evans.founder.sovereignweb.site</a> and it is yours. These steps take about ten minutes, once. After that you change the site by asking your own Claude. Steps as of 20 November 2026.</p>
+
+<ol class="steps">
+<li>
+<h2>Accept the GitHub invitation</h2>
+<p>GitHub has invited your GitHub account to work on the repository that holds your site. Sign in to GitHub with that account, then open:</p>
+<a class="btn" href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/invitations">Open the invitation</a>
+<p>Click <strong>Accept invitation</strong>. That is all.</p>
+<div class="help">
+<p><strong>If that page says "404" or "not found":</strong> you are not signed in, or you are signed in with a different GitHub account. Sign in at <a href="https://github.com/login">github.com/login</a> with the account the invitation was sent to, then click the button above again.</p>
+<p><strong>Other ways in:</strong> the email from GitHub that says you were invited to collaborate on <code>SovereignWebsite/Site__Founder__Kate-Curtis-Evans</code> has a "View invitation" button; or, signed in, open <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans">the repository</a> and accept from the banner at the top.</p>
+<p><strong>If it says the invitation has expired</strong> (GitHub invitations last seven days), ask Dinis to send it again.</p>
+</div>
+<p>You will know it worked when <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans">the repository</a> opens for you without a banner, and you are listed with access.</p>
+</li>
+
+<li>
+<h2>Connect your Claude to GitHub</h2>
+<p><strong>In the browser or the Claude app</strong> (needs a paid Claude plan, Pro or above):</p>
+<ol>
+<li>Go to <a href="https://claude.ai/code">claude.ai/code</a> and sign in.</li>
+<li>Follow the prompt to connect GitHub, and approve it on GitHub's page. To do this again later: <a href="https://claude.ai/connect-github">claude.ai/connect-github</a>.</li>
+<li>Click the repository selector below the message box and choose <code>SovereignWebsite/Site__Founder__Kate-Curtis-Evans</code>, with the branch set to <code>dev</code>.</li>
+</ol>
+<p><strong>Or on your own computer:</strong> install Claude Code (Mac: <code>curl -fsSL https://claude.ai/install.sh | bash</code>; Windows PowerShell: <code>irm https://claude.ai/install.ps1 | iex</code>), run <code>claude</code> and sign in, then sign in to GitHub with GitHub's own tool from <a href="https://cli.github.com/">cli.github.com</a> by running <code>gh auth login</code>.</p>
+<div class="help"><p>You never need to copy or paste a token or password: every sign-in is GitHub's or Claude's own page. If the repository does not appear in the list, tell Dinis.</p>
+<p>Sources: <a href="https://code.claude.com/docs/en/web-quickstart">Claude Code on the web, quickstart</a> and <a href="https://code.claude.com/docs/en/setup">Claude Code setup</a>.</p></div>
+</li>
+
+<li>
+<h2>Paste this into your Claude</h2>
+<p>Tap inside the box, select all, copy, and paste it as your first message. It tells your Claude what the site is, its rules and how to work.</p>
+<label for="prompt" class="eyebrow" style="display:block;margin-bottom:.4rem">The prompt</label>
+<textarea id="prompt" readonly>You are helping me, Kate Curtis-Evans, look after my own website.
+
+**What it is.** My sovereign website: the repository SovereignWebsite/Site__Founder__Kate-Curtis-Evans on GitHub, live at https://kate-curtis-evans.founder.sovereignweb.site. It is plain static files in the site/ folder. GitHub Pages publishes site/ every time a change is pushed to the dev branch, usually within a minute or two. The main branch is locked: never push to it.
+
+**What I own.** The site, its files, its history and its address are mine. I decide what goes on it.
+
+**Rules (from the repository&#x27;s CLAUDE.md), please keep to them:**
+- Static files only in site/: no server code, no cookies, no tracking, no third-party scripts, embeds or web fonts.
+- Plain British English. No em dashes.
+- Never invent a fact, a figure, a client or a quote. Anything about me or Audio Genius must come from me or from the material/ folder (its README says where each file came from). Give every figure its date.
+- Credit photos: the photo of me at my desk is by Matt Hinton Photography. Ask me before using any other image.
+- Never put a password, key, token, email address or phone number in the repository unless I tell you to.
+
+**How to work:**
+1. Clone the repository and switch to dev.
+2. Edit the files in site/ (the home page is site/index.html, the other designs are in site/designs/, images are in site/img/).
+3. Before committing, check the page on a phone-sized and a desktop-sized screen, in both light and dark mode, and make sure nothing scrolls sideways.
+4. Show me what changed and wait for my yes.
+5. Commit with a clear message and push to dev, from my own GitHub account. The change is live at https://kate-curtis-evans.founder.sovereignweb.site a minute or two later. To watch it publish, open the repository&#x27;s Actions tab on GitHub: the Pages run for the push turns green when it is done.
+
+**Access.** I have accepted the GitHub invitation to the repository first (push to dev only; main stays locked). If a push is refused, stop and tell me; do not try to get round it.
+
+**Designs.** The site comes in several designs of the same facts, with a &quot;Choose a design&quot; bar at the top of every page. The home page is site/index.html; the others are in site/designs/. When you change a fact, change it in every design, and keep the bar on every page.
+
+**Questions for me.** docs/questions-for-kate.md lists things the site would like to know from me. Ask me them one at a time, update the site from my answers, and tick each one off. docs/handover.md says what is here.
+
+**My story.** I am a specialist who became a founder: a practising legal transcriber who built Audio Genius. Help me tell that story well, in my own words.
+
+**Getting help.** If you are stuck or want something changed that is outside the site, write a short note in docs/notes.md (what you tried, what you need) and push it, and tell me. I will pass it to Dinis Cruz, who can relay it to the agent that built the site.</textarea>
+<p>The same text is in the repository as <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/blob/dev/docs/prompt-for-your-claude.md">docs/prompt-for-your-claude.md</a>.</p>
+</li>
+
+<li>
+<h2>Make your first change</h2>
+<p>A good first request: <em>"Ask me the questions in docs/questions-for-kate.md, one at a time, and update the site from my answers."</em> They cover the dates for your figures, who took your headshot, which images may be used, and your story as a specialist who became a founder.</p>
+<p>Your Claude shows you the change, and when you say yes it pushes it. It is live a minute or two later; you can watch it publish in the repository's <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/actions">Actions</a> tab.</p>
+</li>
+
+<li>
+<h2>Choose your design</h2>
+<p>Your site comes in five designs of the same facts; the "Choose a design" bar at the top of every page switches between them. <a href="../designs/">See all five</a>, then tell your Claude which one you want as the home page, or keep them all.</p>
+</li>
+</ol>
+
+<h2>Where everything is</h2>
+<ul>
+<li><a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/blob/dev/docs/handover.md">The handover</a>: what is in the repository and the rules the site keeps.</li>
+<li><a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/blob/dev/docs/questions-for-kate.md">Questions for you</a>.</li>
+<li><a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/tree/dev/material">The material</a> the site was built from.</li>
+<li>Stuck? Ask your Claude to write a note in <code>docs/notes.md</code>, and tell Dinis.</li>
+</ul>
+
+<footer>This page is for Kate. Your commits do not need to be signed. No cookies, no tracking.</footer>
+</main>
+</body>
+</html>

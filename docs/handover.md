@@ -10,6 +10,8 @@ Your site is yours: its files, its history and its address. This page says what 
 - **Questions:** docs/questions-for-kate.md lists what the site would like to know from you (dates for the figures, who took your headshot, which images may be used, your founder story).
 
 ## How to carry on
+The same steps, with direct links, are on the site at https://kate-curtis-evans.founder.sovereignweb.site/start/
+
 1. Accept the GitHub invitation to the repository (from GitHub's email).
 2. Connect your Claude to GitHub (Part 1 of docs/prompt-for-your-claude.md).
 3. Paste the prompt (Part 2) and ask for what you want: answer the questions, add photos, change words, choose a design.
