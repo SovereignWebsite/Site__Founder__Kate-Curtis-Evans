@@ -18,7 +18,7 @@ Kate, the site only says what you have said yourself (your LinkedIn profile and 
 6. May the site use the Audio Genius logo, and the "Audio Genius needs you" poster?
    - **Answered by Kate (20 November 2026):** yes to the logo (she supplied the file, now site/img/audio-genius-logo.webp), and the site may use its colours (navy #05102f, purple #6b3fc0 to #c5aaf1). No to the "Audio Genius needs you" poster: never use it.
 7. Do you have other photos, or screenshots of Audio Genius, you would like on the site?
-   - **Partly answered by Kate (20 November 2026):** the site may use other images from her LinkedIn page. Which ones still to choose.
+   - **Answered by Kate (20 November 2026):** the site may use other images from her LinkedIn page. She sent five photos, all by Matt Hinton Photography; four are new and now lead a design each (home page: colour desk photo; The Transcript: armchair; The Edit Window: brick wall; The Newsroom: on the stool with her dog).
 
 ## Your story as a founder
 8. You are a specialist who became a founder. What was the moment you decided to build Audio Genius yourself?
