@@ -8,7 +8,7 @@ Kate, the site only says what you have said yourself (your LinkedIn profile and 
 2. "Since launch in September": which year was that?
    - **Answered by Kate:** September 2026. Added to every design.
 3. Are those figures still current, or do you have newer ones you would like to show?
-   - **Partly answered by Kate (20 November 2026):** 46,700 minutes of audio transcribed, now on every design. Testers and website visits still as in the post.
+   - **Answered by Kate (20 November 2026):** 46,700 minutes of audio transcribed; 1,552 website visits in the last 90 days; 50 beta testers; no paid advertising. Now on every design.
 4. When did you publish your "Foundations first" post?
 
 ## Images
