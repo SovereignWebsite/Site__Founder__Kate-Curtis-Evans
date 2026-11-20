@@ -2,7 +2,7 @@
 
 ## The top bar
 
-Every design page starts with the same dark bar: Kate's name (links home), her links (Co-founder wanted, Audio Genius, LinkedIn, Start here, Use with your AI, How it was made, Star on GitHub), the "Choose a design" panel, and a small top-right menu with the Sovereign Website links. **Do not edit this bar by hand in each page.** It is written by a script:
+Every design page starts with the same dark bar, for visitors: Kate's name (links home), her links (Co-founder wanted, Audio Genius, LinkedIn, Use with your AI, Star on GitHub), the "Choose a design" panel, and a small top-right menu holding the editor links (Admin, Start here) and the Sovereign Website links. Editor-only links belong in the admin area, not in the visitor bar. **Do not edit this bar by hand in each page.** It is written by a script:
 
     cd site && python3 ../tools/chooser.py
 

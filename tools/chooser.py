@@ -52,7 +52,7 @@ CSS = '''<style>
 .pick .pick-fam{order:4;position:relative}
 .pick .pick-fam summary{background:transparent;color:#f2eee6;border:1px solid #6b665c;padding:0 .6rem;font-size:18px;font-weight:700;min-width:32px;text-align:center}
 .pick .pick-fam-menu{position:absolute;right:0;top:calc(100% + .4rem);background:#1c1b19;border:1px solid #6b665c;border-radius:10px;padding:.6rem .4rem;min-width:13rem;box-shadow:0 14px 30px rgba(0,0,0,.45);z-index:30}
-.pick .pick-fam-menu p{margin:0 .6rem .3rem;font-size:12.5px;color:#d8d2c6}
+.pick .pick-fam-menu p{margin:.3rem .6rem .3rem;font-size:12.5px;color:#d8d2c6}
 .pick .pick-fam-menu ul{list-style:none;margin:0;padding:0}
 .pick .pick-fam-menu a{display:block;padding:0 .6rem;min-height:30px;line-height:30px;border-radius:6px}
 .pick .pick-fam-menu a:hover,.pick .pick-fam-menu a:focus-visible{background:#3a3833;text-decoration:underline}
@@ -84,7 +84,7 @@ def bar(cur):
     alla = f'<a href="{rel("designs/index.html", cur)}"{" aria-current=\"page\"" if cur == "designs/index.html" else ""}>All designs</a>'
     cof = COF.get(cur, rel('index.html', cur) + '#wanted')
     fam = ('<details class="pick-fam"><summary aria-label="Made with Sovereign Website: menu">&#8942;</summary>'
-           '<div class="pick-fam-menu"><p>Made with Sovereign Website</p><ul>'
+           f'<div class="pick-fam-menu"><p>For Kate</p><ul><li><a href="{up}admin/">Admin</a></li><li><a href="{up}start/">Start here</a></li></ul><p>Made with Sovereign Website</p><ul>'
            + ''.join(f'<li><a href="{u}">{n}</a></li>' for n, u in FAMILY) + '</ul></div></details>')
     return ('<nav class="pick" aria-label="Kate Curtis-Evans"><div class="pick-row">'
             f'<a class="pick-name" href="{rel("index.html", cur)}"><b>Kate Curtis-Evans</b><span>Founder, Audio Genius</span></a>'
@@ -92,9 +92,7 @@ def bar(cur):
             f'<li><a href="{cof}">Co-founder wanted</a></li>'
             '<li><a href="https://audio-genius.com/">Audio Genius</a></li>'
             '<li><a href="https://www.linkedin.com/in/kate-curtis-evans/">LinkedIn</a></li>'
-            f'<li><a href="{up}start/">Start here</a></li>'
             f'<li><a href="{up}agents/">Use with your AI</a></li>'
-            f'<li><a href="{up}admin/">How it was made</a></li>'
             '<li><a class="pick-gh" href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans">'
             '<svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>'
             '<span>Star on GitHub</span></a></li></ul>'
@@ -112,8 +110,8 @@ for f in PAGES:
     s = re.sub(r'(?s)\n?<nav class="family".*?</nav>\n?', '\n', s)
     s = re.sub(r'(?s)<p class="site-links">.*?</p>', '', s)
     up = '../' if f.startswith('designs/') else ''
-    links = (f'<p class="site-links"><a href="{up}start/">Start here</a><a href="{up}agents/">Use with your AI</a>'
-             f'<a href="{up}admin/">How this site was made</a></p>')
+    links = (f'<p class="site-links"><a href="{up}agents/">Use with your AI</a>'
+             f'<a href="{up}admin/">Admin</a></p>')
     k = s.rfind('</footer>')
     assert k > 0, f
     s = s[:k] + links + s[k:]

@@ -16,7 +16,7 @@ The site is plain static files. There is no server code, no database and no buil
 | site/designs/3.html | Forwards to the home page (the Board used to live here) |
 | site/start/ | Start here: how Kate took over the site |
 | site/agents/ | Use with your AI: prompts for visitors and for Kate, plus agents/*.md |
-| site/admin/ | The back office: how the site was made, this guide, the policy |
+| site/admin/ | The admin area (for Kate and her Claude, not visitors): board, this guide, the policy, how the site was made |
 | site/index.md | Every fact on the site, as Markdown: the master copy for AI agents |
 | site/llms.txt | The entry point for AI agents visiting the site |
 | site/img/ | Photos; site/img/designs/ holds the chooser thumbnails; site/img/share-card.jpg is the link preview |

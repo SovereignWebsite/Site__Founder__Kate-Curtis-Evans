@@ -72,7 +72,7 @@ li a,td a,nav a,.file a{display:inline-block;min-height:24px;line-height:24px}
 
 def page(title, desc, body, cur, depth=1):
     up = '../' * depth
-    nav = [('index.html', 'Back office'), ('board.html', 'Board'), ('guide/index.html', 'Guide'),
+    nav = [('index.html', 'Admin'), ('board.html', 'Board'), ('guide/index.html', 'Guide'),
            ('policy.html', 'Policy'), ('made.html', 'How it was made')]
     base = '' if depth == 1 else '../'
     links = ''.join(f'<a href="{base}{h}"{" aria-current=\"page\"" if h == cur else ""}>{n}</a>' for h, n in nav)
@@ -90,11 +90,11 @@ def page(title, desc, body, cur, depth=1):
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="bo"><div><span class="t">Kate Curtis-Evans · back office</span>
-<nav aria-label="Back office">{links}<a href="{up}">Live site</a></nav></div></header>
+<header class="bo"><div><span class="t">Kate Curtis-Evans · admin</span>
+<nav aria-label="Admin">{links}<a href="{up}">Live site</a></nav></div></header>
 <main id="main">
 {body}
-<footer>The back office of <a href="{up}">kate-curtis-evans.founder.sovereignweb.site</a>. Built from the repository by tools/backoffice.py. <a href="{REPO}">Repository</a> · <a href="{REPO}/actions">Publishing runs</a> · No cookies, no tracking.</footer>
+<footer>The admin area of <a href="{up}">kate-curtis-evans.founder.sovereignweb.site</a>. Built from the repository by tools/backoffice.py. <a href="{REPO}">Repository</a> · <a href="{REPO}/actions">Publishing runs</a> · No cookies, no tracking.</footer>
 </main>
 </body>
 </html>
@@ -261,8 +261,8 @@ def main():
     open(os.path.join(ADMIN, 'made.html'), 'w').write(page('How it was made', 'How Kate Curtis-Evans\'s site was made: the agents, the design rounds and every commit.', made(), 'made.html'))
     # hub
     top = ''.join(f'<li><a href="{REPO}/blob/dev/{it["file"]}">{inline(it["title"])}</a></li>' for it in cols['open'][:4])
-    hub = f'''<h1>Back office</h1>
-<p class="lede">Everything about running this site, for Kate and for her Claude. The live site is at <a href="../">kate-curtis-evans.founder.sovereignweb.site</a>.</p>
+    hub = f'''<h1>Admin</h1>
+<p class="lede">Everything about editing and running this site, for Kate and for her Claude. Visitors do not need anything here. The live site is at <a href="../">kate-curtis-evans.founder.sovereignweb.site</a>.</p>
 <div class="tiles">
 <a class="tile" href="board.html"><b>Board</b><span>What is open, blocked and done.</span><span class="counts"><span class="pill">Open {n["open"]}</span><span class="pill">Blocked {n["blocked"]}</span><span class="pill">Done {n["done"]}</span></span></a>
 <a class="tile" href="guide/index.html"><b>Guide for your Claude</b><span>Ten pages: how the site works, changing facts in every design, photos, checks, publishing, limits, interviewing Kate.</span></a>
@@ -276,7 +276,7 @@ def main():
 <h2>For Kate's Claude</h2>
 <p>Begin every session with <a href="guide/01-start.html">Start of every session</a>. To be interviewed, Kate pastes:</p>
 <blockquote><p>Read {U}/admin/guide/09-interview.md and interview me for my website. Start with the open questions in docs/questions-for-kate.md. Ask one question at a time, use my own words, and after each answer show me the change you would make and wait for my yes.</p></blockquote>'''
-    open(os.path.join(ADMIN, 'index.html'), 'w').write(page('Back office', 'The back office of Kate Curtis-Evans\'s site: board, guide, policy and how it was made.', hub, 'index.html'))
+    open(os.path.join(ADMIN, 'index.html'), 'w').write(page('Admin', 'The admin area of Kate Curtis-Evans\'s site: board, guide, policy and how it was made.', hub, 'index.html'))
     print('back office built:', n)
 
 

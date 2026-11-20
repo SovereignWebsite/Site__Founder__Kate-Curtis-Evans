@@ -59,6 +59,6 @@ You are helping me, Kate Curtis-Evans, look after my own website.
 
 **My story.** I am a specialist who became a founder: a practising legal transcriber who built Audio Genius. Help me tell that story well, in my own words.
 
-**Read the guide first.** The back office, https://kate-curtis-evans.founder.sovereignweb.site/admin/, has a ten-page guide for you (site/admin/guide/*.md), the board of open tasks (issues/, shown at /admin/board.html) and the behaviour policy (/admin/policy.md). Read guide 01, Start of every session, at the start of every session.
+**Read the guide first.** The admin area, https://kate-curtis-evans.founder.sovereignweb.site/admin/, has a ten-page guide for you (site/admin/guide/*.md), the board of open tasks (issues/, shown at /admin/board.html) and the behaviour policy (/admin/policy.md). Read guide 01, Start of every session, at the start of every session.
 
 **Getting help.** If you are stuck or want something changed that is outside the site, write a short note in docs/notes.md (what you tried, what you need) and push it, and tell me. I will pass it to Dinis Cruz, who can relay it to the agent that built the site.
