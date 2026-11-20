@@ -1,6 +1,78 @@
 {
  "commits": [
   {
+   "commit": "2f4c67f",
+   "when": "2026-11-20T17:12:31+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Add the message page: signed, sealed requests from Kate and Dinis",
+   "added": 3020,
+   "removed": 48,
+   "files": [
+    "docs/proposals/abp-lane-requests.md",
+    "site/admin/board.html",
+    "site/admin/data.json",
+    "site/admin/data/checks.json",
+    "site/admin/guide/01-start.html",
+    "site/admin/guide/02-how-it-works.html",
+    "site/admin/guide/03-changing-content.html",
+    "site/admin/guide/04-designs.html",
+    "site/admin/guide/05-images.html",
+    "site/admin/guide/06-checks.html",
+    "site/admin/guide/07-publishing.html",
+    "site/admin/guide/08-limits.html",
+    "site/admin/guide/09-interview.html",
+    "site/admin/guide/10-help.html",
+    "site/admin/guide/index.html",
+    "site/admin/index.html",
+    "site/admin/made.html",
+    "site/admin/message/index.html",
+    "site/admin/message/message.js",
+    "site/admin/message/qr.svg",
+    "site/admin/policy.html",
+    "site/admin/policy.md",
+    "site/assets/keyring.js",
+    "site/data/inbox.json",
+    "site/data/person-keys.json",
+    "site/data/replies/dinis.json",
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/index.html",
+    "site/designs/newsroom.html",
+    "site/designs/profile.html",
+    "site/index.html",
+    "site/version.json",
+    "tools/backoffice.py",
+    "tools/chooser.py",
+    "tools/dashboard.py",
+    "tools/inbox_drain.py",
+    "tools/person-key.mjs",
+    "tools/reply.mjs",
+    "tools/vendor/qrcode-generator-2.0.4.mjs"
+   ]
+  },
+  {
+   "commit": "a20a699",
+   "when": "2026-11-20T17:00:09+00:00",
+   "author": "Kate's Claude",
+   "subject": "Figures: 1,552 website visits in the last 90 days, all dated 20 Nov 2026",
+   "added": 17,
+   "removed": 17,
+   "files": [
+    "docs/questions-for-kate.md",
+    "site/agents/questions.md",
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/newsroom.html",
+    "site/designs/profile.html",
+    "site/index.html",
+    "site/index.md"
+   ]
+  },
+  {
    "commit": "2bedbc3",
    "when": "2026-11-20T17:00:12+00:00",
    "author": "kate-curtis-evans.b",
@@ -759,12 +831,22 @@
    "small_targets": 0,
    "external_requests": 0,
    "broken_links": 0
+  },
+  {
+   "when": "2026-11-20T17:12Z",
+   "commit": "2bedbc3",
+   "views": 102,
+   "problems": 0,
+   "overflow": 0,
+   "small_targets": 0,
+   "external_requests": 0,
+   "broken_links": 0
   }
  ],
  "datasets": [
   {
    "path": "index.md",
-   "bytes": 3118,
+   "bytes": 3034,
    "records": 16,
    "unit": "facts (list items)",
    "preview": "# Kate Curtis-Evans\n\nFounder of Audio Genius (https://audio-genius.com/), legal transcription and workflow management, built by a transcriber, for transcription professionals. Based in the United Kingdom. Looking for a t"
@@ -778,24 +860,24 @@
   },
   {
    "path": "admin/data/checks.json",
-   "bytes": 898,
-   "records": 5,
+   "bytes": 1077,
+   "records": 6,
    "unit": "records",
    "preview": "[\n {\n  \"when\": \"2026-11-20T16:50Z\",\n  \"commit\": \"78ba123\",\n  \"views\": 102,\n  \"problems\": 0,\n  \"overflow\": 0,\n  \"small_targets\": 0,\n  \"external_requests\": 0,\n  \"broken_links\": 0\n },\n {\n  \"when\": \"2026-11-20T16:55Z\",\n  \"co"
   },
   {
    "path": "admin/data.json",
-   "bytes": 24945,
+   "bytes": 27299,
    "records": 10,
    "unit": "keys",
-   "preview": "{\n \"commits\": [\n  {\n   \"commit\": \"2bedbc3\",\n   \"when\": \"2026-11-20T17:00:12+00:00\",\n   \"author\": \"kate-curtis-evans.b\",\n   \"subject\": \"Dashboard: round 1 rating is 1; readable Home badge in dark mode\",\n   \"added\": 56,\n  "
+   "preview": "{\n \"commits\": [\n  {\n   \"commit\": \"2f4c67f\",\n   \"when\": \"2026-11-20T17:12:31+00:00\",\n   \"author\": \"kate-curtis-evans.b\",\n   \"subject\": \"Add the message page: signed, sealed requests from Kate and Dinis\",\n   \"added\": 3020,"
   },
   {
    "path": "version.json",
    "bytes": 231,
    "records": 5,
    "unit": "keys",
-   "preview": "{\n \"site\": \"kate-curtis-evans.founder.sovereignweb.site\",\n \"built_from_commit\": \"2bedbc3\",\n \"built_at\": \"2026-11-20T17:08Z\",\n \"repository\": \"https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans\",\n \"branch"
+   "preview": "{\n \"site\": \"kate-curtis-evans.founder.sovereignweb.site\",\n \"built_from_commit\": \"2f4c67f\",\n \"built_at\": \"2026-11-20T17:16Z\",\n \"repository\": \"https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans\",\n \"branch"
   },
   {
    "path": "../issues/",
@@ -929,11 +1011,11 @@
   }
  ],
  "files": 63,
- "bytes": 1010503,
+ "bytes": 1016777,
  "version": {
   "site": "kate-curtis-evans.founder.sovereignweb.site",
-  "built_from_commit": "2bedbc3",
-  "built_at": "2026-11-20T17:12Z",
+  "built_from_commit": "2f4c67f",
+  "built_at": "2026-11-20T17:16Z",
   "repository": "https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans",
   "branch": "dev"
  }

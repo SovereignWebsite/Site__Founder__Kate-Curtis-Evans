@@ -42,8 +42,10 @@
     async function showWho() {
         const KR = window.WSKeyring; await KR.ready
         const who = KR.person, name = { kate: 'Kate', dinis: 'Dinis' }[who] || who
-        $('#who').textContent = who ? `You are ${name}: messages from this browser are signed with your key (${KR.fingerprint}).` : 'No key in this browser yet.'
-        $('#addkey').hidden = !!who; $('#form').hidden = !who; $('#lock').hidden = !who
+        $('#msg').classList.toggle('has-key', !!who)
+        $('#who').textContent = who ? `Signed in as ${name} (key ...${(KR.fingerprint || '').slice(-4)})` : 'No key in this browser yet.'
+        $('#gokey').hidden = !!who; $('#lock').hidden = !who; $('#form').hidden = !who
+        $('#addkey').open = !who; $('#addkey').querySelector('summary').textContent = who ? 'Use a different key' : 'Add your key'
         if (who) showReplies(who)
     }
     async function showReplies(who) {
@@ -80,6 +82,7 @@
         $('#form').addEventListener('submit', send)
         $('#addbtn').addEventListener('click', addKey)
         $('#lock').addEventListener('click', async () => { await window.WSKeyring.lock(); say('Your key is removed from this browser.'); showWho() })
+        $('#gokey').addEventListener('click', () => { $('#addkey').open = true })
         $('#files').addEventListener('change', async e => {
             images = []; $('#thumbs').innerHTML = ''
             for (const f of [...e.target.files].slice(0, 4)) {

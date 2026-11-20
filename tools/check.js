@@ -3,7 +3,7 @@
 // Run from the repository root: node tools/check.js
 const {chromium}=require('playwright');const fs=require('fs');let views=0,problems=0,broken=0,overflow=0,small=0,external=0;
 (async()=>{const b=await chromium.launch();const base='file://'+require('path').resolve(__dirname,'../site')+'/';
-const pages=['index.html','designs/1.html','designs/2.html','designs/newsroom.html','designs/5.html','designs/index.html','designs/4.html','designs/profile.html','start/index.html','agents/index.html','admin/index.html','admin/board.html','admin/policy.html','admin/made.html','admin/guide/index.html','admin/guide/05-images.html','admin/guide/09-interview.html'];
+const pages=['index.html','designs/1.html','designs/2.html','designs/newsroom.html','designs/5.html','designs/index.html','designs/4.html','designs/profile.html','start/index.html','agents/index.html','admin/index.html','admin/board.html','admin/policy.html','admin/made.html','admin/guide/index.html','admin/guide/05-images.html','admin/guide/09-interview.html','admin/message/index.html'];
 for(const pg of pages) for(const [w,h] of [[320,700],[390,844],[1366,900]]) for(const s of ['light','dark']){
  const p=await b.newPage({viewport:{width:w,height:h},colorScheme:s});let bytes=0;
  p.on('response',async r=>{try{bytes+=(await r.body()).length}catch{}});
