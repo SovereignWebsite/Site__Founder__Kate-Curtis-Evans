@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(/site/CNAME)",
+      "Edit(/.github/**)",
+      "Edit(/.claude/**)",
+      "Edit(/policy/**)",
+      "Edit(/CLAUDE.md)",
+      "Edit(/material/**)",
+      "Bash(git push --force *)",
+      "Bash(git push -f *)",
+      "Bash(git push * main*)",
+      "Bash(git push * HEAD:main*)",
+      "Bash(git branch -D *)",
+      "Bash(git branch -d *)",
+      "Bash(git reset --hard origin*)",
+      "mcp__Gmail",
+      "mcp__claude_ai_Gmail__*",
+      "mcp__Google_Drive",
+      "mcp__claude_ai_Google_Drive__*",
+      "mcp__Google_Calendar",
+      "mcp__claude_ai_Google_Calendar__*",
+      "mcp__claude-code-remote__create_session",
+      "mcp__claude-code-remote__archive_session",
+      "mcp__claude-code-remote__unarchive_session",
+      "mcp__claude-code-remote__interrupt_session",
+      "mcp__claude-code-remote__list_sessions",
+      "mcp__claude-code-remote__list_events",
+      "mcp__claude-code-remote__get_event",
+      "mcp__claude-code-remote__create_trigger",
+      "mcp__claude-code-remote__update_trigger",
+      "mcp__claude-code-remote__delete_trigger",
+      "mcp__claude-code-remote__fire_trigger",
+      "mcp__claude-code-remote__send_later",
+      "mcp__claude-code-remote__create_environment",
+      "mcp__claude-code-remote__update_environment",
+      "mcp__claude-code-remote__switch_environment",
+      "mcp__claude-code-remote__request_credential",
+      "mcp__claude-code-remote__request_computer_folder",
+      "mcp__claude-code-remote__confirm_repository_trust"
+    ]
+  }
+}

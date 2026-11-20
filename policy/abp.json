@@ -1,0 +1,36 @@
+{
+  "about": "Agent Behaviour Policy for Kate Curtis-Evans's site. It says which agent may change which paths, and what no agent may do. The parts that can be enforced are also in .claude/settings.json (deny rules that Claude Code applies in single-repository sessions). Human guide: site/admin/policy.md.",
+  "version": 1,
+  "owner": "Kate Curtis-Evans (GitHub kateandphilce-jpg). Until a rule is changed by Kate and Dinis Cruz together, it stands.",
+  "source": "Dinis Cruz, 20 Nov 2026 ~16:40 UTC in session_01Kw9UwEREYzo2rPJ4cv4XVN: \"make sure that session is governed by an ABP that lets her make changes, but really limits what session can access from her wider claude account, and areas of the site that she shouldn't really be changing\".",
+  "agents": {
+    "site@SovereignWebsite.kate": {
+      "who": "Kate's own Claude, working on this site with her",
+      "may_change": ["site/**", "docs/notes.md", "docs/questions-for-kate.md", "docs/sources.md", "tools/**"],
+      "protected": ["site/CNAME", ".github/**", ".claude/**", "policy/**", "CLAUDE.md", "material/**"],
+      "protected_why": "CNAME and .github/** are the address and the publishing pipeline: a wrong change takes the site down. .claude/**, policy/** and CLAUDE.md are this policy: a session must not rewrite its own limits. material/** is the record of what the site was built from.",
+      "needs_kate_yes": "every change: show Kate the diff and wait for her yes before committing",
+      "branches": ["dev"],
+      "never": [
+        "push to main, force-push, rewrite or delete history, delete branches",
+        "use any connector or account tool outside this repository: email, calendar, drive, other repositories, other Claude sessions, scheduled tasks, environment settings, credentials or computer access",
+        "read, print or commit a key, token or password",
+        "invent a fact, figure, client or quote, or publish anything Kate has not said or approved",
+        "add cookies, tracking, analytics, third-party scripts, embeds or web fonts",
+        "publish a photo without its credit, or a photo of anyone other than Kate without their consent",
+        "change the protected paths; ask Kate, who asks Dinis"
+      ]
+    },
+    "kate-curtis-evans.b@SovereignWebsite.dinis": {
+      "who": "the agent that built the site, working for Dinis Cruz",
+      "may_change": ["**"],
+      "branches": ["dev"],
+      "never": ["push to main", "print or commit a key or token", "invent a fact"]
+    }
+  },
+  "privileges": [
+    {"holder": "github-user:kateandphilce-jpg", "permission": "repository:write", "why": "the owner, through her own Claude, pushes to dev", "state": "expected"},
+    {"holder": "github-team:SovereignWebsite/sovereignwebsite-agents-ci", "permission": "repository:write", "why": "the agents that built and maintain the site", "state": "expected"},
+    {"holder": "github-ruleset:dev", "permission": "no deletion, no force-push", "why": "history is never rewritten", "state": "expected"}
+  ]
+}

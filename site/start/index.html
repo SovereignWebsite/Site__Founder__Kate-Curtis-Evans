@@ -33,7 +33,7 @@
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151412;--paper:#1d1b18;--fg:#efebe3;--muted:#b4aea2;--accent:#e58a63;--accent-ink:#1a0f0a;--line:#2f2c27;--tint:#24211d}}
 :root[data-theme="dark"]{--bg:#151412;--paper:#1d1b18;--fg:#efebe3;--muted:#b4aea2;--accent:#e58a63;--accent-ink:#1a0f0a;--line:#2f2c27;--tint:#24211d}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 var(--sans);overflow-wrap:break-word}
-a{color:var(--accent);text-underline-offset:.18em}a:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+a{overflow-wrap:anywhere;color:var(--accent);text-underline-offset:.18em}a:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--paper);padding:.4rem .7rem}
 main{max-width:44rem;margin:0 auto;padding:2.5rem 1rem 4rem}
 h1{font-family:var(--serif);font-size:clamp(2rem,6vw,2.8rem);line-height:1.1;margin:.3rem 0 1rem}
@@ -46,7 +46,7 @@ ol.steps>li h2::before{content:"Step " counter(s) ": ";color:var(--accent)}
 .help{background:var(--tint);border-radius:8px;padding:.8rem 1rem;margin:.6rem 0}
 .help p{margin:.3rem 0}
 textarea{width:100%;min-height:16rem;font:14px/1.5 ui-monospace,Menlo,Consolas,monospace;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:.8rem}
-code{font-size:.92em;background:var(--tint);padding:.05rem .3rem;border-radius:4px}
+code{overflow-wrap:anywhere;font-size:.92em;background:var(--tint);padding:.05rem .3rem;border-radius:4px}
 footer{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;color:var(--muted);font-size:.95rem}
 li a,td a,footer a,ul a{display:inline-block;min-height:24px;line-height:24px}
 </style>
@@ -121,6 +121,8 @@ li a,td a,footer a,ul a{display:inline-block;min-height:24px;line-height:24px}
 **Questions for me.** docs/questions-for-kate.md lists things the site would like to know from me. Ask me them one at a time, update the site from my answers, and tick each one off. docs/handover.md says what is here.
 
 **My story.** I am a specialist who became a founder: a practising legal transcriber who built Audio Genius. Help me tell that story well, in my own words.
+
+**Read the guide first.** The back office, https://kate-curtis-evans.founder.sovereignweb.site/admin/, has a ten-page guide for you (site/admin/guide/*.md), the board of open tasks (issues/, shown at /admin/board.html) and the behaviour policy (/admin/policy.md). Read guide 01, Start of every session, at the start of every session.
 
 **Getting help.** If you are stuck or want something changed that is outside the site, write a short note in docs/notes.md (what you tried, what you need) and push it, and tell me. I will pass it to Dinis Cruz, who can relay it to the agent that built the site.</textarea>
 <p>The same text is in the repository as <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/blob/dev/docs/prompt-for-your-claude.md">docs/prompt-for-your-claude.md</a>.</p>
