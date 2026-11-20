@@ -21,11 +21,6 @@ a{color:var(--link,var(--accent))}
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .skip{position:absolute;left:-999px;top:0}
 .skip:focus{left:1rem;top:1rem;background:var(--bg);color:var(--fg);padding:.5rem .8rem;z-index:9}
-.family{font-size:.875rem;border-bottom:1px solid var(--line)}
-.family ul{list-style:none;margin:0 auto;padding:.15rem 1rem;display:flex;flex-wrap:wrap;gap:0 .9rem;max-width:72rem}
-.family a{color:var(--muted);text-decoration:none;display:inline-block;min-height:24px;line-height:24px}
-.family a:hover,.family a:focus-visible{color:var(--fg);text-decoration:underline}
-.family .family-sep{margin-left:auto}@media (max-width:40rem){.family .family-sep{margin-left:0}}
 .site-foot{font-size:.9rem;color:var(--muted);padding:2rem 1rem 3rem;max-width:68rem;margin:0 auto}
 .site-foot p{margin:0 0 .5rem}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -81,6 +76,28 @@ blockquote footer{font-family:var(--sans);font-size:.9rem;color:var(--muted)}
 .open strong{display:block}
 .contact{border-top:1.5px solid var(--fg);padding:2rem 0 2.5rem;max-width:44rem}
 
+
+/* The Sovereign Website family bar: the same on every site in the family. */
+/* Colours are explicit, not opacity, so contrast can be measured: a site sets --family-fg (and --family-fg-strong)
+   to measured values for its own background; the fallbacks pass on white and on near-black. */
+.family{--fam-fg:var(--family-fg,#454545);--fam-strong:var(--family-fg-strong,#111);font-size:.875rem;border-bottom:1px solid rgba(127,127,127,.25);background:rgba(127,127,127,.06)}
+@media (prefers-color-scheme:dark){.family{--fam-fg:var(--family-fg,#cfcfcf);--fam-strong:var(--family-fg-strong,#fff)}}
+.family ul{list-style:none;margin:0 auto;padding:.1rem 1rem;display:flex;flex-wrap:wrap;gap:0 1rem;max-width:72rem}
+.family .family-narrow{display:none}
+.family a{color:var(--fam-fg);text-decoration:none;display:inline-block;padding:.2rem 0;min-height:24px}
+.family a:hover,.family a:focus-visible{color:var(--fam-strong);text-decoration:underline}
+.family a[aria-current="true"]{color:var(--fam-strong);font-weight:600}
+.family .family-sep{margin-left:auto}
+/* Phones: the same links folded into one line (a details/summary), instead of three wrapped lines above the
+   site's own header. Two copies in the markup, one shown per width: CSS only, so no script and no CSP issue. */
+@media (max-width:40rem){
+  .family .family-wide{display:none}
+  .family .family-narrow{display:block}
+  .family summary{cursor:pointer;padding:.3rem 1rem;min-height:24px;color:var(--fam-fg)}
+  .family summary:hover,.family summary:focus-visible{color:var(--fam-strong)}
+  .family .family-narrow ul{flex-direction:column;gap:0;padding:0 1rem .4rem}
+  .family .family-sep{margin-left:0}
+}
 </style>
 <style>
 .pick{font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#1c1b19;color:#f2eee6;border-bottom:1px solid #000}
@@ -99,7 +116,7 @@ blockquote footer{font-family:var(--sans);font-size:.9rem;color:var(--muted)}
 <nav class="pick" aria-label="Choose a design"><div tabindex="0">
 <b>Choose a design</b><a href="../index.html">The Workflow Board</a><a href="1.html">The Transcript</a><a href="2.html">The Edit Window</a><a href="newsroom.html">The Newsroom</a><a href="5.html">The Brief</a><a href="index.html">All designs</a></div></nav>
 <nav class="family" aria-label="The Sovereign Website family">
-  <ul>
+  <ul class="family-wide">
     <li><a href="https://sovereignwebsite.ai/">Sovereign Website</a></li>
     <li><a href="https://sovereignwebsite.org/">Principles</a></li>
     <li><a href="https://sovereignwebsite.site/" aria-current="true">Hosted</a></li>
@@ -110,6 +127,20 @@ blockquote footer{font-family:var(--sans);font-size:.9rem;color:var(--muted)}
     <li><a href="https://riskmandate.ai/">RiskMandate</a></li>
     <li><a href="https://newsroom.sgit.ai/">Newsroom</a></li>
   </ul>
+  <details class="family-narrow">
+    <summary>Sovereign Website family</summary>
+    <ul>
+      <li><a href="https://sovereignwebsite.ai/">Sovereign Website</a></li>
+      <li><a href="https://sovereignwebsite.org/">Principles</a></li>
+      <li><a href="https://sovereignwebsite.site/" aria-current="true">Hosted</a></li>
+      <li><a href="https://hub.sovereignweb.site/">Hub</a></li>
+      <li><a href="https://agents.sovereignweb.site/">Agents</a></li>
+      <li><a href="https://vault.sovereignwebsite.site/">Vault</a></li>
+      <li class="family-sep"><a href="https://agenticcells.ai/">AgentiCCells</a></li>
+      <li><a href="https://riskmandate.ai/">RiskMandate</a></li>
+      <li><a href="https://newsroom.sgit.ai/">Newsroom</a></li>
+    </ul>
+  </details>
 </nav>
 <main id="main">
 <header class="title">
