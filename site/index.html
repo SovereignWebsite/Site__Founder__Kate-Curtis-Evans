@@ -4,21 +4,93 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kate Curtis-Evans</title>
-<meta name="description" content="Founder of Audio Genius, legal transcription built by a transcriber.">
+<meta name="description" content="Kate Curtis-Evans, practising legal transcriber and founder of Audio Genius, legal transcription and workflow built by a transcriber, for transcription professionals.">
+<meta name="color-scheme" content="light dark">
 <style>
-:root{--bg:#fbfaf7;--fg:#1d1d1b;--muted:#5d5c57;--accent:#2f6b4f;--line:#e4e1d8}
-@media (prefers-color-scheme:dark){:root{--bg:#141513;--fg:#ecebe6;--muted:#a8a69e;--accent:#7fc3a0;--line:#2c2d29}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
-main{max-width:44rem;margin:0 auto;padding:10vh 1rem 4rem}
-.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem}
-.mark{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
-h1{font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin:.4rem 0 1rem}
-p{color:var(--muted);margin:0 0 1rem}a{color:var(--accent)}
-footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
+:root{
+  --bg:#f7f4ee;--paper:#fffdf9;--fg:#1c1b19;--muted:#5a5750;--soft:#8a867c;
+  --accent:#9a3b1f;--accent-ink:#fff;--line:#e3ddd1;--tint:#efe8dc;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#151412;--paper:#1d1b18;--fg:#efebe3;--muted:#b4aea2;--soft:#8c877d;
+  --accent:#e58a63;--accent-ink:#1a0f0a;--line:#2f2c27;--tint:#24211d;
+}}
+:root[data-theme="dark"]{
+  --bg:#151412;--paper:#1d1b18;--fg:#efebe3;--muted:#b4aea2;--soft:#8c877d;
+  --accent:#e58a63;--accent-ink:#1a0f0a;--line:#2f2c27;--tint:#24211d;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 var(--sans)}
+img{max-width:100%;display:block}
+a{color:var(--accent);text-underline-offset:.18em}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--paper);padding:.4rem .7rem;z-index:9}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1rem}
 .family{font-size:.8rem;border-bottom:1px solid rgba(127,127,127,.25);background:rgba(127,127,127,.06)}
 .family ul{list-style:none;margin:0 auto;padding:.35rem 1rem;display:flex;flex-wrap:wrap;gap:.25rem .9rem;max-width:72rem}
 .family a{color:inherit;opacity:.8;text-decoration:none}.family a:hover,.family a:focus-visible{opacity:1;text-decoration:underline}
 .family .family-sep{margin-left:auto}@media (max-width:40rem){.family .family-sep{margin-left:0}}
+
+/* hero */
+.hero{display:grid;gap:2rem;padding:3.5rem 0 3rem;align-items:center}
+@media (min-width:56rem){.hero{grid-template-columns:1.05fr 1fr;gap:3.5rem;padding:5rem 0 4rem}}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:650;margin:0 0 .8rem}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.6rem,7vw,4.4rem);line-height:1.02;letter-spacing:-.01em;margin:0 0 1.1rem}
+.lede{font-family:var(--serif);font-size:clamp(1.2rem,2.4vw,1.5rem);line-height:1.4;color:var(--fg);margin:0 0 1.4rem;max-width:32rem}
+.sub{color:var(--muted);margin:0 0 1.8rem;max-width:32rem}
+.actions{display:flex;flex-wrap:wrap;gap:.7rem}
+.btn{display:inline-block;padding:.7rem 1.15rem;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;border:1.5px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.btn:hover{filter:brightness(1.07)}
+figure{margin:0}
+.photo img{border-radius:6px;width:100%;height:auto;aspect-ratio:1280/882;object-fit:cover;background:var(--tint)}
+.photo figcaption,.credit{font-size:.78rem;color:var(--soft);margin-top:.5rem}
+
+/* sections */
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+.grid{display:grid;gap:1.5rem 3rem}
+@media (min-width:56rem){.grid{grid-template-columns:15rem 1fr}}
+h2{font-family:var(--serif);font-weight:600;font-size:1.65rem;line-height:1.2;margin:0}
+.kicker{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);font-weight:600;margin:0 0 .4rem}
+.body p{margin:0 0 1rem;max-width:40rem}
+.body p.muted{color:var(--muted)}
+blockquote{margin:1.6rem 0;padding:0 0 0 1.2rem;border-left:3px solid var(--accent);font-family:var(--serif);font-size:1.3rem;line-height:1.45;max-width:38rem}
+blockquote footer{font-family:var(--sans);font-size:.82rem;color:var(--soft);margin-top:.5rem}
+
+/* figures */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:.4rem 0 1rem}
+.stat{background:var(--paper);padding:1.3rem 1.2rem}
+.stat b{display:block;font-family:var(--serif);font-size:2.2rem;line-height:1.05;font-weight:600;color:var(--fg);font-variant-numeric:lining-nums}
+.stat span{display:block;color:var(--muted);font-size:.93rem;margin-top:.35rem}
+.note{font-size:.85rem;color:var(--soft);max-width:40rem}
+
+/* lists */
+.cards{display:grid;gap:1rem;margin-top:.4rem}@media (min-width:40rem){.cards{grid-template-columns:1fr 1fr}}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:1.2rem}
+.card h3{font-size:1rem;margin:0 0 .4rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.feature{background:var(--tint);border-radius:10px;padding:1.6rem;margin-bottom:1.4rem}
+.feature h3{font-family:var(--serif);font-size:1.35rem;margin:0 0 .7rem;font-weight:600}
+.feature dl{display:grid;gap:.9rem;margin:1rem 0 0}
+@media (min-width:44rem){.feature dl{grid-template-columns:1fr 1fr}}
+.feature dt{font-weight:650;font-size:.9rem;margin-bottom:.2rem}
+.feature dd{margin:0;color:var(--muted);font-size:.95rem}
+
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{display:grid;gap:.15rem 1.5rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.timeline li:first-child{padding-top:0}
+@media (min-width:40rem){.timeline li{grid-template-columns:11rem 1fr}}
+.timeline .when{color:var(--soft);font-size:.9rem;font-variant-numeric:tabular-nums}
+.timeline .what b{display:block}
+.timeline .what span{color:var(--muted);font-size:.95rem}
+
+.contact{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.2rem}
+.site-foot{border-top:1px solid var(--line);padding:2rem 0 3rem;font-size:.85rem;color:var(--soft)}
+.site-foot p{margin:0 0 .5rem}
 </style>
 </head>
 <body>
@@ -36,12 +108,129 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-si
     <li><a href="https://newsroom.sgit.ai/">Newsroom</a></li>
   </ul>
 </nav>
-<main id="main">
-<div class="mark">kate-curtis-evans.founder.sovereignweb.site</div>
-<h1>Kate Curtis-Evans</h1>
-<p>Founder of Audio Genius, legal transcription built by a transcriber.</p>
-<p>This site was made by one request to the Sovereign Website pipeline. Its files, its history and its address are in a repository its owner controls, and can move anywhere.</p>
-<footer>A sovereign website, made with the <a href="https://sovereignwebsite.org/">open pattern</a>. Source: <a href="https://github.com/SovereignWebsite/Site__kate-curtis-evans">github.com/SovereignWebsite/Site__kate-curtis-evans</a>.</footer>
+
+<main id="main" class="wrap">
+
+<header class="hero">
+  <div>
+    <p class="eyebrow">Founder, Audio Genius</p>
+    <h1>Kate Curtis&#8209;Evans</h1>
+    <p class="lede">A practising legal transcriber who built a live transcription platform without knowing how to code.</p>
+    <p class="sub">Audio Genius is legal transcription and workflow management, built by a transcriber, for transcription professionals. Kate is based in the United Kingdom and is now looking for a technical co-founder.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://www.linkedin.com/in/kate-curtis-evans/">Message Kate on LinkedIn</a>
+      <a class="btn ghost" href="https://audio-genius.com/">Visit audio-genius.com</a>
+    </div>
+  </div>
+  <figure class="photo">
+    <img src="img/kate-at-desk.webp" srcset="img/kate-at-desk-640.webp 640w, img/kate-at-desk.webp 1280w" sizes="(min-width:56rem) 32rem, 100vw" width="1280" height="882" alt="Black and white photo of Kate at her desk, smiling on the phone, with her dog resting its head against her.">
+    <figcaption>Photo: Matt Hinton Photography</figcaption>
+  </figure>
+</header>
+
+<section id="story" aria-labelledby="story-h">
+  <div class="grid">
+    <div><p class="kicker">Her story</p><h2 id="story-h">Built by someone who does the work</h2></div>
+    <div class="body">
+      <p>Kate has spent six years transcribing for legal professionals across the UK, and she still does the work every day. She kept seeing the same problem: most transcription technology is built for organisations processing audio, or for people capturing their own meetings. Very little of it is designed around the person producing the finished transcript from someone else's audio, with multiple speakers, difficult recordings, exacting standards, confidentiality requirements and deadline pressure.</p>
+      <p>So she built what she wanted to use herself, with no outside funding and no traditional tech background. She taught herself to build with vibe coding and AI tools, and learnt to test properly before anything goes live.</p>
+      <blockquote>
+        "I'm not a tech founder guessing at what professional transcribers need. I am one, and that's the difference."
+        <footer>Kate, on her LinkedIn profile</footer>
+      </blockquote>
+      <p class="muted">Before that: a BA in European Business Studies at Brunel University of London, 1992 to 1996.</p>
+    </div>
+  </div>
+</section>
+
+<section id="audio-genius" aria-labelledby="ag-h">
+  <div class="grid">
+    <div><p class="kicker">The product</p><h2 id="ag-h">Audio Genius</h2></div>
+    <div class="body">
+      <p>Audio Genius is an ASR-powered legal transcription and workflow platform designed around human-led transcription. The technology does the heavy lifting, but the professional keeps control. Because legal audio can hold highly sensitive information, Kate treats security, confidentiality and responsible data handling as fundamental, not features to bolt on later.</p>
+      <p>It is being developed with feedback from real transcription professionals, and some of the best ideas for the platform have come directly from the people testing it.</p>
+      <div class="feature">
+        <h3>Foundations first</h3>
+        <p style="margin:0;color:var(--muted)">Kate has stopped adding new features on purpose, including a legal glossary and template uploads she was looking forward to building. What comes first is the part nobody sees: privacy and data protection, working through what the platform holds and how long it keeps it, one decision at a time.</p>
+      </div>
+      <h3 style="font-size:1rem;margin:1.6rem 0 .6rem">Where it stands, in Kate's words</h3>
+      <div class="stats" role="list">
+        <div class="stat" role="listitem"><b>50</b><span>testers in a 90-day beta</span></div>
+        <div class="stat" role="listitem"><b>34,000</b><span>minutes of audio transcribed since launch in September</span></div>
+        <div class="stat" role="listitem"><b>1,200</b><span>website visits, from Google, social media and elsewhere, with no paid advertising as yet</span></div>
+      </div>
+      <p>It now has paying users, and not one of those who signed up at the end of the beta has left. They use it every day. Audio Genius is bootstrapped and pre-seed.</p>
+      <p class="note">Figures exactly as Kate stated them in her LinkedIn post looking for a technical co-founder, as given to this site on 20 November 2026.</p>
+    </div>
+  </div>
+</section>
+
+<section id="cofounder" aria-labelledby="cf-h">
+  <div class="grid">
+    <div><p class="kicker">Wanted</p><h2 id="cf-h">A technical co-founder</h2></div>
+    <div class="body">
+      <p>The platform Kate built Audio Genius on will not let Kate fork a test site from the live one, and gives her limited control over hosting and other parts of the build. She wants to own how it scales. The next stage is moving to a tech stack built for regulated data and getting certifications like Cyber Essentials in place. That is the work she wants a partner to own, ideally someone with legal tech or regulated-industry experience.</p>
+      <div class="feature">
+        <h3>The partnership</h3>
+        <dl>
+          <div><dt>What Kate brings</dt><dd>The vision for the platform, direct access to users, research and results, and a strategy for expanding into corporates and organisations.</dd></div>
+          <div><dt>What the co-founder would own</dt><dd>The technical scope, the build, integration and implementation.</dd></div>
+        </dl>
+      </div>
+      <p>If that is you, message her. If you know who it is, send her an introduction.</p>
+      <div class="contact"><a class="btn primary" href="https://www.linkedin.com/in/kate-curtis-evans/">Message Kate on LinkedIn</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="connect" aria-labelledby="connect-h">
+  <div class="grid">
+    <div><p class="kicker">Also open to</p><h2 id="connect-h">Collaborations, partnerships and investment</h2></div>
+    <div class="body">
+      <div class="cards">
+        <div class="card"><h3>Law firms and agencies</h3><p>Exploring secure transcription and workflow technology for in-house teams and freelancer networks.</p></div>
+        <div class="card"><h3>Transcribers and legal professionals</h3><p>Who want to help shape the technology they will actually use.</p></div>
+        <div class="card"><h3>Investors</h3><p>Interested in vertical SaaS built from genuine domain expertise and a clearly identified industry problem.</p></div>
+        <div class="card"><h3>Partners</h3><p>LegalTech, speech technology and security partners who understand the technical and compliance challenges of handling professional and legal audio.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" aria-labelledby="exp-h">
+  <div class="grid">
+    <div><p class="kicker">Experience</p><h2 id="exp-h">Six years of legal transcription</h2></div>
+    <div class="body">
+      <ol class="timeline">
+        <li><span class="when">Nov 2025 to now</span><span class="what"><b>Founder, Audio Genius</b><span>A secure transcription workspace designed to support professional transcription workflows.</span></span></li>
+        <li><span class="when">Mar 2021 to now</span><span class="what"><b>Transcription Specialist (Legal and Professional)</b><span>Secure, human-led transcription for legal and professional clients, with confidential handling: no AI tools used for sensitive material.</span></span></li>
+        <li><span class="when">2022 to now</span><span class="what"><b>Legal Transcriber, eScribers</b><span>Professional legal transcription focused on accuracy, consistency and careful handling of sensitive material.</span></span></li>
+        <li><span class="when">2021 to 2022</span><span class="what"><b>Freelance Transcriber, Ubiqus</b></span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="contact" aria-labelledby="contact-h">
+  <div class="grid">
+    <div><p class="kicker">Get in touch</p><h2 id="contact-h">Kate would love to connect</h2></div>
+    <div class="body">
+      <p>She is building Audio Genius publicly and sharing what she learns along the way, from transcription and ASR to product development, security, LegalTech and becoming a software founder without a traditional technology background.</p>
+      <div class="contact">
+        <a class="btn primary" href="https://www.linkedin.com/in/kate-curtis-evans/">LinkedIn</a>
+        <a class="btn ghost" href="https://audio-genius.com/">audio-genius.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>Photo of Kate at her desk by Matt Hinton Photography. Everything on this page comes from Kate's own LinkedIn profile and posts.</p>
+    <p>No cookies, no tracking. A sovereign website, made with the <a href="https://sovereignwebsite.org/">open pattern</a>. Source: <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans">github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans</a>.</p>
+  </div>
+</footer>
 </body>
 </html>
