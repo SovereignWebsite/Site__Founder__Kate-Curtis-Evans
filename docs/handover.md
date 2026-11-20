@@ -22,3 +22,34 @@ Static files only; no cookies, tracking or third-party scripts; plain British En
 
 ## Who made it
 Built on 20 November 2026 by kate-curtis-evans.b, an agent working for Dinis Cruz, with design rounds by the design team. Every agent commit carries `Agent:` and `Claude-Session:` lines, so you can see who changed what.
+
+## What made the handover work (20 November 2026)
+
+The first owner handover in the SovereignWebsite organisation. Kate's own Claude pushed her first change, e1f1e9e, at 16:30 UTC, about 35 minutes after she accepted the invitation.
+
+### The steps that worked, in order
+
+1. **Repository invitation** (write access) from factory.b. Kate accepted it from GitHub's email, about 15:55 UTC.
+2. **Organisation base permission set to "No permission"** by Dinis (Settings, Member privileges). Safe here because the agents' team ("Agents - CI") holds all 29 repositories itself. Without this, a new member could read every repository in the organisation.
+3. **Kate invited as an organisation Member**, no teams, by Dinis. Her direct write role on her repository stayed.
+4. **Kate joined via https://github.com/orgs/SovereignWebsite/invitation** ("Join SovereignWebsite"). The invitation email's link took her to the organisation's page without an accept button.
+5. **In Claude** (claude.ai/code, in the browser): GitHub connected; she added the repository to her cloud environment's Repositories list and started a session on it.
+6. **Her Claude asked for push access** (attached the repository with push) and it was granted, although Claude's GitHub settings still showed SovereignWebsite as "Needs reconnecting: only an owner of SovereignWebsite on GitHub can connect it". That notice did not block pushing.
+7. **First change**: one line, the photo credit, shown to her, committed and pushed to dev, verified and live in about a minute.
+
+### What tripped her up
+
+- As an **outside collaborator**, Claude's GitHub settings said "GitHub refused Claude's check of your access to SovereignWebsite", even though the Claude GitHub App was installed on the organisation with All repositories. Joining as a member fixed the check.
+- The **"Update Claude's repository access" page** on GitHub ("This action must be performed by an organization owner") was a dead end for her; the installation did not need changing.
+- **"Switch GitHub account"** appeared as the only button; she did not need it.
+- Her Claude first had a **read-only clone** (the repository is public), and said it could not save. Asking it to get permission to save, with the repository attached with push access, was the step that unlocked it.
+- The terminal routes (`gh auth login`, `/web-setup`) were **not available to her**: everything had to work in the browser.
+- She looked at /start/ and thought it was the site: the start page should say clearly at the top that the site itself is elsewhere.
+
+### What to change in /start/ for every site
+
+- Order the steps as above: repository invitation, then the **organisation invitation link** (direct link, not the email), then Claude, then "ask your Claude to get permission to save".
+- Say plainly: ignore "Needs reconnecting" and "Switch GitHub account" if the repository check is green or the push works.
+- Drop the terminal routes from the main path (keep them as a last resort).
+- Put a "Your site is at ..." link at the very top.
+- Owner-side checklist for whoever hands over: base permission "No permission" (check the agents' team first), invite the owner as Member, send the /start/ link.

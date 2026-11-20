@@ -1,0 +1,894 @@
+{
+ "commits": [
+  {
+   "commit": "c40a5ca",
+   "when": "2026-11-20T16:56:52+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Admin dashboard v2 (design.b's brief): sidebar, eight sections, data.json",
+   "added": 2165,
+   "removed": 471,
+   "files": [
+    "docs/handover.md",
+    "site/admin/board.html",
+    "site/admin/data.json",
+    "site/admin/data/checks.json",
+    "site/admin/guide/01-start.html",
+    "site/admin/guide/02-how-it-works.html",
+    "site/admin/guide/03-changing-content.html",
+    "site/admin/guide/04-designs.html",
+    "site/admin/guide/05-images.html",
+    "site/admin/guide/06-checks.html",
+    "site/admin/guide/07-publishing.html",
+    "site/admin/guide/08-limits.html",
+    "site/admin/guide/09-interview.html",
+    "site/admin/guide/10-help.html",
+    "site/admin/guide/index.html",
+    "site/admin/index.html",
+    "site/admin/made.html",
+    "site/admin/policy.html",
+    "site/shots/chooser-open-phone.png",
+    "site/shots/chooser-open.png",
+    "site/start/index.html",
+    "site/version.json",
+    "tools/__pycache__/dashboard.cpython-313.pyc",
+    "tools/backoffice.py",
+    "tools/check.js",
+    "tools/dashboard.py"
+   ]
+  },
+  {
+   "commit": "2b0cabd",
+   "when": "2026-11-20T16:50:19+00:00",
+   "author": "Kate's Claude",
+   "subject": "Minutes figure: 46,700 since launch in September 2026",
+   "added": 20,
+   "removed": 16,
+   "files": [
+    "docs/questions-for-kate.md",
+    "site/agents/questions.md",
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/newsroom.html",
+    "site/designs/profile.html",
+    "site/index.html",
+    "site/index.md"
+   ]
+  },
+  {
+   "commit": "78ba123",
+   "when": "2026-11-20T16:48:22+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Admin dashboard: KPIs and charts from the repository, no scripts",
+   "added": 540,
+   "removed": 51,
+   "files": [
+    "site/admin/board.html",
+    "site/admin/guide/01-start.html",
+    "site/admin/guide/02-how-it-works.html",
+    "site/admin/guide/03-changing-content.html",
+    "site/admin/guide/04-designs.html",
+    "site/admin/guide/05-images.html",
+    "site/admin/guide/06-checks.html",
+    "site/admin/guide/07-publishing.html",
+    "site/admin/guide/08-limits.html",
+    "site/admin/guide/09-interview.html",
+    "site/admin/guide/10-help.html",
+    "site/admin/guide/index.html",
+    "site/admin/index.html",
+    "site/admin/made.html",
+    "site/admin/policy.html",
+    "tools/__pycache__/dashboard.cpython-313.pyc",
+    "tools/backoffice.py",
+    "tools/dashboard.py"
+   ]
+  },
+  {
+   "commit": "3a14b91",
+   "when": "2026-11-20T16:45:13+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Editor links move to Admin: the top bar is for visitors",
+   "added": 91,
+   "removed": 93,
+   "files": [
+    "docs/prompt-for-your-claude.md",
+    "site/admin/board.html",
+    "site/admin/guide/01-start.html",
+    "site/admin/guide/02-how-it-works.html",
+    "site/admin/guide/02-how-it-works.md",
+    "site/admin/guide/03-changing-content.html",
+    "site/admin/guide/04-designs.html",
+    "site/admin/guide/04-designs.md",
+    "site/admin/guide/05-images.html",
+    "site/admin/guide/06-checks.html",
+    "site/admin/guide/07-publishing.html",
+    "site/admin/guide/08-limits.html",
+    "site/admin/guide/09-interview.html",
+    "site/admin/guide/10-help.html",
+    "site/admin/guide/index.html",
+    "site/admin/index.html",
+    "site/admin/made.html",
+    "site/admin/policy.html",
+    "site/agents/index.html",
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/index.html",
+    "site/designs/newsroom.html",
+    "site/designs/profile.html",
+    "site/index.html",
+    "tools/backoffice.py",
+    "tools/chooser.py"
+   ]
+  },
+  {
+   "commit": "0f46d42",
+   "when": "2026-11-20T16:43:43+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Board: issue 001 (date the figures) done by Kate's Claude in bce873d",
+   "added": 6,
+   "removed": 4,
+   "files": [
+    "issues/{open => done}/001-date-the-traction-figures.md",
+    "site/admin/board.html",
+    "site/admin/index.html",
+    "site/admin/made.html"
+   ]
+  },
+  {
+   "commit": "4fa1b25",
+   "when": "2026-11-20T16:43:27+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Back office, guide for Kate's Claude, behaviour policy, Issues-FS board",
+   "added": 1994,
+   "removed": 60,
+   "files": [
+    ".claude/settings.json",
+    "docs/prompt-for-your-claude.md",
+    "issues/blocked/009-design-pass-after-material.md",
+    "issues/done/010-site-built.md",
+    "issues/done/011-handover.md",
+    "issues/open/001-date-the-traction-figures.md",
+    "issues/open/002-headshot-credit.md",
+    "issues/open/003-logo-and-poster.md",
+    "issues/open/004-founder-story-interview.md",
+    "issues/open/005-choose-home-design.md",
+    "issues/open/006-photo-credit-wording.md",
+    "issues/open/007-more-photos.md",
+    "issues/open/008-user-quotes.md",
+    "policy/abp.json",
+    "site/admin/board.html",
+    "site/admin/guide/01-start.html",
+    "site/admin/guide/01-start.md",
+    "site/admin/guide/02-how-it-works.html",
+    "site/admin/guide/02-how-it-works.md",
+    "site/admin/guide/03-changing-content.html",
+    "site/admin/guide/03-changing-content.md",
+    "site/admin/guide/04-designs.html",
+    "site/admin/guide/04-designs.md",
+    "site/admin/guide/05-images.html",
+    "site/admin/guide/05-images.md",
+    "site/admin/guide/06-checks.html",
+    "site/admin/guide/06-checks.md",
+    "site/admin/guide/07-publishing.html",
+    "site/admin/guide/07-publishing.md",
+    "site/admin/guide/08-limits.html",
+    "site/admin/guide/08-limits.md",
+    "site/admin/guide/09-interview.html",
+    "site/admin/guide/09-interview.md",
+    "site/admin/guide/10-help.html",
+    "site/admin/guide/10-help.md",
+    "site/admin/guide/index.html",
+    "site/admin/guide/index.md",
+    "site/admin/index.html",
+    "site/admin/made.html",
+    "site/admin/policy.html",
+    "site/admin/policy.md",
+    "site/agents/index.html",
+    "site/agents/kate.md",
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/index.html",
+    "site/designs/newsroom.html",
+    "site/designs/profile.html",
+    "site/index.html",
+    "site/start/index.html",
+    "tools/backoffice.py",
+    "tools/check.js",
+    "tools/chooser.py",
+    "tools/thumbs.js"
+   ]
+  },
+  {
+   "commit": "bce873d",
+   "when": "2026-11-20T16:40:01+00:00",
+   "author": "Kate's Claude",
+   "subject": "Date the co-founder post figures: published in November 2026",
+   "added": 11,
+   "removed": 9,
+   "files": [
+    "docs/questions-for-kate.md",
+    "material/README.md",
+    "site/agents/questions.md",
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/newsroom.html",
+    "site/designs/profile.html",
+    "site/index.html",
+    "site/index.md"
+   ]
+  },
+  {
+   "commit": "e1f1e9e",
+   "when": "2026-11-20T16:30:41+00:00",
+   "author": "Kate's Claude",
+   "subject": "Home page: photo credit reads \"Photo by Matt Hinton Photography\"",
+   "added": 3,
+   "removed": 3,
+   "files": [
+    "site/index.html"
+   ]
+  },
+  {
+   "commit": "3433886",
+   "when": "2026-11-20T16:17:12+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Start page: join the organisation via the invitation link, then Check again",
+   "added": 3,
+   "removed": 2,
+   "files": [
+    "site/start/index.html"
+   ]
+  },
+  {
+   "commit": "c7bffb9",
+   "when": "2026-11-20T16:00:49+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Header: How it was made link, two tidy rows; start page: reconnect fix",
+   "added": 29,
+   "removed": 17,
+   "files": [
+    "site/agents/index.html",
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/index.html",
+    "site/designs/newsroom.html",
+    "site/designs/profile.html",
+    "site/index.html",
+    "site/shots/chooser-open-phone.png",
+    "site/shots/chooser-open.png",
+    "site/start/index.html"
+   ]
+  },
+  {
+   "commit": "275bc39",
+   "when": "2026-11-20T15:57:47+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Add \"Star on GitHub\" to the top bar",
+   "added": 18,
+   "removed": 10,
+   "files": [
+    "site/admin/index.html",
+    "site/agents/index.html",
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/index.html",
+    "site/designs/newsroom.html",
+    "site/designs/profile.html",
+    "site/index.html",
+    "site/shots/chooser-open-phone.png",
+    "site/shots/chooser-open.png"
+   ]
+  },
+  {
+   "commit": "5cabbc9",
+   "when": "2026-11-20T15:49:11+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Kate's site first: family links in a top-right menu; /agents/, /llms.txt, /admin/; share previews",
+   "added": 578,
+   "removed": 320,
+   "files": [
+    "site/admin/index.html",
+    "site/agents/index.html",
+    "site/agents/kate.md",
+    "site/agents/questions.md",
+    "site/agents/visitor.md",
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/index.html",
+    "site/designs/newsroom.html",
+    "site/designs/profile.html",
+    "site/img/designs/edit.webp",
+    "site/img/share-card.jpg",
+    "site/index.html",
+    "site/index.md",
+    "site/llms.txt",
+    "site/shots/chooser-open-phone.png",
+    "site/shots/chooser-open.png",
+    "site/start/index.html"
+   ]
+  },
+  {
+   "commit": "2b403e4",
+   "when": "2026-11-20T15:38:45+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Top bar is Kate's own: name, co-founder, Audio Genius, LinkedIn, designs",
+   "added": 274,
+   "removed": 210,
+   "files": [
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/index.html",
+    "site/designs/newsroom.html",
+    "site/designs/profile.html",
+    "site/index.html"
+   ]
+  },
+  {
+   "commit": "89e5043",
+   "when": "2026-11-20T15:29:39+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Round 8: even lanes, phone lanes open from their heading, readable tags, chooser pushes down",
+   "added": 52,
+   "removed": 29,
+   "files": [
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/index.html",
+    "site/designs/newsroom.html",
+    "site/designs/profile.html",
+    "site/img/designs/board.webp",
+    "site/img/designs/edit.webp",
+    "site/index.html"
+   ]
+  },
+  {
+   "commit": "9346b32",
+   "when": "2026-11-20T15:24:44+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Round 6, wow not bland: visual chooser and four bold redesigns",
+   "added": 501,
+   "removed": 172,
+   "files": [
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/index.html",
+    "site/designs/newsroom.html",
+    "site/designs/profile.html",
+    "site/img/designs/board.webp",
+    "site/img/designs/brief.webp",
+    "site/img/designs/edit.webp",
+    "site/img/designs/newsroom.webp",
+    "site/img/designs/transcript.webp",
+    "site/index.html"
+   ]
+  },
+  {
+   "commit": "6ed53ed",
+   "when": "2026-11-20T15:17:13+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "New family bar from the Factory (fc21653): folded on phones",
+   "added": 296,
+   "removed": 47,
+   "files": [
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/index.html",
+    "site/designs/newsroom.html",
+    "site/designs/profile.html",
+    "site/index.html"
+   ]
+  },
+  {
+   "commit": "48337d1",
+   "when": "2026-11-20T15:15:06+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Add /start/: Kate's step-by-step takeover page",
+   "added": 129,
+   "removed": 0,
+   "files": [
+    "docs/handover.md",
+    "site/start/index.html"
+   ]
+  },
+  {
+   "commit": "91fe979",
+   "when": "2026-11-20T15:10:36+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Board: numbers on their own line, \"Open: looking for a co-founder\", 1rem pills on phones",
+   "added": 4,
+   "removed": 3,
+   "files": [
+    "site/index.html"
+   ]
+  },
+  {
+   "commit": "dcf8a5f",
+   "when": "2026-11-20T15:07:35+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Five designs with The Newsroom; chooser scrolls on phones; 3.html forwards",
+   "added": 232,
+   "removed": 28,
+   "files": [
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/3.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/index.html",
+    "site/designs/newsroom.html",
+    "site/designs/profile.html",
+    "site/index.html"
+   ]
+  },
+  {
+   "commit": "31a98f2",
+   "when": "2026-11-20T15:02:30+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Choose-a-design bar on every page, home is The Workflow Board, handover",
+   "added": 505,
+   "removed": 372,
+   "files": [
+    "docs/guidelines-for-founder-sites.md",
+    "docs/handover.md",
+    "docs/prompt-for-your-claude.md",
+    "docs/questions-for-kate.md",
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/3.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/index.html",
+    "site/designs/profile.html",
+    "site/index.html"
+   ]
+  },
+  {
+   "commit": "6027d61",
+   "when": "2026-11-20T14:57:24+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Reflow at 320 px: let the footer source link wrap",
+   "added": 2,
+   "removed": 1,
+   "files": [
+    "site/index.html"
+   ]
+  },
+  {
+   "commit": "b0554b2",
+   "when": "2026-11-20T14:56:11+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Design round 2: quieter designs link, grouped experience, box text in --fg",
+   "added": 8,
+   "removed": 4,
+   "files": [
+    "site/index.html"
+   ]
+  },
+  {
+   "commit": "dde6fc9",
+   "when": "2026-11-20T14:53:33+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Design 4: hero sentence back to Kate's own wording",
+   "added": 1,
+   "removed": 1,
+   "files": [
+    "site/designs/4.html"
+   ]
+  },
+  {
+   "commit": "3ec583f",
+   "when": "2026-11-20T14:52:47+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Design round 1: contrast and target fixes, favicon, five designs",
+   "added": 901,
+   "removed": 8,
+   "files": [
+    "site/designs/1.html",
+    "site/designs/2.html",
+    "site/designs/3.html",
+    "site/designs/4.html",
+    "site/designs/5.html",
+    "site/designs/index.html",
+    "site/favicon.svg",
+    "site/index.html"
+   ]
+  },
+  {
+   "commit": "a256397",
+   "when": "2026-11-20T14:48:15+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Replace the signing warning with \"accept the invitation first\"",
+   "added": 1,
+   "removed": 1,
+   "files": [
+    "docs/prompt-for-your-claude.md"
+   ]
+  },
+  {
+   "commit": "82135df",
+   "when": "2026-11-20T14:46:38+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Say plainly that Kate pushes to dev from her own account",
+   "added": 2,
+   "removed": 2,
+   "files": [
+    "docs/prompt-for-your-claude.md"
+   ]
+  },
+  {
+   "commit": "f0d5e3b",
+   "when": "2026-11-20T14:46:12+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Add how Kate connects her Claude to GitHub",
+   "added": 28,
+   "removed": 1,
+   "files": [
+    "docs/prompt-for-your-claude.md"
+   ]
+  },
+  {
+   "commit": "1717fbc",
+   "when": "2026-11-20T14:45:04+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Add a paste-in prompt for Kate's own Claude",
+   "added": 29,
+   "removed": 0,
+   "files": [
+    "docs/prompt-for-your-claude.md"
+   ]
+  },
+  {
+   "commit": "28823d2",
+   "when": "2026-11-20T14:37:16+00:00",
+   "author": "kate-curtis-evans.b",
+   "subject": "Build Kate Curtis-Evans founder site, first draft",
+   "added": 205,
+   "removed": 16,
+   "files": [
+    "site/img/kate-at-desk-640.webp",
+    "site/img/kate-at-desk.webp",
+    "site/index.html"
+   ]
+  },
+  {
+   "commit": "301c38f",
+   "when": "2026-11-20T14:33:55+00:00",
+   "author": "sites.b",
+   "subject": "Material for Kate's site, from Dinis",
+   "added": 161,
+   "removed": 0,
+   "files": [
+    "material/README.md",
+    "material/audio-genius-logo-post.png",
+    "material/audio-genius-needs-you-poster.webp",
+    "material/linkedin-banner-and-headshot.webp",
+    "material/linkedin-post-cofounder.txt",
+    "material/linkedin-post-foundations-first.webp",
+    "material/linkedin-profile.pdf",
+    "material/linkedin-profile.txt",
+    "material/photo-at-desk-with-dog.webp"
+   ]
+  },
+  {
+   "commit": "2c25504",
+   "when": "2026-11-20T14:32:51+00:00",
+   "author": "Factory (bot)",
+   "subject": "Seed 4 files from SovereignWebsite__Factory (org-apply)",
+   "added": 82,
+   "removed": 0,
+   "files": [
+    ".github/workflows/pages.yml",
+    "CLAUDE.md",
+    "site/CNAME",
+    "site/index.html"
+   ]
+  },
+  {
+   "commit": "daeea51",
+   "when": "2026-11-20T14:32:44+00:00",
+   "author": "Factory (bot)",
+   "subject": "Initial commit",
+   "added": 2,
+   "removed": 0,
+   "files": [
+    "README.md"
+   ]
+  }
+ ],
+ "shallow": false,
+ "images": [
+  {
+   "path": "favicon.svg",
+   "bytes": 410,
+   "dims": "",
+   "credit": "Tab icon"
+  },
+  {
+   "path": "img/kate-at-desk.webp",
+   "bytes": 125038,
+   "dims": "1280 x 882",
+   "credit": "Photo by Matt Hinton Photography"
+  },
+  {
+   "path": "img/kate-at-desk-640.webp",
+   "bytes": 38476,
+   "dims": "640 x 441",
+   "credit": "Photo by Matt Hinton Photography"
+  },
+  {
+   "path": "img/share-card.jpg",
+   "bytes": 109053,
+   "dims": "1200 x 630",
+   "credit": "Link preview, made from the Matt Hinton Photography photo"
+  },
+  {
+   "path": "img/designs/transcript.webp",
+   "bytes": 17208,
+   "dims": "640 x 400",
+   "credit": "Screenshot of a design, for the chooser"
+  },
+  {
+   "path": "img/designs/board.webp",
+   "bytes": 24346,
+   "dims": "640 x 400",
+   "credit": "Screenshot of a design, for the chooser"
+  },
+  {
+   "path": "img/designs/edit.webp",
+   "bytes": 20796,
+   "dims": "640 x 400",
+   "credit": "Screenshot of a design, for the chooser"
+  },
+  {
+   "path": "img/designs/brief.webp",
+   "bytes": 21070,
+   "dims": "640 x 400",
+   "credit": "Screenshot of a design, for the chooser"
+  },
+  {
+   "path": "img/designs/newsroom.webp",
+   "bytes": 22060,
+   "dims": "640 x 400",
+   "credit": "Screenshot of a design, for the chooser"
+  }
+ ],
+ "checks": [
+  {
+   "when": "2026-11-20T16:50Z",
+   "commit": "78ba123",
+   "views": 102,
+   "problems": 0,
+   "overflow": 0,
+   "small_targets": 0,
+   "external_requests": 0,
+   "broken_links": 0
+  },
+  {
+   "when": "2026-11-20T16:55Z",
+   "commit": "78ba123",
+   "views": 102,
+   "problems": 0,
+   "overflow": 0,
+   "small_targets": 0,
+   "external_requests": 0,
+   "broken_links": 0
+  },
+  {
+   "when": "2026-11-20T16:56Z",
+   "commit": "78ba123",
+   "views": 102,
+   "problems": 0,
+   "overflow": 0,
+   "small_targets": 0,
+   "external_requests": 0,
+   "broken_links": 0
+  },
+  {
+   "when": "2026-11-20T16:57Z",
+   "commit": "c40a5ca",
+   "views": 102,
+   "problems": 0,
+   "overflow": 0,
+   "small_targets": 0,
+   "external_requests": 0,
+   "broken_links": 0
+  }
+ ],
+ "datasets": [
+  {
+   "path": "index.md",
+   "bytes": 3118,
+   "records": 16,
+   "unit": "facts (list items)",
+   "preview": "# Kate Curtis-Evans\n\nFounder of Audio Genius (https://audio-genius.com/), legal transcription and workflow management, built by a transcriber, for transcription professionals. Based in the United Kingdom. Looking for a t"
+  },
+  {
+   "path": "llms.txt",
+   "bytes": 2394,
+   "records": 10,
+   "unit": "facts (list items)",
+   "preview": "# Kate Curtis-Evans\n\n> Personal founder website of Kate Curtis-Evans, a practising legal transcriber in the United Kingdom who built Audio Genius (https://audio-genius.com/), a legal transcription and workflow platform, "
+  },
+  {
+   "path": "admin/data/checks.json",
+   "bytes": 719,
+   "records": 4,
+   "unit": "records",
+   "preview": "[\n {\n  \"when\": \"2026-11-20T16:50Z\",\n  \"commit\": \"78ba123\",\n  \"views\": 102,\n  \"problems\": 0,\n  \"overflow\": 0,\n  \"small_targets\": 0,\n  \"external_requests\": 0,\n  \"broken_links\": 0\n },\n {\n  \"when\": \"2026-11-20T16:55Z\",\n  \"co"
+  },
+  {
+   "path": "admin/data.json",
+   "bytes": 23502,
+   "records": 10,
+   "unit": "keys",
+   "preview": "{\n \"commits\": [\n  {\n   \"commit\": \"c40a5ca\",\n   \"when\": \"2026-11-20T16:56:52+00:00\",\n   \"author\": \"kate-curtis-evans.b\",\n   \"subject\": \"Admin dashboard v2 (design.b's brief): sidebar, eight sections, data.json\",\n   \"added"
+  },
+  {
+   "path": "version.json",
+   "bytes": 231,
+   "records": 5,
+   "unit": "keys",
+   "preview": "{\n \"site\": \"kate-curtis-evans.founder.sovereignweb.site\",\n \"built_from_commit\": \"c40a5ca\",\n \"built_at\": \"2026-11-20T16:56Z\",\n \"repository\": \"https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans\",\n \"branch"
+  },
+  {
+   "path": "../issues/",
+   "bytes": 0,
+   "records": 11,
+   "unit": "tasks",
+   "preview": "open 7, blocked 1, done 3"
+  }
+ ],
+ "issues": {
+  "open": [
+   {
+    "file": "issues/open/004-founder-story-interview.md",
+    "title": "Interview Kate for her founder story",
+    "priority": "high"
+   },
+   {
+    "file": "issues/open/002-headshot-credit.md",
+    "title": "Credit and permission for the LinkedIn headshot",
+    "priority": "normal"
+   },
+   {
+    "file": "issues/open/003-logo-and-poster.md",
+    "title": "Permission for the Audio Genius logo and poster",
+    "priority": "normal"
+   },
+   {
+    "file": "issues/open/005-choose-home-design.md",
+    "title": "Kate chooses her home design",
+    "priority": "normal"
+   },
+   {
+    "file": "issues/open/007-more-photos.md",
+    "title": "More photos from Kate",
+    "priority": "normal"
+   },
+   {
+    "file": "issues/open/006-photo-credit-wording.md",
+    "title": "Same photo credit wording everywhere",
+    "priority": "low"
+   },
+   {
+    "file": "issues/open/008-user-quotes.md",
+    "title": "Quotes from Audio Genius users",
+    "priority": "low"
+   }
+  ],
+  "blocked": [
+   {
+    "file": "issues/blocked/009-design-pass-after-material.md",
+    "title": "Design pass after Kate's own material",
+    "priority": "normal"
+   }
+  ],
+  "done": [
+   {
+    "file": "issues/done/001-date-the-traction-figures.md",
+    "title": "Date the traction figures",
+    "priority": "high"
+   },
+   {
+    "file": "issues/done/011-handover.md",
+    "title": "Hand the site over to Kate",
+    "priority": "high"
+   },
+   {
+    "file": "issues/done/010-site-built.md",
+    "title": "Build the founder site",
+    "priority": "normal"
+   }
+  ]
+ },
+ "rounds": [
+  {
+   "round": 1,
+   "rating": 2,
+   "synthetic_users": null
+  },
+  {
+   "round": 2,
+   "rating": 2,
+   "synthetic_users": [
+    4,
+    4,
+    4,
+    4,
+    4
+   ]
+  },
+  {
+   "round": 3,
+   "rating": 2,
+   "synthetic_users": null
+  },
+  {
+   "round": 4,
+   "rating": 2,
+   "synthetic_users": null
+  },
+  {
+   "round": 5,
+   "rating": 4,
+   "synthetic_users": [
+    4,
+    3,
+    4,
+    4,
+    4
+   ]
+  },
+  {
+   "round": 6,
+   "rating": 3,
+   "synthetic_users": null
+  },
+  {
+   "round": 7,
+   "rating": 3,
+   "synthetic_users": [
+    4,
+    4,
+    4,
+    4,
+    4
+   ]
+  },
+  {
+   "round": 8,
+   "rating": 4,
+   "synthetic_users": null
+  }
+ ],
+ "files": 56,
+ "bytes": 950205,
+ "version": {
+  "site": "kate-curtis-evans.founder.sovereignweb.site",
+  "built_from_commit": "c40a5ca",
+  "built_at": "2026-11-20T16:57Z",
+  "repository": "https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans",
+  "branch": "dev"
+ }
+}

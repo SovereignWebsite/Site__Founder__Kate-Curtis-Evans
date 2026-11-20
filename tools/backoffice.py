@@ -41,7 +41,7 @@ header.bo div{max-width:76rem;margin:0 auto;padding:.7rem 1rem;display:flex;flex
 header.bo .t{font-weight:700;margin-right:auto}
 header.bo nav a{display:inline-block;min-height:28px;line-height:28px;padding:0 .5rem;border-radius:6px;color:var(--fg);text-decoration:none}
 header.bo nav a:hover,header.bo nav a[aria-current="page"]{background:var(--chip)}
-main{max-width:76rem;margin:0 auto;padding:1.6rem 1rem 3rem}
+main.full{max-width:none;padding:0}main{max-width:76rem;margin:0 auto;padding:1.6rem 1rem 3rem}
 h1{font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.2;margin:0 0 .4rem}
 h2{font-size:1.2rem;margin:2rem 0 .6rem}h3{font-size:1rem;margin:1.4rem 0 .4rem}
 p,li{max-width:46rem}.lede{color:var(--muted);margin:0 0 1.4rem}
@@ -72,7 +72,7 @@ li a,td a,nav a,.file a{display:inline-block;min-height:24px;line-height:24px}
 '''
 
 
-def page(title, desc, body, cur, depth=1):
+def page(title, desc, body, cur, depth=1, full=False):
     up = '../' * depth
     nav = [('index.html', 'Admin'), ('board.html', 'Board'), ('guide/index.html', 'Guide'),
            ('policy.html', 'Policy'), ('made.html', 'How it was made')]
@@ -94,7 +94,7 @@ def page(title, desc, body, cur, depth=1):
 <a class="skip" href="#main">Skip to content</a>
 <header class="bo"><div><span class="t">Kate Curtis-Evans · admin</span>
 <nav aria-label="Admin">{links}<a href="{up}">Live site</a></nav></div></header>
-<main id="main">
+<main id="main"{' class="full"' if full else ''}>
 {body}
 <footer>The admin area of <a href="{up}">kate-curtis-evans.founder.sovereignweb.site</a>. Built from the repository by tools/backoffice.py. <a href="{REPO}">Repository</a> · <a href="{REPO}/actions">Publishing runs</a> · No cookies, no tracking.</footer>
 </main>
@@ -262,25 +262,8 @@ def main():
     # made
     open(os.path.join(ADMIN, 'made.html'), 'w').write(page('How it was made', 'How Kate Curtis-Evans\'s site was made: the agents, the design rounds and every commit.', made(), 'made.html'))
     # hub
-    top = ''.join(f'<li><a href="{REPO}/blob/dev/{it["file"]}">{inline(it["title"])}</a></li>' for it in cols['open'][:4])
-    hub = f'''<h1>Admin</h1>
-<p class="lede">Everything about editing and running this site, for Kate and for her Claude. Visitors do not need anything here. The live site is at <a href="../">kate-curtis-evans.founder.sovereignweb.site</a>.</p>
-{dashboard.render(ROOT, SITE, cols)}
-<h2>Where to go</h2>
-<div class="tiles">
-<a class="tile" href="board.html"><b>Board</b><span>What is open, blocked and done.</span><span class="counts"><span class="pill">Open {n["open"]}</span><span class="pill">Blocked {n["blocked"]}</span><span class="pill">Done {n["done"]}</span></span></a>
-<a class="tile" href="guide/index.html"><b>Guide for your Claude</b><span>Ten pages: how the site works, changing facts in every design, photos, checks, publishing, limits, interviewing Kate.</span></a>
-<a class="tile" href="guide/09-interview.html"><b>Interview Kate</b><span>A prompt for Kate's Claude to draw out her story and facts, one question at a time.</span></a>
-<a class="tile" href="policy.html"><b>Policy</b><span>What Kate's Claude may and may not change or reach, and what is enforced.</span></a>
-<a class="tile" href="made.html"><b>How it was made</b><span>The agents, eight design rounds and every commit.</span></a>
-<a class="tile" href="../start/"><b>Start here</b><span>How Kate took over the site: GitHub, Claude, the first change.</span></a>
-</div>
-<h2>Next up</h2>
-<ol>{top}</ol>
-<h2>For Kate's Claude</h2>
-<p>Begin every session with <a href="guide/01-start.html">Start of every session</a>. To be interviewed, Kate pastes:</p>
-<blockquote><p>Read {U}/admin/guide/09-interview.md and interview me for my website. Start with the open questions in docs/questions-for-kate.md. Ask one question at a time, use my own words, and after each answer show me the change you would make and wait for my yes.</p></blockquote>'''
-    open(os.path.join(ADMIN, 'index.html'), 'w').write(page('Admin', 'The admin area of Kate Curtis-Evans\'s site: board, guide, policy and how it was made.', hub, 'index.html'))
+    hub = dashboard.render(ROOT, SITE, cols)
+    open(os.path.join(ADMIN, 'index.html'), 'w').write(page('Admin', 'The admin area of Kate Curtis-Evans\'s site: board, guide, policy and how it was made.', hub, 'index.html', full=True))
     print('back office built:', n)
 
 
