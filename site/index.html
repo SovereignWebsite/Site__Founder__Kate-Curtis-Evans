@@ -73,13 +73,13 @@ blockquote footer{font-family:var(--sans);font-size:.82rem;color:var(--soft);mar
 .cards{display:grid;gap:1rem;margin-top:.4rem}@media (min-width:40rem){.cards{grid-template-columns:1fr 1fr}}
 .card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:1.2rem}
 .card h3{font-size:1rem;margin:0 0 .4rem}
-.card p{margin:0;color:var(--muted);font-size:.95rem}
+.card p{margin:0;color:var(--fg);font-size:.95rem}
 .feature{background:var(--tint);border-radius:10px;padding:1.6rem;margin-bottom:1.4rem}
 .feature h3{font-family:var(--serif);font-size:1.35rem;margin:0 0 .7rem;font-weight:600}
 .feature dl{display:grid;gap:.9rem;margin:1rem 0 0}
 @media (min-width:44rem){.feature dl{grid-template-columns:1fr 1fr}}
 .feature dt{font-weight:650;font-size:.9rem;margin-bottom:.2rem}
-.feature dd{margin:0;color:var(--muted);font-size:.95rem}
+.feature dd{margin:0;color:var(--fg);font-size:.95rem}
 
 .timeline{list-style:none;margin:0;padding:0}
 .timeline li{display:grid;gap:.15rem 1.5rem;padding:1rem 0;border-bottom:1px solid var(--line)}
@@ -88,6 +88,7 @@ blockquote footer{font-family:var(--sans);font-size:.82rem;color:var(--soft);mar
 .timeline .when{color:var(--soft);font-size:.9rem;font-variant-numeric:tabular-nums}
 .timeline .what b{display:block}
 .timeline .what span{color:var(--muted);font-size:.95rem}
+.tl-group{font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);font-weight:600;margin:1.4rem 0 .6rem}
 
 .contact{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.2rem}
 .site-foot{border-top:1px solid var(--line);padding:2rem 0 3rem;font-size:.85rem;color:var(--soft)}
@@ -152,7 +153,7 @@ blockquote footer{font-family:var(--sans);font-size:.82rem;color:var(--soft);mar
       <p>It is being developed with feedback from real transcription professionals, and some of the best ideas for the platform have come directly from the people testing it.</p>
       <div class="feature">
         <h3>Foundations first</h3>
-        <p style="margin:0;color:var(--muted)">Kate has stopped adding new features on purpose, including a legal glossary and template uploads she was looking forward to building. What comes first is the part nobody sees: privacy and data protection, working through what the platform holds and how long it keeps it, one decision at a time.</p>
+        <p style="margin:0">Kate has stopped adding new features on purpose, including a legal glossary and template uploads she was looking forward to building. What comes first is the part nobody sees: privacy and data protection, working through what the platform holds and how long it keeps it, one decision at a time.</p>
       </div>
       <h3 style="font-size:1rem;margin:1.6rem 0 .6rem">Where it stands, in Kate's words</h3>
       <div class="stats" role="list">
@@ -204,6 +205,9 @@ blockquote footer{font-family:var(--sans);font-size:.82rem;color:var(--soft);mar
     <div class="body">
       <ol class="timeline">
         <li><span class="when">Nov 2025 to now</span><span class="what"><b>Founder, Audio Genius</b><span>A secure transcription workspace designed to support professional transcription workflows.</span></span></li>
+      </ol>
+      <p class="tl-group">Alongside it, since 2021</p>
+      <ol class="timeline">
         <li><span class="when">Mar 2021 to now</span><span class="what"><b>Transcription Specialist (Legal and Professional)</b><span>Secure, human-led transcription for legal and professional clients, with confidential handling: no AI tools used for sensitive material.</span></span></li>
         <li><span class="when">2022 to now</span><span class="what"><b>Legal Transcriber, eScribers</b><span>Professional legal transcription focused on accuracy, consistency and careful handling of sensitive material.</span></span></li>
         <li><span class="when">2021 to 2022</span><span class="what"><b>Freelance Transcriber, Ubiqus</b></span></li>
@@ -229,7 +233,7 @@ blockquote footer{font-family:var(--sans);font-size:.82rem;color:var(--soft);mar
 
 <footer class="site-foot">
   <div class="wrap">
-    <p>Five alternative designs for this page, for Kate to choose from: <a href="designs/">see the designs</a>.</p>
+    <p><a href="designs/">This page in five other designs</a></p>
     <p>Photo of Kate at her desk by Matt Hinton Photography. Everything on this page comes from Kate's own LinkedIn profile and posts.</p>
     <p>No cookies, no tracking. A sovereign website, made with the <a href="https://sovereignwebsite.org/">open pattern</a>. Source: <a href="https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans">github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans</a>.</p>
   </div>
