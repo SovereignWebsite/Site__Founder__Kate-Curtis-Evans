@@ -22,7 +22,7 @@ ROLES = {"Kate's Claude": 'Kate, through her own Claude: the owner, editing her 
          'kate-curtis-evans.b': 'Built the site, the handover and this admin area',
          'Factory (bot)': 'Made the repository, the address and the publishing pipeline',
          'sites.b': 'Took the request from Dinis Cruz and committed the material'}
-CREDITS = {'kate-at-desk': 'Photo by Matt Hinton Photography', 'share-card': 'Link preview, made from the Matt Hinton Photography photo',
+CREDITS = {'kate-at-desk': 'Photo by Matt Hinton Photography', 'kate-headshot': 'Photo: Kate Curtis-Evans','share-card': 'Link preview, made from the Matt Hinton Photography photo',
            'designs/': 'Screenshot of a design, for the chooser', 'favicon': 'Tab icon'}
 PROMPTS = [
     ('Words', 'Change my headline to "..." on every design.', 'Your Claude finds the headline in all five designs and the facts file, shows you the change, and publishes it when you say yes.'),

@@ -14,6 +14,7 @@ Kate, the site only says what you have said yourself (your LinkedIn profile and 
 
 ## Images
 5. Who took the headshot on your LinkedIn banner? May the site use it, with their credit?
+   - **Answered by Kate (20 November 2026):** it is her own photo, made with ChatGPT. The site may use it, credited "Photo: Kate Curtis-Evans". Now a small round portrait beside her name in the top bar of every design (site/img/kate-headshot.webp), credited in each footer.
 6. May the site use the Audio Genius logo, and the "Audio Genius needs you" poster?
 7. Do you have other photos, or screenshots of Audio Genius, you would like on the site?
 

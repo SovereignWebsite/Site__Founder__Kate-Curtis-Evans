@@ -25,7 +25,9 @@ CSS = '''<style>
 .pick{font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#1c1b19;color:#f2eee6;border-bottom:1px solid #000;position:relative;z-index:20}
 .pick .pick-row{max-width:72rem;margin:0 auto;padding:.45rem 1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .4rem}
 .pick a{color:#f2eee6;text-decoration:none}
-.pick .pick-name{display:flex;flex-direction:column;line-height:1.15;margin-right:auto;padding:.15rem 0;min-height:24px}
+.pick .pick-name{display:flex;align-items:center;gap:.6rem;line-height:1.15;margin-right:auto;padding:.15rem 0;min-height:24px}
+.pick .pick-face{display:block;flex:none;width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid #f2eee6;background:#3a3833}
+.pick .pick-name .pick-nm{display:flex;flex-direction:column;font-size:inherit;color:inherit}
 .pick .pick-name b{font-size:15px}.pick .pick-name span{font-size:12.5px;color:#d8d2c6}
 .pick .pick-links{list-style:none;display:flex;flex-wrap:wrap;gap:0 .2rem;margin:0 .4rem 0 0;padding:0}
 .pick .pick-links a{display:inline-block;min-height:28px;line-height:28px;padding:0 .55rem;border-radius:999px;white-space:nowrap}
@@ -57,7 +59,7 @@ CSS = '''<style>
 .pick .pick-fam-menu a{display:block;padding:0 .6rem;min-height:30px;line-height:30px;border-radius:6px}
 .pick .pick-fam-menu a:hover,.pick .pick-fam-menu a:focus-visible{background:#3a3833;text-decoration:underline}
 .pick .pick-links{order:5;flex-basis:100%;margin:0 -.55rem}
-@media (max-width:40rem){.pick .pick-cards ul{grid-template-columns:1fr 1fr}}
+@media (max-width:40rem){.pick .pick-cards ul{grid-template-columns:1fr 1fr}.pick .pick-face{width:26px;height:26px;border-width:1.5px}.pick .pick-name{gap:.3rem}.pick .pick-row{padding-left:.6rem;padding-right:.6rem;column-gap:.3rem}.pick .pick-design summary{padding:0 .55rem}}
 @media (max-width:22rem){.pick .pick-links a{padding:0 .38rem;font-size:13.5px}.pick .pick-row{gap:.3rem}}
 @media print{.pick{display:none}}
 .site-links{margin:.6rem 0 0}.site-links a{display:inline-block;min-height:24px;line-height:24px;margin-right:.9rem}
@@ -87,7 +89,9 @@ def bar(cur):
            f'<div class="pick-fam-menu"><p>For Kate</p><ul><li><a href="{up}admin/">Admin</a></li><li><a href="{up}admin/message/">Message the agent</a></li><li><a href="{up}start/">Start here</a></li></ul><p>Made with Sovereign Website</p><ul>'
            + ''.join(f'<li><a href="{u}">{n}</a></li>' for n, u in FAMILY) + '</ul></div></details>')
     return ('<nav class="pick" aria-label="Kate Curtis-Evans"><div class="pick-row">'
-            f'<a class="pick-name" href="{rel("index.html", cur)}"><b>Kate Curtis-Evans</b><span>Founder, Audio Genius</span></a>'
+            f'<a class="pick-name" href="{rel("index.html", cur)}">'
+            f'<img class="pick-face" src="{up}img/kate-headshot.webp" width="40" height="40" alt="">'
+            '<span class="pick-nm"><b>Kate Curtis-Evans</b><span>Founder, Audio Genius</span></span></a>'
             '<ul class="pick-links">'
             f'<li><a href="{cof}">Co-founder wanted</a></li>'
             '<li><a href="https://audio-genius.com/">Audio Genius</a></li>'
