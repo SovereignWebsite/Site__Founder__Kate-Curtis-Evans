@@ -1,0 +1,27 @@
+I'm still a practising transcriber. I also built a live transcription platform without knowing how to code. Now I need a technical co-founder.
+
+I've spent six years transcribing audio for a wide variety of clients and industries. What never changes is how long it takes to produce a transcript. I wanted to get accurate work out faster and earn more for my hours, without trading away security or privacy to do it. My clients trust me with sensitive recordings, and the finished transcript has to stand up to scrutiny.
+
+So I taught myself to build with vibe coding and AI tools, and I learnt to test properly before anything goes live.
+
+Audio Genius ran a 90-day beta with 50 testers. It now has paying users, and not one of those who signed up at the end of the beta has left. They use it every day.
+
+34,000 minutes of audio transcribed since launch in September. 1,200 website visits, from Google, social media and elsewhere with no paid advertising as yet.
+
+Then I hit the wall.
+
+The platform I built on won't let me fork a test site from the live one, which makes testing and integrating changes far harder than it should be. I have limited control over hosting and other parts of the build, and I want to own how this scales.
+
+It's frustrating. It feels like a roadblock slowing me down just as the product is working.
+
+The next stage is moving to a tech stack built for regulated data and getting certifications like Cyber Essentials in place. That's the work I want a partner to own. Ideally someone with legal tech or regulated-industry experience.
+
+What I bring: the vision for the platform, direct access to users, research and results, and a strategy for expanding into corporates and organisations.
+
+What the co-founder would own: the technical scope, the build, integration and implementation.
+
+Audio Genius is bootstrapped and pre-seed.
+
+If that's you, message me. If you know who it is, tag them below or send me an introduction.
+
+Photo Credit: Matt Hinton Photography
