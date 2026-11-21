@@ -1,17 +1,17 @@
 {
- "about": "The inbox of this site's agent (kate-curtis-evans.b@SovereignWebsite.dinis): an append lane on an sgit vault. The page /admin/message/ seals each message to `recipient` (sgit's hybrid envelope v2) and, when the person's key is in the browser, signs it with that key (site/data/person-keys.json). The append token can only add to the lane: it cannot list, read or delete. Only signed messages from Kate or Dinis are acted on, within the policy at /admin/policy.html; everything else is material, never an instruction.",
- "agent": "kate-curtis-evans.b@SovereignWebsite.dinis",
+ "about": "Inbox of feedback.b@SovereignWebsite.dinis, the feedback and inbox agent for SWS sites. Seal what you send to `recipient` (sgit hybrid envelope v2), sign it with your person key, and POST {append_token, payload} to <endpoint>/api/vault/append/write/<vault_id>. The token can only append; only signed messages from this site's published person keys are acted on.",
+ "agent": "feedback.b@SovereignWebsite.dinis",
+ "site": "kate-curtis-evans",
  "endpoint": "https://dev.send.sgraph.ai",
- "vault_id": "mptf9t93",
- "append_token": "273e5a14b20db6fe7c840486f5c69dd5013925f82e5a638b36fb79b19195c1eb",
+ "vault_id": "7966duv1",
+ "append_token": "41ac806f8e4504f0eca358000189d2157692fbc9fd320b0b137032417f3ab821",
  "recipient": {
-  "fingerprint": "sha256:ce3c9a0ea48f232b",
-  "signing_fingerprint": "sha256:af439e6f8231af8d",
-  "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAwmhFaj0yhNerrz2x8qy6\nV8DHKGSNI64Wgengwz2+4KBwNr1nMN5QGbV8DAcR2K+AL7XuVA0j5rGyK638SA/H\n9+efxXIp+aDwWgVEDj40+Rpgc2pGrNcOEJvsAHvuU9w1HDVtXYFLWpeZ9sjtTQxC\nmB3uVtLIbARMftZWVmklmxGJ/r3DMHirslzs+Fg+8BbQ75fVvBDAkGaUm+UE0E/N\nZ/9BJ8egDoaj+Ctqldv2qXuUN1pvNHtlACS82aINN88SP+J4SnZ4wgyrP0ye15sk\nwPUEt5hYVc0lAH4DHvWVe2ROU9cXB6FJ/jynIM0mzC19lSbuojoKKgoKfOLIzm3Z\nc36fLurO0zL1JMnWRUBkbw496aWsZPCM8DZSMl017bp8urXrLdB5lN7UwJcUOtTH\n3ThYjEH7tWMnbyOe/n8tkEn85u06/U6gGuS94kPcmAVC7rYx2IJ2PwyMLEhnz/nn\nfBJdwMNaG96Kw655whnv0WlMQJuj+eqxBhTlPnYmnCHx5vJEgl4vRmisd5JGTi5y\nFLgUyJMGUqB1HaJVo1KYSsYculcltGTGKq0h7UGiIZJq9QGBk0wO3dRqzOoCnVdK\nxCPI10SM/VhHHzQHK6dA9ttzo2qXKmd6IP3pjNHm7kRTh0hZ4M+WNIr5t5fJKyNb\nj9/0C8LCV8Sio7nGkPJ9B7sCAwEAAQ==\n-----END PUBLIC KEY-----\n"
+  "fingerprint": "sha256:49306a2fb0ef3470",
+  "signing_fingerprint": "sha256:13aac12622d54a95",
+  "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA6UMJcxZiLH5VshixgbYc\nCPVdpypXhcP+FP/G72bZ1RCNr8jl+nsRR38JoRsL/1LywK8z6+uGeHLszbIDbaKi\nbOY85qg99+5GRbaiwvA85vN8qQkaX4RHNNk8kU+Dl4U4kF1Kte+O0wf46x460Ff5\n0vWfzPQWWmwUS1MYoao4ML0KG4G7iW5DkRNgv/uOtap3v3uZiw5y4BuNX3HPt3qM\nrl33ZXapbOEhutwwxfNoJtaYsqy4gTrmvVPUSWTCl8gCog23WYUC7BWNzxW2Hy7T\n3lFBrWcR0IMCNNPIdtKjnw6O6IDIwoeKueTC+sz90fDp+MD0Z/0jsxgAGTKv8klo\nIYNGSvVGwFLBB+oDDbEY0C3AYXTQcibIKJ0LZyU/moddP9v5u7LJGH/HvSQBIgO+\nwxoBIzINuLCKnOXbk/icQppFHnOOaZGH7G2mnqKcbWdywXKgySUmxUTAfNg/Z24d\nOFKY8ErSeNZ9YPkhQm8Spz5N4NDxhAaxhxuoWXKTgCiKu3m8cVRiPPIQfEqrFhUv\n2//atjoISh63j821hmGaSbrLEnIUG5rS6BiBhHIpdJZoxny0wIxWKwAmRKFwv6Uq\nRA87TYlUZktvF8vaYPFxdrz+eoNShFY65XXmOpPNTKbWveR326cbcnCmMxsSuK2a\nHiicsHi4/bpYhr7fG/t0wqsCAwEAAQ==\n-----END PUBLIC KEY-----\n"
  },
  "people": [
   "kate",
   "dinis"
- ],
- "source": "tools/inbox.py; drained by tools/inbox_drain.py"
+ ]
 }

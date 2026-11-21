@@ -24,7 +24,7 @@
         const r = await fetch(`${CFG.endpoint}/api/vault/append/write/${CFG.vault_id}`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ append_token: CFG.append_token, payload: btoa(enc) }) })
         if (!r.ok) throw new Error(r.status === 413 ? 'that is too big for one message: try a smaller photo' : r.status === 507 ? 'the inbox is full until the agent reads it' : `the inbox answered ${r.status}`)
     }
-    // photos: scaled to at most 1600 px on the long side, as JPEG, so a message stays well under the lane's 5 MB
+    // photos: scaled to at most 1600 px on the long side, as JPEG, so a message stays well under the service's limit (a request must be under 6 MiB, measured by feedback.b, 21 Nov 2026)
     function shrink(file) {
         return new Promise((ok, no) => {
             const img = new Image(), url = URL.createObjectURL(file)
