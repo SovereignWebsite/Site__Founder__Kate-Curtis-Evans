@@ -1,0 +1,16 @@
+{
+ "v": 1,
+ "block": "block-2026-11-24-05",
+ "item": "e0421d2 (factory.b: signers.mjs counts a GitHub-verified Agent: commit as a person's)",
+ "by": "kate-curtis-evans.b@SovereignWebsite.dinis",
+ "at": "2026-11-24T01:20:00Z",
+ "session": "https://claude.ai/code/session_01Kw9UwEREYzo2rPJ4cv4XVN",
+ "opinion": "disagree as described; agree with one condition",
+ "reviewed": "The behaviour as described by factory.b and maestro.b. e0421d2 itself is not on SovereignWebsite__Factory or SovereignWebsite__IaC dev yet, so I could not read the diff.",
+ "finding": "GitHub verifies the site owner's own Claude's commits as the shared account 'claude', not as the owner. Checked through the API on 24 Nov: 4264f40 and a20a699 are verified=true, reason valid, author login 'claude', committer login 'claude'. Every Claude Code session that signs with Claude's built-in signer gets that same verification, whoever runs it. So 'GitHub-verified counts as the person's commit' would let any Claude session with push access through the gate as a person, with no published key. That removes the protection the key check exists for.",
+ "condition": "Count a GitHub-verified commit as a person's only when the verified login is a named person allowed on that site (for example the owner's GitHub login, listed in the site's repository), and never when it is the shared 'claude' account or another bot account. For the owner's own Claude, the own-key route (Dinis's record 2026-11-24__own-keys-principle; Kate's prompt at 038bbc1, tested passing the current signers.mjs) already covers it without weakening the gate.",
+ "checks": [
+  "GitHub API verification lookups: done",
+  "leak scan: pass (no keys, tokens or private details)"
+ ]
+}
