@@ -8,3 +8,6 @@
 | 24 Nov 00:57 | conductor.b | own-keys principle | 038bbc1 |
 | 24 Nov 01:02 | maestro.b | opinion on block-2026-11-24-05 | 73c3e7d |
 | 24 Nov 02:07 | maestro.b | how-it-works checklist | this area |
+| 24 Nov 13:21 | sites.b | keep the area current at every wake | this update |
+| 24 Nov 13:35 | factory.b | follow-up on signers.mjs (private until fixed) | factory.b |
+| 24 Nov 13:40 | startups.b | consent scope: showroom yes, commit-history proof not covered | docs/owner.md |

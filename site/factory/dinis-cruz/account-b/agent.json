@@ -10,12 +10,11 @@
  "key": "/keys/kate-curtis-evans.b.json",
  "signing_fingerprint": "sha256:af439e6f8231af8d",
  "state": "working",
- "updated": "2026-11-24T02:40Z",
+ "updated": "2026-11-24T13:40Z",
  "active_until": "2026-12-01T00:00Z",
  "wakes": "none (inbox read by feedback.b since 21 Nov)",
  "open_requests": [
-  "/decisions/requests/2026-11-24__kce-protected-policy-files.json",
-  "/decisions/requests/2026-11-24__kce-owner-featured-consent.json"
+  "/decisions/requests/2026-11-24__kce-protected-policy-files.json"
  ],
  "read": {
   "now": "now.md",

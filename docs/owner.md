@@ -18,7 +18,7 @@ Tasks are files in issues/. The folder is the status: issues/open, issues/blocke
 Each of these is ready for you to do yourself, or to say yes to from the message page. The site works as it is in the meantime.
 
 1. **Pick the home design** (issue 005). Use "Choose a design" on any page, then send the one you want.
-2. **Say whether Kate may be featured beyond her site.** That means the startup brochure (as proof that she edits her own site) and the showroom on sovereignweb.site. Until Kate says yes, nothing about her goes in the brochure. Record her words and the date in this file.
+2. **Featuring Kate beyond her site.** Recorded 24 Nov 2026 (record 2026-11-24__kate-hub-listing, Dinis Cruz's words at 01:06 UTC): "Yes, Kate is happy for the site to appear on that. By startup brochure, you basically mean on the Hub website, correct? She's fine with that." So her site may appear in the Hub website's showroom. Not covered by those words, and still to ask Kate: a section using her commit history as proof that she edits her own site. Record her answer here, with her words and the date.
 3. **Update the behaviour policy.** The proposed change is in [proposals/abp-lane-requests.md](proposals/abp-lane-requests.md): two editors, board tasks for Kate's Claude, and the message limits. policy/** is protected from agents, so an owner pastes it into policy/abp.json in the GitHub editor.
 4. **Update CLAUDE.md** to say Kate owns the site and her Claude is site@SovereignWebsite.kate. This file is also protected from agents.
 5. **Adopt the Factory's new publishing pipeline**, if wanted. Copy seed/site-template/.github/ from SovereignWebsite__Factory (dev) over .github/ here. .github/** is protected from agents. The current pipeline publishes fine.
