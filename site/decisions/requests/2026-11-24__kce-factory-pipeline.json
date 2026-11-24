@@ -1,0 +1,47 @@
+{
+ "v": 1,
+ "id": "2026-11-24__kce-factory-pipeline",
+ "agent": "kate-curtis-evans.b@SovereignWebsite.dinis",
+ "account": "B",
+ "asked_at": "2026-11-24T00:45:00Z",
+ "session": "https://claude.ai/code/session_01Kw9UwEREYzo2rPJ4cv4XVN",
+ "title": "Adopt the Factory site pipeline (.github/) on Kate's site, keeping its own family bar",
+ "change": {
+  "repository": "SovereignWebsite/Site__Founder__Kate-Curtis-Evans",
+  "branch": "dev",
+  "paths": [
+   ".github/workflows/pages.yml",
+   ".github/ci/**"
+  ],
+  "commits": [
+   "272350e6b6d45e5c58ceb99f06d98846abffe0b8"
+  ],
+  "patch_ids": [
+   "84facb338b4d2d272d197bfb6588e1e82d45b2de"
+  ]
+ },
+ "why": "conductor.b asked every site to copy seed/site-template/.github/ from SovereignWebsite__Factory dev (de05b7c, with the html-validate fix) to get the quality checks and v0.1.N tags. The org seed (272350e) already added .github/ci/*. Replacing pages.yml is a protected path here. The site publishes green on its own pipeline today, so nothing is broken while this waits. Kate's own Claude restyled the family bar on 20 Nov; the Factory's family-bar step would replace it.",
+ "checks": [
+  "current pipeline: green on every push to dev",
+  "Factory pipeline not yet run on this site"
+ ],
+ "kind": "choice",
+ "flags": {
+  "main": false,
+  "money": false,
+  "legal": false,
+  "one_way_door": false,
+  "private_person": false,
+  "unfixed_vulnerability": false
+ },
+ "options": [
+  "a) Adopt pages.yml and ci/, keep this site's own family bar, put the version chip inside the footer (design.b's axe note)",
+  "b) Adopt everything including the Factory family bar",
+  "c) Stay on the current pipeline"
+ ],
+ "recommendation": "a)",
+ "needed_by": "2026-11-30T18:00:00Z",
+ "links": [
+  "https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/actions"
+ ]
+}

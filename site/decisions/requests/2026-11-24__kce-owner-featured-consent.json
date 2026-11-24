@@ -1,0 +1,45 @@
+{
+ "v": 1,
+ "id": "2026-11-24__kce-owner-featured-consent",
+ "agent": "kate-curtis-evans.b@SovereignWebsite.dinis",
+ "account": "B",
+ "asked_at": "2026-11-24T00:45:00Z",
+ "session": "https://claude.ai/code/session_01Kw9UwEREYzo2rPJ4cv4XVN",
+ "title": "Ask the site owner whether she may be featured beyond her own site: the startup brochure proof and the showroom entry",
+ "change": {
+  "repository": "SovereignWebsite/Site__Founder__Kate-Curtis-Evans",
+  "branch": "dev",
+  "paths": [
+   "docs/owner.md"
+  ],
+  "commits": [
+   "1b5243eacbf088ffce2548556dedf0a785d90208"
+  ],
+  "patch_ids": [
+   "b36b45669d7bc7b41ef4c3a545bdfa684a2490cb"
+  ]
+ },
+ "why": "startups.b wants the startup brochure to show, as proof, that the site owner edits her own site (linking to her public commit history). It also asks whether the brochure's showroom entry (live since round 1, from the original brief for this site) should stay. There is no record of the owner's own consent for either. A brochure section ran for about 10 minutes on 23 Nov before it was withdrawn (sovereign-website e5778df). Nothing will be added until her consent is recorded, with her words and the date, in docs/owner.md. The question is the site owner's to answer; Dinis is asked only to put it to her.",
+ "checks": [
+  "no record of consent found in this repository or session"
+ ],
+ "kind": "choice",
+ "flags": {
+  "main": false,
+  "money": false,
+  "legal": true,
+  "one_way_door": false,
+  "private_person": false,
+  "unfixed_vulnerability": false
+ },
+ "options": [
+  "a) Dinis asks the owner about both (brochure proof and showroom); her answer is recorded in docs/owner.md",
+  "b) Take the showroom entry down too until she answers",
+  "c) Drop the brochure proof idea"
+ ],
+ "recommendation": "a)",
+ "needed_by": "2026-12-01T18:00:00Z",
+ "links": [
+  "https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/blob/dev/docs/owner.md"
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "v": 1,
+ "id": "2026-11-24__kce-protected-policy-files",
+ "agent": "kate-curtis-evans.b@SovereignWebsite.dinis",
+ "account": "B",
+ "asked_at": "2026-11-24T00:45:00Z",
+ "session": "https://claude.ai/code/session_01Kw9UwEREYzo2rPJ4cv4XVN",
+ "title": "Apply the two-editors and message-limits change to policy/abp.json, and update CLAUDE.md to name Kate as owner",
+ "change": {
+  "repository": "SovereignWebsite/Site__Founder__Kate-Curtis-Evans",
+  "branch": "dev",
+  "paths": [
+   "policy/abp.json",
+   "CLAUDE.md"
+  ],
+  "commits": [
+   "2f4c67f75638a9aed1a537eb7e0c73809ceb64df"
+  ],
+  "patch_ids": [
+   "5b186d5ea100ef22d6783c29bea5da5069680e19"
+  ]
+ },
+ "why": "The machine-readable policy still lacks what Dinis asked for on 20 Nov: two editors (Kate's Claude and Dinis's agents), issues/** for Kate's Claude so it can edit the board, and the limits on requests from the message page. CLAUDE.md predates the handover and does not say Kate owns the site. Both files are protected from agents by .claude/settings.json; my edit was refused by the permission check on 20 Nov and I did not work around it. The human-readable limits are already live in site/admin/policy.md. Commit 2f4c67f carries the exact proposal in docs/proposals/abp-lane-requests.md.",
+ "checks": [
+  "proposal validated by hand against the Factory's ABP schema (version 1, agents, may_change, never, privileges): not run through build/abp.mjs",
+  "leak scan: pass (no keys or tokens in the proposal)",
+  "signatures: pass (2f4c67f signed by kate-curtis-evans.b)"
+ ],
+ "kind": "access",
+ "flags": {
+  "main": false,
+  "money": false,
+  "legal": false,
+  "one_way_door": false,
+  "private_person": false,
+  "unfixed_vulnerability": false
+ },
+ "options": [
+  "a) An owner pastes the proposal into policy/abp.json and edits CLAUDE.md in the GitHub editor on dev (no agent touches protected files)",
+  "b) Dinis tells kate-curtis-evans.b directly 'yes, edit policy/abp.json and CLAUDE.md as proposed', and approves the permission prompt",
+  "c) Leave both as they are; the live policy page already states the limits"
+ ],
+ "recommendation": "a)",
+ "needed_by": "2026-11-30T18:00:00Z",
+ "links": [
+  "https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/blob/dev/docs/proposals/abp-lane-requests.md",
+  "https://kate-curtis-evans.founder.sovereignweb.site/admin/policy.html",
+  "https://github.com/SovereignWebsite/Site__Founder__Kate-Curtis-Evans/blob/dev/docs/owner.md"
+ ]
+}
